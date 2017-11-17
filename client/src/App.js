@@ -10,7 +10,7 @@ const App = () =>
       <Switch>
         <Route exact path="/" component={Main} />
       </Switch>
-
+      <MiamiMadLib />
 
     </div>
   </Router>;
