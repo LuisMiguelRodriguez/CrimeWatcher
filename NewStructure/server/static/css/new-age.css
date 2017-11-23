@@ -306,3 +306,19 @@ footer {
 .btn-xl {
   font-size: 11px;
   padding: 15px 45px; }
+
+
+  .image{
+      width: 100%;
+      height: 500px;
+      border: 15px solid black;
+      background-image: url("/img/CrimeWatcher.jpg");
+      background-size: 100%;
+      background-size: cover;
+      background-position: center center;
+      margin: 20px;
+
+  }
+  .title{
+      text-align: center;
+  }

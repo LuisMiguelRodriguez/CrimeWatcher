@@ -24,6 +24,9 @@ const Base = ({ children }) => (
             <li className="nav-item">
               <a className="nav-link js-scroll-trigger" href="#contact">Contact</a>
             </li>
+            <li className="nav-item">
+              <Link className="nav-link js-scroll-trigger" to="/profile">Profile</Link>
+            </li>
 
             {Auth.isUserAuthenticated() ? (
 
