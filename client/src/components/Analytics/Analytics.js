@@ -18,9 +18,7 @@ class Analytics extends Component {
   };
 
   componentDidMount() {
-    this.loadData();
   }
-
   loadData = () => {
 
   };
@@ -40,8 +38,10 @@ class Analytics extends Component {
       let URL = `https://opendata.miamidade.gov/resource/k7xd-qgzt.json?$where=bookdate between '${this.state.startDate}T12:00:00' and '${this.state.endDate}T14:00:00'`;
 
       API.getData(URL)
-        .then(res =>
-          this.setState({ crimeData: res})
+        .then(res => {
+          this.setState({ crimeData: res});
+          Nvd3Analytics.crimeCount(res).then(dataRes => {console.log("Here is the response: ...");console.log(dataRes)});
+        }
         )
         .catch(err => console.log(err));
     }
