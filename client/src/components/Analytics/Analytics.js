@@ -3,7 +3,7 @@ import API from "../../utils/API";
 import { Link } from "react-router-dom";
 import { Col, Row, Container } from "../../components/Grid";
 import { Input, FormBtn } from "../../components/Form";
-import {graph} from "../graphing";
+import { Graph } from "../Graph";
 
 class Analytics extends Component {
   state = {
@@ -99,7 +99,7 @@ class Analytics extends Component {
         </Row>
 
         <Row>
-        <graph {...this.state} />
+        <Graph {...this.state} />
         </Row>
       </Container>
     );
