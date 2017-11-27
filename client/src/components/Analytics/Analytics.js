@@ -4,6 +4,8 @@ import { Link } from "react-router-dom";
 import { Col, Row, Container } from "../../components/Grid";
 import { Input, FormBtn } from "../../components/Form";
 import { Graph } from "../Graph";
+import Nvd3Analytics from "../../utils/Nvd3Analytics";
+
 
 class Analytics extends Component {
   state = {
@@ -30,6 +32,7 @@ class Analytics extends Component {
     });
   };
 
+//Upon user search, call the miami api and save data in state
   callTheAPI = event => {
     event.preventDefault();
     if (this.state.startDate && this.state.endDate) {
