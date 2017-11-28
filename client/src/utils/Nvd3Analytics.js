@@ -2,6 +2,10 @@ export default {
 	//gets an array of data and returns an array with the following key value pairs - crime name, count
 	crimeCount: (dataArray) => {
 		return new Promise ((resolve, reject) => {
+			// console.log("---------------------- Type of Data Array ----------------------")
+			// console.log(typeof(dataArray));
+			// console.log(dataArray[0])
+			// console.log("---------------------- Type of Data Array ----------------------")
 			let crimeCounts = {};
 			dataArray.forEach( (element) => {
 				var charge = "";
