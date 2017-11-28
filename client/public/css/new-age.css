@@ -74,7 +74,7 @@ section {
     letter-spacing: 2px;
     text-transform: uppercase; }
     #mainNav .navbar-nav > li > a.active {
-      color: #fdcc52 !important;
+      color: #FFFFFF !important;
       background-color: transparent; }
       #mainNav .navbar-nav > li > a.active:hover {
         background-color: transparent; }
@@ -196,8 +196,8 @@ section.features .feature-item {
     font-size: 80px;
     display: block;
     margin-bottom: 15px;
-    background: -webkit-linear-gradient(to left, #7b4397, #dc2430);
-    background: linear-gradient(to left, #7b4397, #dc2430);
+    background: -webkit-linear-gradient(to left, #002d96, #000000);
+    background: linear-gradient(to left, #002d96, #000000);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent; }
 
