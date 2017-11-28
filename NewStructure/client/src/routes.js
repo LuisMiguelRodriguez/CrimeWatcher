@@ -5,6 +5,7 @@ import LoginPage from './containers/LoginPage.jsx';
 import SignUpPage from './containers/SignUpPage.jsx';
 import Auth from './modules/Auth';
 import Profile from './components/Profile';
+import Analytics from './components/Analytics';
 
 
 const routes = {
@@ -36,7 +37,10 @@ const routes = {
       path: '/profile',
       component: Profile
     },
-
+    {
+        path: '/analytics',
+        component: Analytics
+      },
     {
       path: '/logout',
       onEnter: (nextState, replace) => {

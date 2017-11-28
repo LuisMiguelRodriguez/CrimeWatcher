@@ -4,9 +4,7 @@ import  SelectFieldExampleSimple from '../SelectField/SelectField.js'
 
 
 const Profile = () => (
-
-    <SelectFieldExampleSimple />
-
+      <SelectFieldExampleSimple />
 );
 
 

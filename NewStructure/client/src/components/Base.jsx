@@ -32,6 +32,7 @@ const Base = ({ children }) => (
 
               <ul className="navbar-nav ml-auto">
                 <li className="nav-item">
+                  <Link className="nav-link js-scroll-trigger" to="/analytics">Analytics</Link>
                   <Link className="nav-link js-scroll-trigger" to="/logout">Logout</Link>
                 </li>
               </ul>

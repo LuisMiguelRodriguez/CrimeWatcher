@@ -3,7 +3,10 @@ export default {
 	crimeCount: (dataArray) => {
 		return new Promise ((resolve, reject) => {
 			let crimeCounts = {};
-			dataArray.forEach( (element) => {
+
+			 console.log(dataArray);
+
+			dataArray.data.forEach( (element) => {
 				var charge = "";
 				if (element.charge1) {
 					charge = element.charge1
