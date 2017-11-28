@@ -322,3 +322,18 @@ footer {
   .title{
       text-align: center;
   }
+
+  .mainBackground {
+    position: relative;
+    width: 100%;
+    padding-top: 150px;
+    height: -webkit-fill-available;
+    color: white;
+    background: url("../img/bg-pattern.png"), #002d96;
+    background: url("../img/bg-pattern.png"), -webkit-linear-gradient(to left, #002d96, #000000);
+    background: url("../img/bg-pattern.png"), linear-gradient(to left, #002d96, #000000);
+  }
+
+  .card-container {
+    text-align: center;
+  }
