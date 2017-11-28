@@ -1,9 +1,8 @@
 import React, { Component } from "react";
 
-const graph = (props) => {
+export const Graph = (props) => {
   return (
       <h1> Hello World </h1>
     )
 }
 
-export default graph;
