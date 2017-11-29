@@ -3,7 +3,7 @@ before_script:
 script: gulp test
 language: node_js
 env:
-    - PORT=7777
+  - PORT=7777
 node_js:
   - "5.1"
   - "4"
