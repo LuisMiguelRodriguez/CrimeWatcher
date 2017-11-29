@@ -1,54 +1,49 @@
-import React from 'react';
-import TextField from 'material-ui/TextField';
+import React, { PropTypes } from 'react';
+import { Card, CardTitle, CardText } from 'material-ui/Card';
+import  SelectFieldExampleSimple from '../SelectField/SelectField.js'
+import FindForm from "../findform";
 
-const TextFieldExampleSimple = () => (
+
+
+const Dashboard = ({ secretData }) => (
   <div>
-    <TextField
-      hintText="Hint Text"
-    /><br />
-    <br />
-    <TextField
-      hintText="The hint text can be as long as you want, it will wrap."
-    /><br />
-    <TextField
-      id="text-field-default"
-      defaultValue="Default Value"
-    /><br />
-    <TextField
-      hintText="Hint Text"
-      floatingLabelText="Floating Label Text"
-    /><br />
-    <TextField
-      defaultValue="Default Value"
-      floatingLabelText="Floating Label Text"
-    /><br />
-    <TextField
-      hintText="Hint Text"
-      floatingLabelText="Fixed Floating Label Text"
-      floatingLabelFixed={true}
-    /><br />
-    <TextField
-      hintText="Password Field"
-      floatingLabelText="Password"
-      type="password"
-    /><br />
-    <TextField
-      hintText="MultiLine with rows: 2 and rowsMax: 4"
-      multiLine={true}
-      rows={2}
-      rowsMax={4}
-    /><br />
-    <TextField
-      hintText="Message Field"
-      floatingLabelText="MultiLine and FloatingLabel"
-      multiLine={true}
-      rows={2}
-    /><br />
-    <TextField
-      hintText="Full width"
-      fullWidth={true}
-    />
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <FindForm/>
+    <div className="container">
+        <div className="row">
+            <div className="col-md-12">
+                <h1 className="title">Crime Watcher Results</h1>
+            </div>
+        </div>
+        <div className="row">
+            <div className="col-md-12 image">
+            </div>
+        </div>
+        <div className="row">
+                <div className="col-md-4">
+                    <h1>HELLO WORLD</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis ultricies lacus sed turpis tincidunt id aliquet. Senectus et netus et malesuada fames ac turpis egestas integer.</p>
+
+                </div>
+                <div className="col-md-4">
+                        <h1>HELLO WORLD</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis ultricies lacus sed turpis tincidunt id aliquet. Senectus et netus et malesuada fames ac turpis egestas integer.</p>
+                </div>
+                <div className="col-md-4">
+                        <h1>HELLO WORLD</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis ultricies lacus sed turpis tincidunt id aliquet. Senectus et netus et malesuada fames ac turpis egestas integer.</p>
+                </div>
+            </div>
+    </div>
+
   </div>
 );
 
-export default TextFieldExampleSimple;
+Dashboard.propTypes = {
+  secretData: PropTypes.string.isRequired
+};
+
+export default Dashboard;
