@@ -107,8 +107,26 @@ export default {
 			resolve({maxCrimeDay: maxCrimeDay,minCrimeDay: minCrimeDay,maxCrimeDayCount: maxCrimeDayCount,minCrimeDayCount:minCrimeDayCount})
 		})
 	},
+	crime: (dataArray) => {
+		return new Promise ((resolve, reject) => {
+			let crimeCounts = {};
+			crimeCounts["crime"] = [];
+			crimeCounts["counts"] = [];
+			dataArray.forEach( (element) => {
+				let charge= element.charge1;
 
+				if (crimeCounts.crime.indexOf(charge) === -1) {
+					crimeCounts.crime.push(charge);
+					crimeCounts.counts.push(1)
+				} else {
+					crimeCounts.counts[crimeCounts.crime.indexOf(charge)]++;
+				}
+			});
 
-
-
+			console.log(crimeCounts)
+			let maxCrimeType = crimeCounts.crime[crimeCounts.counts.indexOf(Math.max(...crimeCounts.counts))];
+			let minCrimeType = crimeCounts.crime[crimeCounts.counts.indexOf(Math.min(...crimeCounts.counts))];
+			resolve({maxCrimeType: maxCrimeType,minCrimeType: minCrimeType})
+		})
+	}
 }

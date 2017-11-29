@@ -4,7 +4,9 @@ import { Link } from "react-router-dom";
 import { Col, Row, Container } from "../../components/Grid";
 import { Input, FormBtn } from "../../components/Form";
 import Nvd3Analytics from "../../utils/Nvd3Analytics";
-import NVD3Chart from "react-nvd3"
+import NVD3Chart from "react-nvd3";
+import Summary from "../../components/Summary";
+
 
 class Analytics extends Component {
   state = {
@@ -274,7 +276,7 @@ class Analytics extends Component {
             </form>
           </Col>
         </Row>
-        <h1></h1>
+        <Summary {...this.state} />
         <Row>
             <NVD3Chart
               id="chart"
