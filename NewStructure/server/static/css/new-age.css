@@ -60,7 +60,7 @@ section {
   #mainNav .navbar-brand {
     color: #fdcc52;
     font-family: 'Catamaran', 'Helvetica', 'Arial', 'sans-serif';
-    font-weight: 200;
+    font-weight: 600;
     letter-spacing: 1px; }
     #mainNav .navbar-brand:hover, #mainNav .navbar-brand:focus {
       color: #fcbd20; }
@@ -72,7 +72,9 @@ section {
     font-size: 11px;
     font-family: 'Lato', 'Helvetica', 'Arial', 'sans-serif';
     letter-spacing: 2px;
-    text-transform: uppercase; }
+    text-transform: uppercase; 
+    font-weight: 600;
+  }
     #mainNav .navbar-nav > li > a.active {
       color: #fdcc52 !important;
       background-color: transparent; }
@@ -119,8 +121,8 @@ header.masthead {
   padding-bottom: 100px;
   color: white;
   background: url("../img/bg-pattern.png"), #002d96;
-  background: url("../img/bg-pattern.png"), -webkit-linear-gradient(to left, #002d96, #000000);
-  background: url("../img/bg-pattern.png"), linear-gradient(to left, #002d96, #000000); }
+  background: url("../img/bg-pattern.png"), -webkit-linear-gradient(to left, #002d96, #7b4397);
+  background: url("../img/bg-pattern.png"), linear-gradient(to left, #002d96, #7b4397); }
   header.masthead .header-content {
     max-width: 500px;
     margin-bottom: 100px;
@@ -196,8 +198,8 @@ section.features .feature-item {
     font-size: 80px;
     display: block;
     margin-bottom: 15px;
-    background: -webkit-linear-gradient(to left, #7b4397, #dc2430);
-    background: linear-gradient(to left, #7b4397, #dc2430);
+    background: -webkit-linear-gradient(to left, #7b4397, #002d96);
+    background: linear-gradient(to left, #7b4397, #002d96);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent; }
 
@@ -301,7 +303,9 @@ footer {
   border-radius: 300px;
   font-family: 'Lato', 'Helvetica', 'Arial', 'sans-serif';
   letter-spacing: 2px;
-  text-transform: uppercase; }
+  text-transform: uppercase; 
+  font-weight: 600;
+}
 
 .btn-xl {
   font-size: 11px;
