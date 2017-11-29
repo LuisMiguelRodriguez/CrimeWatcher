@@ -4,7 +4,8 @@ import { Link } from "react-router-dom";
 import { Col, Row, Container } from "../../components/Grid";
 import { Input, FormBtn } from "../../components/Form";
 import Nvd3Analytics from "../../utils/Nvd3Analytics";
-import NVD3Chart from "react-nvd3"
+import NVD3Chart from "react-nvd3";
+
 
 class Analytics extends Component {
   state = {
@@ -15,7 +16,10 @@ class Analytics extends Component {
     chartType: "pieChart",
     showGraph: false,
     datum:[],
-    chartVal:"pieChart"
+    chartVal:"pieChart",
+    age: {},
+    day: {},
+    crime: {},
   };
 
   componentDidMount() {
@@ -55,6 +59,30 @@ class Analytics extends Component {
       API.getData(URL)
         .then(res => {
           this.setState({ crimeData: res.data});
+
+          //Get analytics on data 
+          Nvd3Analytics.age(this.state.crimeData).then((response) => {
+            this.setState({
+              age: response
+            })
+          });
+
+          Nvd3Analytics.crime(this.state.crimeData).then((response) => {
+            this.setState({
+              crime: response
+            })
+            ;
+          });
+
+          Nvd3Analytics.day(this.state.crimeData).then((response) => {
+            this.setState({
+              day: response
+            })
+          });
+
+          // END getting data anlytics
+
+
            switch(this.state.chartType) {
               case "discreteBarChart":
                         this.setState({
@@ -66,7 +94,7 @@ class Analytics extends Component {
                               let dataArray = [];
                               Object.keys(response).forEach((value) => {
                                 let tmpObject = {
-                                  key: value,
+                                  key: "Crime: " + value + " | Count: ",
                                   count: parseInt(response[value])
                                 };
 
@@ -88,7 +116,7 @@ class Analytics extends Component {
                               let dataArray = [];
                               Object.keys(response).forEach((value) => {
                                 let tmpObject = {
-                                  key: value + " yrs",
+                                  key: "Age: " + value + " | Count: ",
                                   count: parseInt(response[value])
                                 };
 
@@ -110,7 +138,7 @@ class Analytics extends Component {
                               let dataArray = [];
                               Object.keys(response).forEach((value) => {
                                 let tmpObject = {
-                                  key: "Day " + value,
+                                  key: "Day: " + value + " | Count: ",
                                   count: parseInt(response[value])
                                 };
 
@@ -140,7 +168,7 @@ class Analytics extends Component {
                               let dataArray = [];
                               Object.keys(response).forEach((value) => {
                                 let tmpObject = {
-                                  key: value,
+                                  key: "Crime: " + value + " | Count: ",
                                   count: parseInt(response[value])
                                 };
 
@@ -160,20 +188,18 @@ class Analytics extends Component {
                               let dataArray = [];
                               Object.keys(response).forEach((value) => {
                                 let tmpObject = {
-                                  key: value + " years",
+                                  key: "Age: " + value + " | Count: ",
                                   count: parseInt(response[value])
                                 };
 
                                 dataArray.push(tmpObject)
                               })
-                              console.log("---- This is the data Array -----")
+                              console.log("---- This is the pieChart -----")
                               console.log(dataArray.slice(0,10))
-                              console.log("---- This is the data Array -----")
+                              console.log("---- This is the pieChart -----")
 
-                              this.setState({
-                                datum: [{
-                                  key: "Cumulative bar",
-                                  values: dataArray.slice(0,10)}],
+                               this.setState({
+                                datum: dataArray.slice(0,10),
                               })
                             })
                           break;
@@ -182,7 +208,7 @@ class Analytics extends Component {
                               let dataArray = [];
                               Object.keys(response).forEach((value) => {
                                 let tmpObject = {
-                                  key: "Day " + value,
+                                  key: "Day: " + value + " | Count: ",
                                   count: response[value]
                                 };
 
@@ -193,9 +219,7 @@ class Analytics extends Component {
                               console.log("---- This is the data Array -----")
 
                               this.setState({
-                                datum: [{
-                                  key: "Cumulative bar",
-                                  values: dataArray.slice(0,10)}],
+                                datum: dataArray.slice(0,10),
                               })
                             })
                           break;
@@ -214,7 +238,7 @@ class Analytics extends Component {
     return (
       <Container fluid>
         <Row>
-          <Col size="md-6">
+          <Col size="md-12">
               <h1>MIAMI - Crime Analytics</h1>
             <form>
               <Input
@@ -249,36 +273,43 @@ class Analytics extends Component {
               </FormBtn>
             </form>
           </Col>
-          <Col size="md-6">
-            <form>
-              <Input
-                value={this.state.sortType}
-                disabled={!(this.state.crimeData.length)}
-                onChange={this.handleInputChange}
-                name="sortType"
-                placeholder="sortType (required)"
-              />
-              <Input
-                value={this.state.chartType}
-                disabled={!(this.state.crimeData.length)}
-                onChange={this.handleInputChange}
-                name="chartType"
-                placeholder="chartType (required)"
-              />
-              <FormBtn
-                disabled={!(this.state.startDate && this.state.endDate)}
-                onClick={this.handleFormSubmit}
-              >
-                Chart Graphs
-              </FormBtn>
-            </form>
-          </Col>
         </Row>
-        <h1></h1>
+        <div class="row">
+          <div class="col-md-4">
+            Max Age : {this.state.age.maxAge}
+          </div>
+          <div class="col-md-4">
+            Min Age : {this.state.age.minAge}
+          </div>
+          <div class="col-md-4">
+            Age that commited the most crimes : {this.state.age.maxCrimeAge}
+          </div>
+        </div>
+
+
+        <div class="row">
+          <div class="col-md-6">
+            Lowest crimes commited on : {this.state.day.minCrimeDay} || Number of Crimes commited : {this.state.day.minCrimeDayCount}
+          </div>
+          <div class="col-md-6">
+            Highest crimes commited on : {this.state.day.maxCrimeDay} || Number of Crimes commited : {this.state.day.maxCrimeDayCount}
+          </div>
+        </div>
+
+
+        <div class="row">
+          <div class="col-md-6">
+            Most commited crime : {this.state.crime.maxCrimeType}
+          </div>
+          <div class="col-md-6">
+            Least commited crime : {this.state.crime.minCrimeType}
+          </div>
+        </div>
+
         <Row>
             <NVD3Chart
               id="chart"
-              width={500}
+              width={700}
               height={570}
               type={this.state.chartVal}
               datum={this.state.datum}
