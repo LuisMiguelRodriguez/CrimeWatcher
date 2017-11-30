@@ -4,7 +4,6 @@
   "description": "application for journalist",
   "main": "index.js",
   "scripts": {
-    "postinstall": "webpack --display-error-details",
     "start": " node index.js",
     "bundle": "webpack"
   },
