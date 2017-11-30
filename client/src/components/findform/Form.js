@@ -16,10 +16,10 @@ class FindForm extends Component {
 
     this.state = {
       result: [],
-      month: "MM",
-      day: "DD",
-      year: "YYYY",
-      charge: "PETIT THEFT",
+      month: "Month",
+      day: "Day",
+      year: "Year",
+      charge: "Charge"
     }
 
     // This gets user input for charges and sends it to <ChargesInput />:
@@ -125,7 +125,6 @@ class FindForm extends Component {
         <div className="container">
           <div className="form-group">
             <h1>This is the FindForm!</h1>
-            <h5>Start Your Search By Selecting Desire Date and Crime</h5>
                 <DateInput
                     handleInputChange={this.handleInputChange}
                     month={this.state.month}

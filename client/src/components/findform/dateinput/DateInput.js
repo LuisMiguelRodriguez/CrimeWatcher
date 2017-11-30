@@ -19,6 +19,7 @@ const DateInput = props => (
         value={props.month}
         placeholder="MM"
         openImmediately={false} >
+          <MenuItem value={"Month"} primaryText="Month" />
           <MenuItem value={"01"} primaryText="01" />
           <MenuItem value={"02"} primaryText="02" />
           <MenuItem value={"03"} primaryText="03" />
@@ -40,6 +41,7 @@ const DateInput = props => (
          value={props.day}
          placeholder="DD"
          openImmediately={false} >
+           <MenuItem value={"Day"} primaryText="Day" />
            <MenuItem value={"01"} primaryText="01" />
            <MenuItem value={"02"} primaryText="02" />
            <MenuItem value={"03"} primaryText="03" />
@@ -80,6 +82,7 @@ const DateInput = props => (
         value={props.year}
         placeholder="YYYY"
         openImmediately={false} >
+          <MenuItem value={"Year"} primaryText="Year" />
           <MenuItem value={"2004"} primaryText="2004" />
           <MenuItem value={"2005"} primaryText="2005" />
           <MenuItem value={"2006"} primaryText="2006" />
@@ -93,6 +96,7 @@ const DateInput = props => (
           <MenuItem value={"2014"} primaryText="2014" />
           <MenuItem value={"2015"} primaryText="2015" />
           <MenuItem value={"2016"} primaryText="2016" />
+          <MenuItem value={"2016"} primaryText="2017" />
       </DropDownMenu>
 
       <br/>
@@ -103,6 +107,7 @@ const DateInput = props => (
           value={props.charge}
           onChange={(event, index, value ) => props.handleInputChange(event, index, value, 'charge')}
           openImmediately={false}>
+          <MenuItem value={"Charge"} primaryText="Charge" />
           <MenuItem value={"PETIT THEFT"} primaryText="PETIT THEFT" />
           <MenuItem value={"LOITERING OR PROWL"} primaryText="LOITERING OR PROWL" />
           <MenuItem value={"ALCOHOL/CONSUM/STORE"} primaryText="ALCOHOL/CONSUM/STORE" />
@@ -120,7 +125,7 @@ const DateInput = props => (
       </DropDownMenu>
 
     </Card>
-    
+
   </div>
 
 )
