@@ -16,24 +16,24 @@ const Base = ({ children }) => (
         <div className="collapse navbar-collapse" id="navbarResponsive">
           <ul className="navbar-nav ml-auto">
             <li className="nav-item">
-              <a className="nav-link js-scroll-trigger" href="#download">Download</a>
-            </li>
-            <li className="nav-item">
               <a className="nav-link js-scroll-trigger" href="#features">Features</a>
             </li>
             <li className="nav-item">
               <a className="nav-link js-scroll-trigger" href="#contact">Contact</a>
             </li>
-            <li className="nav-item">
-              <Link className="nav-link js-scroll-trigger" to="/profile">Profile</Link>
-            </li>
+    
 
             {Auth.isUserAuthenticated() ? (
 
               <ul className="navbar-nav ml-auto">
                 <li className="nav-item">
-                  <Link className="nav-link js-scroll-trigger" to="/analytics">Analytics</Link>
-                  <Link className="nav-link js-scroll-trigger" to="/logout">Logout</Link>
+                  <Link className="nav-link js-scroll-trigger" to="/profile">Profile</Link>
+                </li>
+                <li className="nav-item">
+                <Link className="nav-link js-scroll-trigger" to="/analytics">Analytics</Link>
+                </li>
+                <li className="nav-item">
+                <Link className="nav-link js-scroll-trigger" to="/logout">Logout</Link>
                 </li>
               </ul>
 

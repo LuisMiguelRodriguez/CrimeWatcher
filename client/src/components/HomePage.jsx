@@ -31,20 +31,6 @@ const HomePage = () => (
       </div>
     </header>
 
-    <section className="download bg-primary text-center" id="download">
-      <div className="container">
-        <div className="row">
-          <div className="col-md-8 mx-auto">
-            <h2 className="section-heading">Discover what all the buzz is about!</h2>
-            <p>Our app is available on any mobile device! Download now to get started!</p>
-            <div className="badges">
-              <a className="badge-link" href="#"><img src="img/app-store-badge.svg" alt=""/></a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
     <section className="features" id="features">
       <div className="container">
         <div className="section-heading text-center">
