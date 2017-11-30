@@ -2,10 +2,14 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const passport = require('passport');
 const config = require('./config');
+const mongodb = require("mongodb");
+const ObjectID = mongodb.ObjectID;
 let port = process.env.PORT || 3000;
+let mongodbUri = process.env.MONGODB_URI || config.dbUri;
 
 // connect to the database and load models
-require('./server/models').connect(config.dbUri);
+require('./server/models').connect(mongodbUri);
+
 
 const app = express();
 // tell the app to look for static files in these directories
