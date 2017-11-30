@@ -11,7 +11,6 @@ const Dashboard = ({ secretData }) => (
     <br/>
     <br/>
     <br/>
-    <FindForm/>
     <div className="container">
         <div className="row">
             <div className="col-md-12">
@@ -22,23 +21,9 @@ const Dashboard = ({ secretData }) => (
             <div className="col-md-12 image">
             </div>
         </div>
-        <div className="row">
-                <div className="col-md-4">
-                    <h1>HELLO WORLD</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis ultricies lacus sed turpis tincidunt id aliquet. Senectus et netus et malesuada fames ac turpis egestas integer.</p>
 
-                </div>
-                <div className="col-md-4">
-                        <h1>HELLO WORLD</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis ultricies lacus sed turpis tincidunt id aliquet. Senectus et netus et malesuada fames ac turpis egestas integer.</p>
-                </div>
-                <div className="col-md-4">
-                        <h1>HELLO WORLD</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis ultricies lacus sed turpis tincidunt id aliquet. Senectus et netus et malesuada fames ac turpis egestas integer.</p>
-                </div>
-            </div>
     </div>
-
+  <FindForm/>
   </div>
 );
 
