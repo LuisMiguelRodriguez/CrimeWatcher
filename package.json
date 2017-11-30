@@ -1,10 +1,10 @@
 {
-  "name": "authentication-in-react-apps",
+  "name": "crimewatcher",
   "version": "1.0.0",
-  "description": "Authentication in React Applications, Part 2: JSON Web Token (JWT)",
+  "description": "application for journalist",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
+    "start": " node index.js && npm run bundle",
     "bundle": "webpack"
   },
   "repository": {
