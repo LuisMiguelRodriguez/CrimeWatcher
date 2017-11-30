@@ -48085,9 +48085,9 @@
 
 	    _this.state = {
 	      result: [],
-	      month: "",
-	      day: "",
-	      year: "",
+	      month: "MM",
+	      day: "DD",
+	      year: "YYYY",
 	      charge: "PETIT THEFT"
 
 	      // This gets user input for charges and sends it to <ChargesInput />:
@@ -48205,6 +48205,11 @@
 	            "h1",
 	            null,
 	            "This is the FindForm!"
+	          ),
+	          _react2.default.createElement(
+	            "h5",
+	            null,
+	            "Start Your Search By Selecting Desire Date and Crime"
 	          ),
 	          _react2.default.createElement(_dateinput2.default, {
 	            handleInputChange: this.handleInputChange,
