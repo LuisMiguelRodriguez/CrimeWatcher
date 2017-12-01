@@ -5,6 +5,8 @@ import FindForm from "../findform";
 
 
 
+
+
 const Dashboard = ({ secretData }) => (
   <div>
     <br/>
@@ -24,6 +26,7 @@ const Dashboard = ({ secretData }) => (
 
     </div>
   <FindForm/>
+
   </div>
 );
 

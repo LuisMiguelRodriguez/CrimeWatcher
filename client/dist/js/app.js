@@ -48009,8 +48009,6 @@
 
 	var _sentencerender2 = _interopRequireDefault(_sentencerender);
 
-	var _Card = __webpack_require__(399);
-
 	var _moment = __webpack_require__(555);
 
 	var _moment2 = _interopRequireDefault(_moment);
@@ -48018,6 +48016,12 @@
 	var _lodash = __webpack_require__(675);
 
 	var _lodash2 = _interopRequireDefault(_lodash);
+
+	var _Card = __webpack_require__(399);
+
+	var _FlatButton = __webpack_require__(505);
+
+	var _FlatButton2 = _interopRequireDefault(_FlatButton);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -48192,51 +48196,70 @@
 	              "Here are the API call results!"
 	            ),
 	            _react2.default.createElement(
-	              "ul",
-	              { className: "list-group" },
-	              this.state.result.map(function (item) {
-	                return _react2.default.createElement(
-	                  "li",
-	                  { className: "list-group-item", key: item.dob },
-	                  item.defendant,
-	                  _react2.default.createElement(
-	                    "p",
-	                    null,
-	                    "DOB: ",
-	                    item.dob
-	                  ),
-	                  _react2.default.createElement(
-	                    "p",
-	                    null,
-	                    "Residence: ",
-	                    item.location_1_address,
-	                    ", ",
-	                    item.location_1_city,
-	                    ", ",
-	                    item.location_1_state,
-	                    " ",
-	                    item.location_1_zip
-	                  ),
-	                  _react2.default.createElement(
-	                    "p",
-	                    null,
-	                    "Charges: ",
-	                    item.charge1,
-	                    ", ",
-	                    item.charge2
-	                  ),
-	                  _react2.default.createElement(_sentencerender2.default, {
-	                    nameInterpreter: _this2.nameInterpreter,
-	                    cityInterpreter: _this2.cityInterpreter,
-	                    chargesInterpreter: _this2.chargesInterpreter,
-	                    weekDayInterpreter: _this2.weekDayInterpreter,
-	                    defendant: item.defendant,
-	                    uninterpretedCity: item.location_1_city,
-	                    chargeOne: item.charge1,
-	                    uninterpretedDate: item.bookdate
-	                  })
-	                );
-	              })
+	              "div",
+	              { className: "container" },
+	              _react2.default.createElement(
+	                "div",
+	                { className: "row" },
+	                this.state.result.map(function (item) {
+	                  return _react2.default.createElement(
+	                    "div",
+	                    { className: "col-md-4", key: item.dob },
+	                    _react2.default.createElement(
+	                      _Card.Card,
+	                      null,
+	                      _react2.default.createElement(
+	                        _Card.CardMedia,
+	                        {
+	                          overlay: _react2.default.createElement(_Card.CardTitle, { title: item.defendant, subtitle: "Overlay subtitle" })
+	                        },
+	                        _react2.default.createElement("img", { src: "img/mugshot.png" })
+	                      ),
+	                      _react2.default.createElement(_Card.CardTitle, { title: "Card title", subtitle: "Card subtitle" }),
+	                      _react2.default.createElement(
+	                        _Card.CardText,
+	                        null,
+	                        _react2.default.createElement(
+	                          "p",
+	                          null,
+	                          "DOB: ",
+	                          item.dob
+	                        ),
+	                        _react2.default.createElement(
+	                          "p",
+	                          null,
+	                          "Residence: ",
+	                          item.location_1_address,
+	                          ", ",
+	                          item.location_1_city,
+	                          ", ",
+	                          item.location_1_state,
+	                          " ",
+	                          item.location_1_zip
+	                        ),
+	                        _react2.default.createElement(
+	                          "p",
+	                          null,
+	                          "Charges: ",
+	                          item.charge1,
+	                          ", ",
+	                          item.charge2
+	                        ),
+	                        _react2.default.createElement(_sentencerender2.default, {
+	                          nameInterpreter: _this2.nameInterpreter,
+	                          cityInterpreter: _this2.cityInterpreter,
+	                          chargesInterpreter: _this2.chargesInterpreter,
+	                          weekDayInterpreter: _this2.weekDayInterpreter,
+	                          defendant: item.defendant,
+	                          uninterpretedCity: item.location_1_city,
+	                          chargeOne: item.charge1,
+	                          uninterpretedDate: item.bookdate
+	                        })
+	                      )
+	                    )
+	                  );
+	                })
+	              )
 	            )
 	          )
 	        )
@@ -54426,11 +54449,6 @@
 	            " on ",
 	            props.weekDayInterpreter(props.uninterpretedDate),
 	            ", according to booking logs."
-	        ),
-	        _react2.default.createElement(
-	            "p",
-	            null,
-	            "_____________"
 	        )
 	    );
 	};

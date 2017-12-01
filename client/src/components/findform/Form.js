@@ -4,9 +4,11 @@ import ChargeInput from "./chargeinput";
 import SubmitButton from "./submitbutton";
 import API from "./findAPI";
 import SentenceRender from "./sentencerender";
-import { Card, CardText } from 'material-ui/Card';
 import moment from 'moment';
 import _ from 'lodash';
+import {Card, CardActions, CardHeader, CardMedia, CardTitle, CardText} from 'material-ui/Card';
+import FlatButton from 'material-ui/FlatButton';
+
 
 class FindForm extends Component {
 
@@ -137,10 +139,18 @@ class FindForm extends Component {
             <h2>Here are the results!</h2>
             <div>
               <h4>Here are the API call results!</h4>
-                <ul className="list-group">
-                  {this.state.result.map(item => (
-                    <li className="list-group-item" key={item.dob}>
-                      {item.defendant}
+              <div className = "container">
+               <div className = "row">
+                {this.state.result.map(item => (
+                  <div className = "col-md-4" key={item.dob}>       
+                    <Card>
+                      <CardMedia
+                      overlay={<CardTitle title={item.defendant} subtitle="Overlay subtitle" />}
+                      >
+                      <img src="img/mugshot.png" />
+                      </CardMedia>
+                      <CardTitle title="Card title" subtitle="Card subtitle" />
+                      <CardText>
                       <p>DOB: {item.dob}</p>
                       <p>Residence: {item.location_1_address}, {item.location_1_city}, {item.location_1_state} {item.location_1_zip}</p>
                       <p>Charges: {item.charge1}, {item.charge2}</p>
@@ -154,9 +164,12 @@ class FindForm extends Component {
                         chargeOne={item.charge1}
                         uninterpretedDate={item.bookdate}
                       />
-                    </li>
-                  ))}
-                </ul>
+                      </CardText>
+                    </Card>
+                  </div>  
+                ))}
+               </div>
+              </div>
             </div>
           </div>
         </div>
