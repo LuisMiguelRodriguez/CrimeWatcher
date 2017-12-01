@@ -52,10 +52,10 @@ class FindForm extends Component {
       }
       this.setState({
           result: [],
-          month: "",
-          day: "",
-          year: "",
-          charge: ""
+          month: "Month",
+          day: "Day",
+          year: "Year",
+          charge: "Charge"
       })
     }
 
@@ -132,6 +132,7 @@ class FindForm extends Component {
                     month={this.state.month}
                     day={this.state.day}
                     year={this.state.year}
+                    charge={this.state.charge}
                      />
                     <p>For examples of charges and their titles,
                     <a href="https://opendata.miamidade.gov/Corrections/Jail-Bookings-May-29-2015-to-current/7nhc-4yqn">go here</a>.</p>
@@ -142,7 +143,7 @@ class FindForm extends Component {
               <div className = "container">
                <div className = "row">
                 {this.state.result.map(item => (
-                  <div className = "col-md-4" key={item.dob}>       
+                  <div className = "col-md-4" key={item.dob}>
                     <Card>
                       <CardMedia
                       overlay={<CardTitle title={item.defendant} subtitle="Overlay subtitle" />}
@@ -166,7 +167,7 @@ class FindForm extends Component {
                       />
                       </CardText>
                     </Card>
-                  </div>  
+                  </div>
                 ))}
                </div>
               </div>

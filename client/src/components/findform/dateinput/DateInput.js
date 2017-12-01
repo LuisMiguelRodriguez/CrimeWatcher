@@ -96,7 +96,7 @@ const DateInput = props => (
           <MenuItem value={"2014"} primaryText="2014" />
           <MenuItem value={"2015"} primaryText="2015" />
           <MenuItem value={"2016"} primaryText="2016" />
-          <MenuItem value={"2016"} primaryText="2017" />
+          <MenuItem value={"2017"} primaryText="2017" />
       </DropDownMenu>
 
       <br/>
