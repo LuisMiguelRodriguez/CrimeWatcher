@@ -10,8 +10,9 @@ import { Card, CardText } from 'material-ui/Card';
 // import 'react-datepicker/dist/react-datepicker.css';
 
 const DateInput = props => (
-  <div>
-    <Card>
+  <div  >
+    <Card id="dashboard-form-card">
+      <br/>
       <DropDownMenu
         type="text"
         onChange={(event, index, value ) => props.handleInputChange(event, index, value, 'month')}
@@ -33,6 +34,7 @@ const DateInput = props => (
           <MenuItem value={"11"} primaryText="11" />
           <MenuItem value={"12"} primaryText="12" />
       </DropDownMenu>
+      <br/>
 
       <DropDownMenu
          type="text"
@@ -74,6 +76,7 @@ const DateInput = props => (
            <MenuItem value={"30"} primaryText="30" />
            <MenuItem value={"31"} primaryText="31" />
       </DropDownMenu>
+      <br/>
 
       <DropDownMenu
         type="text"
@@ -98,6 +101,7 @@ const DateInput = props => (
           <MenuItem value={"2016"} primaryText="2016" />
           <MenuItem value={"2017"} primaryText="2017" />
       </DropDownMenu>
+      <br/>
 
       <br/>
 
@@ -107,7 +111,7 @@ const DateInput = props => (
           value={props.charge}
           onChange={(event, index, value ) => props.handleInputChange(event, index, value, 'charge')}
           openImmediately={false}>
-          <MenuItem value={"Charge"} primaryText="Charge" />
+          <MenuItem value={""} primaryText="Charge" />
           <MenuItem value={"PETIT THEFT"} primaryText="PETIT THEFT" />
           <MenuItem value={"LOITERING OR PROWL"} primaryText="LOITERING OR PROWL" />
           <MenuItem value={"ALCOHOL/CONSUM/STORE"} primaryText="ALCOHOL/CONSUM/STORE" />

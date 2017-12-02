@@ -9,6 +9,7 @@ import FindForm from "../findform";
 
 const Dashboard = ({ secretData }) => (
   <div>
+    <div id="dashboard-hero"></div>
     <br/>
     <br/>
     <br/>
@@ -20,7 +21,7 @@ const Dashboard = ({ secretData }) => (
             </div>
         </div>
         <div className="row">
-            <div className="col-md-12 image">
+            <div className="col-md-12">
             </div>
         </div>
 
