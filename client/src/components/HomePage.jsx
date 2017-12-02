@@ -9,7 +9,8 @@ const HomePage = () => (
         <div className="row h-100">
           <div className="col-lg-7 my-auto">
             <div className="header-content mx-auto">
-              <h1 className="mb-5">Crime Watcher is an app that will help users consume crime data in bite size pieces</h1>
+              <h1 className="mb-5">Add depth to your crime stories.</h1>
+              <h4 className="mb-5">Give us a few basic details and we'll do the leg work. Booking logs, crime statistics, a wealth of information at your fingertips.</h4>
               <a href="#download" className="btn btn-outline btn-xl js-scroll-trigger">Sign Up Now for Free!</a>
             </div>
           </div>
@@ -59,14 +60,14 @@ const HomePage = () => (
                   <div className="feature-item">
                     <i className="icon-magnifier text-primary"></i>
                     <h3>Search</h3>
-                    <p className="text-muted">Ready to use HTML/CSS device mockups, no Photoshop required!</p>
+                    <p className="text-muted">Give us dates and a type of crime, and we'll dig up all the matching data in Miami-Dade County booking logs.</p>
                   </div>
                 </div>
                 <div className="col-lg-6">
                   <div className="feature-item">
                     <i className="icon-book-open text-primary"></i>
                     <h3>Automated Articles</h3>
-                    <p className="text-muted">Put an image, video, animation, or anything else in the screen!</p>
+                    <p className="text-muted">We'll give you these data in paragraph form so you can copy-paste into your articles. No more typos!</p>
                   </div>
                 </div>
               </div>
@@ -75,14 +76,14 @@ const HomePage = () => (
                   <div className="feature-item">
                     <i className="icon-graph text-primary"></i>
                     <h3>Crime Data</h3>
-                    <p className="text-muted">As always, this theme is free to download and use for any purpose!</p>
+                    <p className="text-muted">We'll give you pie charts and bar graphs describing crime trends in the date range you can use to illustrate your stories.</p>
                   </div>
                 </div>
                 <div className="col-lg-6">
                   <div className="feature-item">
                     <i className="icon-layers text-primary"></i>
-                    <h3>Heat Map</h3>
-                    <p className="text-muted">Since this theme is MIT licensed, you can use it commercially!</p>
+                    <h3>Email</h3>
+                    <p className="text-muted">We can email you the data for safe keeping.</p>
                   </div>
                 </div>
               </div>
@@ -95,7 +96,7 @@ const HomePage = () => (
     <section className="cta">
       <div className="cta-content">
         <div className="container">
-          <h2>Stop waiting.<br/>Start Watching.</h2>
+          <h2>Stop waiting.<br/>Start watching.</h2>
           <a href="#contact" className="btn btn-outline btn-xl js-scroll-trigger">Let's Get Started!</a>
         </div>
       </div>
