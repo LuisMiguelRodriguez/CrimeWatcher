@@ -6,6 +6,8 @@ import SignUpPage from './containers/SignUpPage.jsx';
 import Auth from './modules/Auth';
 import Profile from './components/Profile';
 import Analytics from './components/Analytics';
+import ContactPage from './containers/ContactPage';
+import AboutPage from './containers/AboutPage';
 
 
 const routes = {
@@ -23,12 +25,18 @@ const routes = {
         }
       }
     },
-
     {
       path: '/login',
       component: LoginPage
     },
-
+    {
+      path: '/ContactPage',
+      component: ContactPage
+    },
+    {
+      path: '/AboutPage',
+      component: AboutPage
+    },
     {
       path: '/signup',
       component: SignUpPage
