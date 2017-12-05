@@ -112,15 +112,10 @@ const DateInput = props => (
           value={props.charge}
           onChange={(event, index, value ) => props.handleInputChange(event, index, value, 'charge')}
           openImmediately={false}>
-<<<<<<< HEAD
+
           <MenuItem value={"Charge"} primaryText="Charge" />
-          <MenuItem value={"PETIT THEFT"} primaryText="PETIT THEFT" />
-          <MenuItem value={"LOITERING OR PROWL"} primaryText="LOITERING OR PROWL" />
-=======
-          <MenuItem value={""} primaryText="Charge" />
           <MenuItem value={"PETIT THEFT"} primaryText="Petty Theft" />
           <MenuItem value={"LOITERING OR PROWL"} primaryText="Loitering" />
->>>>>>> ee9d34771446c3ce0b6cda0806a6fd969673ff9d
           <MenuItem value={"ALCOHOL/CONSUM/STORE"} primaryText="ALCOHOL/CONSUM/STORE" />
           <MenuItem value={"CHILD ABUSE/NO HARM"} primaryText="Child Abuse" />
           <MenuItem value={"COCAINE/POSSESSION"} primaryText="Cocaine Possession" />
