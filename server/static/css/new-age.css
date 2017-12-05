@@ -368,3 +368,8 @@ footer {
     border: none;
     color: white;
   }
+
+  #dashboard-form-card{
+    text-align: center;
+    background-color: black;
+  }

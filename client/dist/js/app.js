@@ -72,6 +72,10 @@
 
 	var _routes2 = _interopRequireDefault(_routes);
 
+	var _darkBaseTheme = __webpack_require__(703);
+
+	var _darkBaseTheme2 = _interopRequireDefault(_darkBaseTheme);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	// remove tap delay, essential for MaterialUI to work properly
@@ -79,7 +83,7 @@
 
 	_reactDom2.default.render(_react2.default.createElement(
 	  _MuiThemeProvider2.default,
-	  { muiTheme: (0, _getMuiTheme2.default)() },
+	  { muiTheme: (0, _getMuiTheme2.default)(_darkBaseTheme2.default) },
 	  _react2.default.createElement(_reactRouter.Router, { history: _reactRouter.browserHistory, routes: _routes2.default })
 	), document.getElementById('react-app'));
 
@@ -48201,6 +48205,7 @@
 	                    "div",
 	                    { className: "form-group" },
 	                    _react2.default.createElement(_dateinput2.default, {
+
 	                        handleInputChange: this.handleInputChange,
 	                        month: this.state.month,
 	                        day: this.state.day,
@@ -115241,6 +115246,47 @@
 	};
 
 	exports.default = AboutPage;
+
+/***/ }),
+/* 703 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _colors = __webpack_require__(249);
+
+	var _colorManipulator = __webpack_require__(247);
+
+	var _spacing = __webpack_require__(250);
+
+	var _spacing2 = _interopRequireDefault(_spacing);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	exports.default = {
+	  spacing: _spacing2.default,
+	  fontFamily: 'Roboto, sans-serif',
+	  palette: {
+	    primary1Color: _colors.cyan700,
+	    primary2Color: _colors.cyan700,
+	    primary3Color: _colors.grey600,
+	    accent1Color: _colors.pinkA200,
+	    accent2Color: _colors.pinkA400,
+	    accent3Color: _colors.pinkA100,
+	    textColor: _colors.fullWhite,
+	    secondaryTextColor: (0, _colorManipulator.fade)(_colors.fullWhite, 0.7),
+	    alternateTextColor: '#303030',
+	    canvasColor: '#303030',
+	    borderColor: (0, _colorManipulator.fade)(_colors.fullWhite, 0.3),
+	    disabledColor: (0, _colorManipulator.fade)(_colors.fullWhite, 0.3),
+	    pickerHeaderColor: (0, _colorManipulator.fade)(_colors.fullWhite, 0.12),
+	    clockCircleColor: (0, _colorManipulator.fade)(_colors.fullWhite, 0.12)
+	  }
+	};
 
 /***/ })
 /******/ ]);

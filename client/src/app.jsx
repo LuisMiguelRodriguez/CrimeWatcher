@@ -6,10 +6,12 @@ import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import { browserHistory, Router } from 'react-router';
 import routes from './routes.js';
 
+import darkBaseTheme from 'material-ui/styles/baseThemes/darkBaseTheme';
+
 // remove tap delay, essential for MaterialUI to work properly
 injectTapEventPlugin();
 
 ReactDom.render((
-  <MuiThemeProvider muiTheme={getMuiTheme()}>
+  <MuiThemeProvider muiTheme={getMuiTheme(darkBaseTheme)}>
     <Router history={browserHistory} routes={routes} />
   </MuiThemeProvider>), document.getElementById('react-app'));
