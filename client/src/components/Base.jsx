@@ -19,10 +19,10 @@ const Base = ({ children }) => (
               <a className="nav-link js-scroll-trigger" href="#features">Features</a>
             </li>
             <li className="nav-item">
-              <Link className="nav-link js-scroll-trigger" to="/ContactPage">ContactPage</Link>
+              <Link className="nav-link js-scroll-trigger" to="/ContactPage">About</Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link js-scroll-trigger" to="/About">AboutPage</Link>
+              <Link className="nav-link js-scroll-trigger" to="/About">Contact</Link>
             </li>
 
             {Auth.isUserAuthenticated() ? (
@@ -43,7 +43,7 @@ const Base = ({ children }) => (
 
               <ul className="navbar-nav ml-auto">
                 <li className="nav-item">
-                  <Link className="nav-link js-scroll-trigger" to="/login">Login</Link>
+                  <Link className="nav-link js-scroll-trigger" to="/login">Login/Sign-Up</Link>
                 </li>
                 <li className="nav-item">
                   <Link className="nav-link js-scroll-trigger" to="/signup">Sign Up</Link>

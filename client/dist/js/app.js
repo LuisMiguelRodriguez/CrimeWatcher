@@ -35135,7 +35135,7 @@
 	              _react2.default.createElement(
 	                _reactRouter.Link,
 	                { className: 'nav-link js-scroll-trigger', to: '/ContactPage' },
-	                'ContactPage'
+	                'About'
 	              )
 	            ),
 	            _react2.default.createElement(
@@ -35144,7 +35144,7 @@
 	              _react2.default.createElement(
 	                _reactRouter.Link,
 	                { className: 'nav-link js-scroll-trigger', to: '/About' },
-	                'AboutPage'
+	                'Contact'
 	              )
 	            ),
 	            _Auth2.default.isUserAuthenticated() ? _react2.default.createElement(
@@ -35186,7 +35186,7 @@
 	                _react2.default.createElement(
 	                  _reactRouter.Link,
 	                  { className: 'nav-link js-scroll-trigger', to: '/login' },
-	                  'Login'
+	                  'Login/Sign-Up'
 	                )
 	              ),
 	              _react2.default.createElement(
