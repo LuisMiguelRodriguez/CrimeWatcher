@@ -41340,7 +41340,7 @@
 	'use strict';
 
 	Object.defineProperty(exports, "__esModule", {
-	    value: true
+	  value: true
 	});
 
 	var _react = __webpack_require__(1);
@@ -41360,43 +41360,35 @@
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	var Dashboard = function Dashboard(_ref) {
-	    var secretData = _ref.secretData;
-	    return _react2.default.createElement(
+	  var secretData = _ref.secretData;
+	  return _react2.default.createElement(
+	    'div',
+	    null,
+	    _react2.default.createElement('div', { id: 'dashboard-hero' }),
+	    _react2.default.createElement('br', null),
+	    _react2.default.createElement('br', null),
+	    _react2.default.createElement('br', null),
+	    _react2.default.createElement('br', null),
+	    _react2.default.createElement(
+	      'div',
+	      { className: 'container' },
+	      _react2.default.createElement(
 	        'div',
-	        null,
-	        _react2.default.createElement('div', { id: 'dashboard-hero' }),
-	        _react2.default.createElement('br', null),
-	        _react2.default.createElement('br', null),
-	        _react2.default.createElement('br', null),
-	        _react2.default.createElement('br', null),
-	        _react2.default.createElement(
-	            'div',
-	            { className: 'container' },
-	            _react2.default.createElement(
-	                'div',
-	                { className: 'row' },
-	                _react2.default.createElement(
-	                    'div',
-	                    { className: 'col-md-12' },
-	                    _react2.default.createElement(
-	                        'h1',
-	                        { className: 'title' },
-	                        'Crime Watcher Results'
-	                    )
-	                )
-	            ),
-	            _react2.default.createElement(
-	                'div',
-	                { className: 'row' },
-	                _react2.default.createElement('div', { className: 'col-md-12' })
-	            )
-	        ),
-	        _react2.default.createElement(_findform2.default, null)
-	    );
+	        { className: 'row' },
+	        _react2.default.createElement('div', { className: 'col-md-12' })
+	      ),
+	      _react2.default.createElement(
+	        'div',
+	        { className: 'row' },
+	        _react2.default.createElement('div', { className: 'col-md-12' })
+	      )
+	    ),
+	    _react2.default.createElement(_findform2.default, null)
+	  );
 	};
 
 	Dashboard.propTypes = {
-	    secretData: _react.PropTypes.string.isRequired
+	  secretData: _react.PropTypes.string.isRequired
 	};
 
 	exports.default = Dashboard;
@@ -48188,11 +48180,6 @@
 	        _react2.default.createElement(
 	          "div",
 	          { className: "form-group" },
-	          _react2.default.createElement(
-	            "h1",
-	            null,
-	            "This is the FindForm!"
-	          ),
 	          _react2.default.createElement(_dateinput2.default, {
 	            handleInputChange: this.handleInputChange,
 	            month: this.state.month,
@@ -48200,17 +48187,6 @@
 	            year: this.state.year,
 	            charge: this.state.charge
 	          }),
-	          _react2.default.createElement(
-	            "p",
-	            null,
-	            "For examples of charges and their titles,",
-	            _react2.default.createElement(
-	              "a",
-	              { href: "https://opendata.miamidade.gov/Corrections/Jail-Bookings-May-29-2015-to-current/7nhc-4yqn" },
-	              "go here"
-	            ),
-	            "."
-	          ),
 	          _react2.default.createElement(_submitbutton2.default, { handleFormSubmit: this.handleFormSubmit }),
 	          _react2.default.createElement(
 	            "h2",
@@ -48364,6 +48340,11 @@
 	    _react2.default.createElement(
 	      _Card.Card,
 	      { id: 'dashboard-form-card' },
+	      _react2.default.createElement(
+	        'h1',
+	        { className: 'title' },
+	        'Crime Watcher Results'
+	      ),
 	      _react2.default.createElement('br', null),
 	      _react2.default.createElement(
 	        _DropDownMenu2.default,

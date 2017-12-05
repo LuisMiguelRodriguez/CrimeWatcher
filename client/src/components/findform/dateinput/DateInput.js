@@ -12,6 +12,7 @@ import { Card, CardText } from 'material-ui/Card';
 const DateInput = props => (
   <div  id="dashboard-form-layout">
     <Card id="dashboard-form-card">
+    <h1 className="title">Crime Watcher Results</h1>
       <br/>
       <DropDownMenu
         type="text"

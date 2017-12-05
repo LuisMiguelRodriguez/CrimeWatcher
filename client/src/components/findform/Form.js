@@ -126,7 +126,6 @@ class FindForm extends Component {
       return (
         <div className="container">
           <div className="form-group">
-            <h1>This is the FindForm!</h1>
                 <DateInput
                     handleInputChange={this.handleInputChange}
                     month={this.state.month}
@@ -134,8 +133,6 @@ class FindForm extends Component {
                     year={this.state.year}
                     charge={this.state.charge}
                      />
-                    <p>For examples of charges and their titles,
-                    <a href="https://opendata.miamidade.gov/Corrections/Jail-Bookings-May-29-2015-to-current/7nhc-4yqn">go here</a>.</p>
                 <SubmitButton  handleFormSubmit={this.handleFormSubmit} />
             <h2>Here are the results!</h2>
             <div>
