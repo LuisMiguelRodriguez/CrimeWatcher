@@ -11,7 +11,7 @@ body {
  }
 
 body {
-  font-family: 'Muli', 'Helvetica', 'Arial', 'sans-serif'; }
+  font-family: 'Muli', 'Helvetica', 'Open Sans', 'sans-serif'; }
 
 a {
   color: #fdcc52;
@@ -38,7 +38,9 @@ h5,
 h6 {
   font-family: 'Catamaran', 'Helvetica', 'Arial', 'sans-serif';
   font-weight: 200;
-  letter-spacing: 1px; }
+  letter-spacing: 1px; 
+  color: #fff;
+}
 
 p {
   font-size: 18px;
@@ -124,9 +126,9 @@ header.masthead {
   padding-top: 150px;
   padding-bottom: 100px;
   color: white;
-  background: url("../img/bg-pattern.png"), #7b4397;
-  background: url("../img/bg-pattern.png"), -webkit-linear-gradient(to left, #7b4397, #002d96);
-  background: url("../img/bg-pattern.png"), linear-gradient(to left, #7b4397, #002d96); }
+  background: url("../img/bg-pattern.png"), #000;
+  background: url("../img/bg-pattern.png"), -webkit-linear-gradient(to left, #d80404, #000);
+  background: url("../img/bg-pattern.png"), linear-gradient(to left, #d80404, #000); }
   header.masthead .header-content {
     max-width: 500px;
     margin-bottom: 100px;
@@ -152,27 +154,6 @@ header.masthead {
           font-size: 50px; }
       header.masthead .device-container {
         max-width: 325px; } }
-
-section.download {
-  position: relative;
-  padding: 150px 0; }
-  section.download h2 {
-    font-size: 50px;
-    margin-top: 0; }
-  section.download .badges .badge-link {
-    display: block;
-    margin-bottom: 25px; }
-    section.download .badges .badge-link:last-child {
-      margin-bottom: 0; }
-    section.download .badges .badge-link img {
-      height: 60px; }
-    @media (min-width: 768px) {
-      section.download .badges .badge-link {
-        display: inline-block;
-        margin-bottom: 0; } }
-  @media (min-width: 768px) {
-    section.download h2 {
-      font-size: 70px; } }
 
 section.features .section-heading {
   margin-bottom: 100px; }
@@ -202,10 +183,12 @@ section.features .feature-item {
     font-size: 80px;
     display: block;
     margin-bottom: 15px;
-    background: -webkit-linear-gradient(to left, #7b4397, #002d96);
-    background: linear-gradient(to left, #7b4397, #002d96);
+    background: -webkit-linear-gradient(to left, #d80404, #000000);
+    background: linear-gradient(to left, #d80404, #000000);
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; }
+    -webkit-text-fill-color: transparent; 
+    color:#fff;
+  }
 
 section.cta {
   position: relative;
@@ -283,9 +266,9 @@ footer {
         text-decoration: none; }
 
 .bg-primary {
-  background: #fdcc52;
-  background: -webkit-linear-gradient(#fdcc52, #fdc539);
-  background: linear-gradient(#fdcc52, #fdc539); }
+  background: #000;
+  background: -webkit-linear-gradient(#000, #000);
+  background: linear-gradient(#000, #000); }
 
 .text-primary {
   color: #fdcc52; }

@@ -35544,7 +35544,7 @@
 	          ),
 	          _react2.default.createElement(
 	            'a',
-	            { href: '#contact', className: 'btn btn-outline btn-xl js-scroll-trigger' },
+	            { href: '/login', className: 'btn btn-outline btn-xl js-scroll-trigger' },
 	            'Let\'s Get Started!'
 	          )
 	        )
