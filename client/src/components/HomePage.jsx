@@ -97,7 +97,7 @@ const HomePage = () => (
       <div className="cta-content">
         <div className="container">
           <h2>Stop waiting.<br/>Start watching.</h2>
-          <a href="#contact" className="btn btn-outline btn-xl js-scroll-trigger">Let's Get Started!</a>
+          <a href="/login" className="btn btn-outline btn-xl js-scroll-trigger">Let's Get Started!</a>
         </div>
       </div>
       <div className="overlay"></div>
