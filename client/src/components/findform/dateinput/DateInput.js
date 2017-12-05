@@ -10,7 +10,7 @@ import { Card, CardText } from 'material-ui/Card';
 // import 'react-datepicker/dist/react-datepicker.css';
 
 const DateInput = props => (
-  <div  >
+  <div  id="dashboard-form-layout">
     <Card id="dashboard-form-card">
       <br/>
       <DropDownMenu
@@ -21,18 +21,18 @@ const DateInput = props => (
         placeholder="MM"
         openImmediately={false} >
           <MenuItem value={"Month"} primaryText="Month" />
-          <MenuItem value={"01"} primaryText="01" />
-          <MenuItem value={"02"} primaryText="02" />
-          <MenuItem value={"03"} primaryText="03" />
-          <MenuItem value={"04"} primaryText="04" />
-          <MenuItem value={"05"} primaryText="05" />
-          <MenuItem value={"06"} primaryText="06" />
-          <MenuItem value={"07"} primaryText="07" />
-          <MenuItem value={"08"} primaryText="08" />
-          <MenuItem value={"09"} primaryText="09" />
-          <MenuItem value={"10"} primaryText="10" />
-          <MenuItem value={"11"} primaryText="11" />
-          <MenuItem value={"12"} primaryText="12" />
+          <MenuItem value={"01"} primaryText="January" />
+          <MenuItem value={"02"} primaryText="February" />
+          <MenuItem value={"03"} primaryText="March" />
+          <MenuItem value={"04"} primaryText="April" />
+          <MenuItem value={"05"} primaryText="May" />
+          <MenuItem value={"06"} primaryText="June" />
+          <MenuItem value={"07"} primaryText="July" />
+          <MenuItem value={"08"} primaryText="August" />
+          <MenuItem value={"09"} primaryText="September" />
+          <MenuItem value={"10"} primaryText="October" />
+          <MenuItem value={"11"} primaryText="November" />
+          <MenuItem value={"12"} primaryText="December" />
       </DropDownMenu>
       <br/>
 
@@ -112,20 +112,19 @@ const DateInput = props => (
           onChange={(event, index, value ) => props.handleInputChange(event, index, value, 'charge')}
           openImmediately={false}>
           <MenuItem value={""} primaryText="Charge" />
-          <MenuItem value={"PETIT THEFT"} primaryText="PETIT THEFT" />
-          <MenuItem value={"LOITERING OR PROWL"} primaryText="LOITERING OR PROWL" />
+          <MenuItem value={"PETIT THEFT"} primaryText="Petty Theft" />
+          <MenuItem value={"LOITERING OR PROWL"} primaryText="Loitering" />
           <MenuItem value={"ALCOHOL/CONSUM/STORE"} primaryText="ALCOHOL/CONSUM/STORE" />
-          <MenuItem value={"CHILD ABUSE/NO HARM"} primaryText="CHILD ABUSE/NO HARM" />
-          <MenuItem value={"COCAINE/POSSESSION"} primaryText="COCAINE/POSSESSION" />
+          <MenuItem value={"CHILD ABUSE/NO HARM"} primaryText="Child Abuse" />
+          <MenuItem value={"COCAINE/POSSESSION"} primaryText="Cocaine Possession" />
           <MenuItem value={"BENCH WARRANT"} primaryText="BENCH WARRANT" />
           <MenuItem value={"TRES PROP/AFTER WARN"} primaryText="TRES PROP/AFTER WARN" />
-          <MenuItem value={"PROBATION WARRANT"} primaryText="PROBATION WARRANT" />
+          <MenuItem value={"PROBATION WARRANT"} primaryText="Probation Warrant" />
           <MenuItem value={"DL/EXPIRED 6 MTHS+"} primaryText="DL/EXPIRED 6 MTHS+" />
           <MenuItem value={"DWLS/KNOWINGL"} primaryText="DWLS/KNOWINGLY" />
-          <MenuItem value={"ARREST WARRANT"} primaryText="ARREST WARRANT" />
-          <MenuItem value={"DRUG PARAPHERNA/POSN"} primaryText="DRUG PARAPHERNA/POSN" />
-          <MenuItem value={"COCAINE/POSSESSION"} primaryText="COCAINE/POSSESSION" />
-          <MenuItem value={"ALC BEV/DRK IN PUBLC"} primaryText="ALC BEV/DRK IN PUBLC" />
+          <MenuItem value={"ARREST WARRANT"} primaryText="Arrest Warrant" />
+          <MenuItem value={"DRUG PARAPHERNA/POSN"} primaryText="Drug Paraherna Posession" />
+          <MenuItem value={"ALC BEV/DRK IN PUBLC"} primaryText="Drunk in Public" />
       </DropDownMenu>
 
     </Card>

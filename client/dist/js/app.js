@@ -35330,7 +35330,12 @@
 	              _react2.default.createElement(
 	                'h1',
 	                { className: 'mb-5' },
-	                'Crime Watcher is an app that will help users consume crime data in bite size pieces'
+	                'Add depth to your crime stories.'
+	              ),
+	              _react2.default.createElement(
+	                'h4',
+	                { className: 'mb-5' },
+	                'Give us a few basic details and we\'ll do the leg work. Booking logs, crime statistics, a wealth of information at your fingertips.'
 	              ),
 	              _react2.default.createElement(
 	                'a',
@@ -35434,7 +35439,7 @@
 	                    _react2.default.createElement(
 	                      'p',
 	                      { className: 'text-muted' },
-	                      'Ready to use HTML/CSS device mockups, no Photoshop required!'
+	                      'Give us dates and a type of crime, and we\'ll dig up all the matching data in Miami-Dade County booking logs.'
 	                    )
 	                  )
 	                ),
@@ -35453,7 +35458,7 @@
 	                    _react2.default.createElement(
 	                      'p',
 	                      { className: 'text-muted' },
-	                      'Put an image, video, animation, or anything else in the screen!'
+	                      'We\'ll give you these data in paragraph form so you can copy-paste into your articles. No more typos!'
 	                    )
 	                  )
 	                )
@@ -35476,7 +35481,7 @@
 	                    _react2.default.createElement(
 	                      'p',
 	                      { className: 'text-muted' },
-	                      'As always, this theme is free to download and use for any purpose!'
+	                      'We\'ll give you pie charts and bar graphs describing crime trends in the date range you can use to illustrate your stories.'
 	                    )
 	                  )
 	                ),
@@ -35490,12 +35495,12 @@
 	                    _react2.default.createElement(
 	                      'h3',
 	                      null,
-	                      'Heat Map'
+	                      'Email'
 	                    ),
 	                    _react2.default.createElement(
 	                      'p',
 	                      { className: 'text-muted' },
-	                      'Since this theme is MIT licensed, you can use it commercially!'
+	                      'We can email you the data for safe keeping.'
 	                    )
 	                  )
 	                )
@@ -35519,7 +35524,7 @@
 	            null,
 	            'Stop waiting.',
 	            _react2.default.createElement('br', null),
-	            'Start Watching.'
+	            'Start watching.'
 	          ),
 	          _react2.default.createElement(
 	            'a',
@@ -41335,7 +41340,7 @@
 	'use strict';
 
 	Object.defineProperty(exports, "__esModule", {
-	  value: true
+	    value: true
 	});
 
 	var _react = __webpack_require__(1);
@@ -41355,43 +41360,43 @@
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	var Dashboard = function Dashboard(_ref) {
-	  var secretData = _ref.secretData;
-	  return _react2.default.createElement(
-	    'div',
-	    null,
-	    _react2.default.createElement('div', { id: 'dashboard-hero' }),
-	    _react2.default.createElement('br', null),
-	    _react2.default.createElement('br', null),
-	    _react2.default.createElement('br', null),
-	    _react2.default.createElement('br', null),
-	    _react2.default.createElement(
-	      'div',
-	      { className: 'container' },
-	      _react2.default.createElement(
+	    var secretData = _ref.secretData;
+	    return _react2.default.createElement(
 	        'div',
-	        { className: 'row' },
+	        null,
+	        _react2.default.createElement('div', { id: 'dashboard-hero' }),
+	        _react2.default.createElement('br', null),
+	        _react2.default.createElement('br', null),
+	        _react2.default.createElement('br', null),
+	        _react2.default.createElement('br', null),
 	        _react2.default.createElement(
-	          'div',
-	          { className: 'col-md-12' },
-	          _react2.default.createElement(
-	            'h1',
-	            { className: 'title' },
-	            'Crime Watcher Results'
-	          )
-	        )
-	      ),
-	      _react2.default.createElement(
-	        'div',
-	        { className: 'row' },
-	        _react2.default.createElement('div', { className: 'col-md-12' })
-	      )
-	    ),
-	    _react2.default.createElement(_findform2.default, null)
-	  );
+	            'div',
+	            { className: 'container' },
+	            _react2.default.createElement(
+	                'div',
+	                { className: 'row' },
+	                _react2.default.createElement(
+	                    'div',
+	                    { className: 'col-md-12' },
+	                    _react2.default.createElement(
+	                        'h1',
+	                        { className: 'title' },
+	                        'Crime Watcher Results'
+	                    )
+	                )
+	            ),
+	            _react2.default.createElement(
+	                'div',
+	                { className: 'row' },
+	                _react2.default.createElement('div', { className: 'col-md-12' })
+	            )
+	        ),
+	        _react2.default.createElement(_findform2.default, null)
+	    );
 	};
 
 	Dashboard.propTypes = {
-	  secretData: _react.PropTypes.string.isRequired
+	    secretData: _react.PropTypes.string.isRequired
 	};
 
 	exports.default = Dashboard;
@@ -48004,7 +48009,7 @@
 	"use strict";
 
 	Object.defineProperty(exports, "__esModule", {
-	    value: true
+	  value: true
 	});
 
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -48058,241 +48063,241 @@
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 	var FindForm = function (_Component) {
-	    _inherits(FindForm, _Component);
+	  _inherits(FindForm, _Component);
 
-	    function FindForm(props) {
-	        _classCallCheck(this, FindForm);
+	  function FindForm(props) {
+	    _classCallCheck(this, FindForm);
 
-	        var _this = _possibleConstructorReturn(this, (FindForm.__proto__ || Object.getPrototypeOf(FindForm)).call(this, props));
+	    var _this = _possibleConstructorReturn(this, (FindForm.__proto__ || Object.getPrototypeOf(FindForm)).call(this, props));
 
-	        _this.state = {
-	            result: [],
-	            month: "Month",
-	            day: "Day",
-	            year: "Year",
-	            charge: "Charge"
+	    _this.state = {
+	      result: [],
+	      month: "Month",
+	      day: "Day",
+	      year: "Year",
+	      charge: "Charge"
 
-	            // This gets user input for charges and sends it to <ChargesInput />:
-	        };_this.handleInputChange = function (event, index, value, name) {
+	      // This gets user input for charges and sends it to <ChargesInput />:
+	    };_this.handleInputChange = function (event, index, value, name) {
 
-	            console.log(name);
+	      console.log(name);
 
-	            console.log(value);
+	      console.log(value);
 
-	            _this.setState(_defineProperty({}, name, value));
-	        };
+	      _this.setState(_defineProperty({}, name, value));
+	    };
 
-	        // This is for the submit button:
-	        _this.handleFormSubmit = function (event) {
-	            // Stops the page from refreshing:
-	            event.preventDefault();
-	            // Checks whether all date and charge fields have been filled out. If they have:
-	            if (_this.state.month && _this.state.day && _this.state.year && _this.state.charge) {
-	                // We call the API with both parameters:
-	                _this.searchLogs("?bookdate=" + _this.state.year + "-" + _this.state.month + "-" + _this.state.day + "T00:00:00.000" + "&charge1=" + _this.state.charge);
-	                // If we have the date fields but no charge, we call the API with the date:
-	            } else if (_this.state.month && _this.state.day && _this.state.year && !_this.state.charge) {
-	                _this.searchLogs("?bookdate=" + _this.state.year + "-" + _this.state.month + "-" + _this.state.day + "T00:00:00.000");
-	            }
-	            _this.setState({
-	                result: [],
-	                month: "Month",
-	                day: "Day",
-	                year: "Year",
-	                charge: "Charge"
-	            });
-	        };
+	    // This is for the submit button:
+	    _this.handleFormSubmit = function (event) {
+	      // Stops the page from refreshing:
+	      event.preventDefault();
+	      // Checks whether all date and charge fields have been filled out. If they have:
+	      if (_this.state.month && _this.state.day && _this.state.year && _this.state.charge) {
+	        // We call the API with both parameters:
+	        _this.searchLogs("?bookdate=" + _this.state.year + "-" + _this.state.month + "-" + _this.state.day + "T00:00:00.000" + "&charge1=" + _this.state.charge);
+	        // If we have the date fields but no charge, we call the API with the date:
+	      } else if (_this.state.month && _this.state.day && _this.state.year && !_this.state.charge) {
+	        _this.searchLogs("?bookdate=" + _this.state.year + "-" + _this.state.month + "-" + _this.state.day + "T00:00:00.000");
+	      }
+	      _this.setState({
+	        result: [],
+	        month: "Month",
+	        day: "Day",
+	        year: "Year",
+	        charge: "Charge"
+	      });
+	    };
 
-	        _this.searchLogs = function (query) {
-	            _findAPI2.default.search(query).then(function (res) {
-	                return _this.setState({ result: res.data });
-	            }).catch(function (err) {
-	                return console.log(err);
-	            });
-	        };
+	    _this.searchLogs = function (query) {
+	      _findAPI2.default.search(query).then(function (res) {
+	        return _this.setState({ result: res.data });
+	      }).catch(function (err) {
+	        return console.log(err);
+	      });
+	    };
 
-	        // CODE FOR SENTENCERENDER:
-	        // Splits the defendant value and assigns them to vars firstName and lastName.
-	        _this.nameInterpreter = function (defendant) {
-	            var fullName = defendant;
-	            var lowerCaseName = fullName.toLowerCase();
-	            var splitName = lowerCaseName.split(",");
-	            var lowerCaseFirst = splitName[1].trim();
-	            var lowerCaseLast = splitName[0].trim();
-	            var firstName = lowerCaseFirst.charAt(0).toUpperCase() + lowerCaseFirst.substr(1);
-	            var lastName = lowerCaseLast.charAt(0).toUpperCase() + lowerCaseLast.substr(1);
-	            var interpretedFullName = firstName + " " + lastName;
-	            return interpretedFullName;
-	        };
+	    // CODE FOR SENTENCERENDER:
+	    // Splits the defendant value and assigns them to vars firstName and lastName.
+	    _this.nameInterpreter = function (defendant) {
+	      var fullName = defendant;
+	      var lowerCaseName = fullName.toLowerCase();
+	      var splitName = lowerCaseName.split(",");
+	      var lowerCaseFirst = splitName[1].trim();
+	      var lowerCaseLast = splitName[0].trim();
+	      var firstName = lowerCaseFirst.charAt(0).toUpperCase() + lowerCaseFirst.substr(1);
+	      var lastName = lowerCaseLast.charAt(0).toUpperCase() + lowerCaseLast.substr(1);
+	      var interpretedFullName = firstName + " " + lastName;
+	      return interpretedFullName;
+	    };
 
-	        // Presents city name with proper capitalization:
-	        _this.cityInterpreter = function (uninterpretedCity) {
-	            var original = uninterpretedCity;
-	            var lowerCaseCity = original.toLowerCase();
-	            var splitCity = lowerCaseCity.split(" ");
-	            var interpretedWord = [];
-	            var interpretedCity = [];
-	            for (var i = 0; i < splitCity.length; i++) {
-	                interpretedWord = splitCity[i].charAt(0).toUpperCase() + splitCity[i].substr(1, splitCity[i].length - 1);
-	                interpretedCity.push(interpretedWord);
-	            }
-	            interpretedCity = interpretedCity.toString();
-	            interpretedCity = interpretedCity.replace(",", " ");
-	            return interpretedCity;
-	        };
+	    // Presents city name with proper capitalization:
+	    _this.cityInterpreter = function (uninterpretedCity) {
+	      var original = uninterpretedCity;
+	      var lowerCaseCity = original.toLowerCase();
+	      var splitCity = lowerCaseCity.split(" ");
+	      var interpretedWord = [];
+	      var interpretedCity = [];
+	      for (var i = 0; i < splitCity.length; i++) {
+	        interpretedWord = splitCity[i].charAt(0).toUpperCase() + splitCity[i].substr(1, splitCity[i].length - 1);
+	        interpretedCity.push(interpretedWord);
+	      }
+	      interpretedCity = interpretedCity.toString();
+	      interpretedCity = interpretedCity.replace(",", " ");
+	      return interpretedCity;
+	    };
 
-	        // Presents charges with proper capitalization:
-	        _this.chargesInterpreter = function (chargeOne) {
-	            var original = chargeOne;
-	            var charge = original.toLowerCase();
-	            return charge;
-	        };
+	    // Presents charges with proper capitalization:
+	    _this.chargesInterpreter = function (chargeOne) {
+	      var original = chargeOne;
+	      var charge = original.toLowerCase();
+	      return charge;
+	    };
 
-	        _this.weekDayInterpreter = function (uninterpretedDate) {
-	            var original = uninterpretedDate;
-	            var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-	            var interpretedDate = new Date(original);
-	            var dayIndex = interpretedDate.getDay();
-	            var day = days[dayIndex];
-	            var monthIndex = interpretedDate.getMonth();
-	            var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
-	            var month = months[monthIndex];
-	            var date = interpretedDate.getDate();
-	            return day + ", " + month + " " + date;
-	        };
+	    _this.weekDayInterpreter = function (uninterpretedDate) {
+	      var original = uninterpretedDate;
+	      var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+	      var interpretedDate = new Date(original);
+	      var dayIndex = interpretedDate.getDay();
+	      var day = days[dayIndex];
+	      var monthIndex = interpretedDate.getMonth();
+	      var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+	      var month = months[monthIndex];
+	      var date = interpretedDate.getDate();
+	      return day + ", " + month + " " + date;
+	    };
 
-	        return _this;
+	    return _this;
+	  }
+
+	  // Makes sure the component mounts:
+
+
+	  _createClass(FindForm, [{
+	    key: "componentDidMount",
+	    value: function componentDidMount() {
+	      console.log("<Form /> mounted!");
 	    }
+	  }, {
+	    key: "render",
+	    value: function render() {
+	      var _this2 = this;
 
-	    // Makes sure the component mounts:
-
-
-	    _createClass(FindForm, [{
-	        key: "componentDidMount",
-	        value: function componentDidMount() {
-	            console.log("<Form /> mounted!");
-	        }
-	    }, {
-	        key: "render",
-	        value: function render() {
-	            var _this2 = this;
-
-	            return _react2.default.createElement(
+	      return _react2.default.createElement(
+	        "div",
+	        { className: "container" },
+	        _react2.default.createElement(
+	          "div",
+	          { className: "form-group" },
+	          _react2.default.createElement(
+	            "h1",
+	            null,
+	            "This is the FindForm!"
+	          ),
+	          _react2.default.createElement(_dateinput2.default, {
+	            handleInputChange: this.handleInputChange,
+	            month: this.state.month,
+	            day: this.state.day,
+	            year: this.state.year,
+	            charge: this.state.charge
+	          }),
+	          _react2.default.createElement(
+	            "p",
+	            null,
+	            "For examples of charges and their titles,",
+	            _react2.default.createElement(
+	              "a",
+	              { href: "https://opendata.miamidade.gov/Corrections/Jail-Bookings-May-29-2015-to-current/7nhc-4yqn" },
+	              "go here"
+	            ),
+	            "."
+	          ),
+	          _react2.default.createElement(_submitbutton2.default, { handleFormSubmit: this.handleFormSubmit }),
+	          _react2.default.createElement(
+	            "h2",
+	            null,
+	            "Here are the results!"
+	          ),
+	          _react2.default.createElement(
+	            "div",
+	            null,
+	            _react2.default.createElement(
+	              "h4",
+	              null,
+	              "Here are the API call results!"
+	            ),
+	            _react2.default.createElement(
+	              "div",
+	              { className: "container" },
+	              _react2.default.createElement(
 	                "div",
-	                { className: "container" },
-	                _react2.default.createElement(
+	                { className: "row" },
+	                this.state.result.map(function (item) {
+	                  return _react2.default.createElement(
 	                    "div",
-	                    { className: "form-group" },
+	                    { className: "col-md-4", key: item.dob },
 	                    _react2.default.createElement(
-	                        "h1",
-	                        null,
-	                        "This is the FindForm!"
-	                    ),
-	                    _react2.default.createElement(_dateinput2.default, {
-	                        handleInputChange: this.handleInputChange,
-	                        month: this.state.month,
-	                        day: this.state.day,
-	                        year: this.state.year,
-	                        charge: this.state.charge
-	                    }),
-	                    _react2.default.createElement(
-	                        "p",
-	                        null,
-	                        "For examples of charges and their titles,",
-	                        _react2.default.createElement(
-	                            "a",
-	                            { href: "https://opendata.miamidade.gov/Corrections/Jail-Bookings-May-29-2015-to-current/7nhc-4yqn" },
-	                            "go here"
-	                        ),
-	                        "."
-	                    ),
-	                    _react2.default.createElement(_submitbutton2.default, { handleFormSubmit: this.handleFormSubmit }),
-	                    _react2.default.createElement(
-	                        "h2",
-	                        null,
-	                        "Here are the results!"
-	                    ),
-	                    _react2.default.createElement(
-	                        "div",
+	                      _Card.Card,
+	                      null,
+	                      _react2.default.createElement(
+	                        _Card.CardMedia,
+	                        {
+	                          overlay: _react2.default.createElement(_Card.CardTitle, { title: item.defendant, subtitle: "Overlay subtitle" })
+	                        },
+	                        _react2.default.createElement("img", { src: "img/mugshot.png" })
+	                      ),
+	                      _react2.default.createElement(_Card.CardTitle, { title: "Card title", subtitle: "Card subtitle" }),
+	                      _react2.default.createElement(
+	                        _Card.CardText,
 	                        null,
 	                        _react2.default.createElement(
-	                            "h4",
-	                            null,
-	                            "Here are the API call results!"
+	                          "p",
+	                          null,
+	                          "DOB: ",
+	                          item.dob
 	                        ),
 	                        _react2.default.createElement(
-	                            "div",
-	                            { className: "container" },
-	                            _react2.default.createElement(
-	                                "div",
-	                                { className: "row" },
-	                                this.state.result.map(function (item) {
-	                                    return _react2.default.createElement(
-	                                        "div",
-	                                        { className: "col-md-4", key: item.dob },
-	                                        _react2.default.createElement(
-	                                            _Card.Card,
-	                                            null,
-	                                            _react2.default.createElement(
-	                                                _Card.CardMedia,
-	                                                {
-	                                                    overlay: _react2.default.createElement(_Card.CardTitle, { title: item.defendant, subtitle: "Overlay subtitle" })
-	                                                },
-	                                                _react2.default.createElement("img", { src: "img/mugshot.png" })
-	                                            ),
-	                                            _react2.default.createElement(_Card.CardTitle, { title: "Card title", subtitle: "Card subtitle" }),
-	                                            _react2.default.createElement(
-	                                                _Card.CardText,
-	                                                null,
-	                                                _react2.default.createElement(
-	                                                    "p",
-	                                                    null,
-	                                                    "DOB: ",
-	                                                    item.dob
-	                                                ),
-	                                                _react2.default.createElement(
-	                                                    "p",
-	                                                    null,
-	                                                    "Residence: ",
-	                                                    item.location_1_address,
-	                                                    ", ",
-	                                                    item.location_1_city,
-	                                                    ", ",
-	                                                    item.location_1_state,
-	                                                    " ",
-	                                                    item.location_1_zip
-	                                                ),
-	                                                _react2.default.createElement(
-	                                                    "p",
-	                                                    null,
-	                                                    "Charges: ",
-	                                                    item.charge1,
-	                                                    ", ",
-	                                                    item.charge2
-	                                                ),
-	                                                _react2.default.createElement(_sentencerender2.default, {
-	                                                    nameInterpreter: _this2.nameInterpreter,
-	                                                    cityInterpreter: _this2.cityInterpreter,
-	                                                    chargesInterpreter: _this2.chargesInterpreter,
-	                                                    weekDayInterpreter: _this2.weekDayInterpreter,
-	                                                    defendant: item.defendant,
-	                                                    uninterpretedCity: item.location_1_city,
-	                                                    chargeOne: item.charge1,
-	                                                    uninterpretedDate: item.bookdate
-	                                                })
-	                                            )
-	                                        )
-	                                    );
-	                                })
-	                            )
-	                        )
+	                          "p",
+	                          null,
+	                          "Residence: ",
+	                          item.location_1_address,
+	                          ", ",
+	                          item.location_1_city,
+	                          ", ",
+	                          item.location_1_state,
+	                          " ",
+	                          item.location_1_zip
+	                        ),
+	                        _react2.default.createElement(
+	                          "p",
+	                          null,
+	                          "Charges: ",
+	                          item.charge1,
+	                          ", ",
+	                          item.charge2
+	                        ),
+	                        _react2.default.createElement(_sentencerender2.default, {
+	                          nameInterpreter: _this2.nameInterpreter,
+	                          cityInterpreter: _this2.cityInterpreter,
+	                          chargesInterpreter: _this2.chargesInterpreter,
+	                          weekDayInterpreter: _this2.weekDayInterpreter,
+	                          defendant: item.defendant,
+	                          uninterpretedCity: item.location_1_city,
+	                          chargeOne: item.charge1,
+	                          uninterpretedDate: item.bookdate
+	                        })
+	                      )
 	                    )
-	                )
-	            );
-	        }
-	    }]);
+	                  );
+	                })
+	              )
+	            )
+	          )
+	        )
+	      );
+	    }
+	  }]);
 
-	    return FindForm;
+	  return FindForm;
 	}(_react.Component);
 
 	exports.default = FindForm;
@@ -48355,7 +48360,7 @@
 	var DateInput = function DateInput(props) {
 	  return _react2.default.createElement(
 	    'div',
-	    null,
+	    { id: 'dashboard-form-layout' },
 	    _react2.default.createElement(
 	      _Card.Card,
 	      { id: 'dashboard-form-card' },
@@ -48372,18 +48377,18 @@
 	          placeholder: 'MM',
 	          openImmediately: false },
 	        _react2.default.createElement(_MenuItem2.default, { value: "Month", primaryText: 'Month' }),
-	        _react2.default.createElement(_MenuItem2.default, { value: "01", primaryText: '01' }),
-	        _react2.default.createElement(_MenuItem2.default, { value: "02", primaryText: '02' }),
-	        _react2.default.createElement(_MenuItem2.default, { value: "03", primaryText: '03' }),
-	        _react2.default.createElement(_MenuItem2.default, { value: "04", primaryText: '04' }),
-	        _react2.default.createElement(_MenuItem2.default, { value: "05", primaryText: '05' }),
-	        _react2.default.createElement(_MenuItem2.default, { value: "06", primaryText: '06' }),
-	        _react2.default.createElement(_MenuItem2.default, { value: "07", primaryText: '07' }),
-	        _react2.default.createElement(_MenuItem2.default, { value: "08", primaryText: '08' }),
-	        _react2.default.createElement(_MenuItem2.default, { value: "09", primaryText: '09' }),
-	        _react2.default.createElement(_MenuItem2.default, { value: "10", primaryText: '10' }),
-	        _react2.default.createElement(_MenuItem2.default, { value: "11", primaryText: '11' }),
-	        _react2.default.createElement(_MenuItem2.default, { value: "12", primaryText: '12' })
+	        _react2.default.createElement(_MenuItem2.default, { value: "01", primaryText: 'January' }),
+	        _react2.default.createElement(_MenuItem2.default, { value: "02", primaryText: 'February' }),
+	        _react2.default.createElement(_MenuItem2.default, { value: "03", primaryText: 'March' }),
+	        _react2.default.createElement(_MenuItem2.default, { value: "04", primaryText: 'April' }),
+	        _react2.default.createElement(_MenuItem2.default, { value: "05", primaryText: 'May' }),
+	        _react2.default.createElement(_MenuItem2.default, { value: "06", primaryText: 'June' }),
+	        _react2.default.createElement(_MenuItem2.default, { value: "07", primaryText: 'July' }),
+	        _react2.default.createElement(_MenuItem2.default, { value: "08", primaryText: 'August' }),
+	        _react2.default.createElement(_MenuItem2.default, { value: "09", primaryText: 'September' }),
+	        _react2.default.createElement(_MenuItem2.default, { value: "10", primaryText: 'October' }),
+	        _react2.default.createElement(_MenuItem2.default, { value: "11", primaryText: 'November' }),
+	        _react2.default.createElement(_MenuItem2.default, { value: "12", primaryText: 'December' })
 	      ),
 	      _react2.default.createElement('br', null),
 	      _react2.default.createElement(
@@ -48471,20 +48476,19 @@
 	          },
 	          openImmediately: false },
 	        _react2.default.createElement(_MenuItem2.default, { value: "", primaryText: 'Charge' }),
-	        _react2.default.createElement(_MenuItem2.default, { value: "PETIT THEFT", primaryText: 'PETIT THEFT' }),
-	        _react2.default.createElement(_MenuItem2.default, { value: "LOITERING OR PROWL", primaryText: 'LOITERING OR PROWL' }),
+	        _react2.default.createElement(_MenuItem2.default, { value: "PETIT THEFT", primaryText: 'Petty Theft' }),
+	        _react2.default.createElement(_MenuItem2.default, { value: "LOITERING OR PROWL", primaryText: 'Loitering' }),
 	        _react2.default.createElement(_MenuItem2.default, { value: "ALCOHOL/CONSUM/STORE", primaryText: 'ALCOHOL/CONSUM/STORE' }),
-	        _react2.default.createElement(_MenuItem2.default, { value: "CHILD ABUSE/NO HARM", primaryText: 'CHILD ABUSE/NO HARM' }),
-	        _react2.default.createElement(_MenuItem2.default, { value: "COCAINE/POSSESSION", primaryText: 'COCAINE/POSSESSION' }),
+	        _react2.default.createElement(_MenuItem2.default, { value: "CHILD ABUSE/NO HARM", primaryText: 'Child Abuse' }),
+	        _react2.default.createElement(_MenuItem2.default, { value: "COCAINE/POSSESSION", primaryText: 'Cocaine Possession' }),
 	        _react2.default.createElement(_MenuItem2.default, { value: "BENCH WARRANT", primaryText: 'BENCH WARRANT' }),
 	        _react2.default.createElement(_MenuItem2.default, { value: "TRES PROP/AFTER WARN", primaryText: 'TRES PROP/AFTER WARN' }),
-	        _react2.default.createElement(_MenuItem2.default, { value: "PROBATION WARRANT", primaryText: 'PROBATION WARRANT' }),
+	        _react2.default.createElement(_MenuItem2.default, { value: "PROBATION WARRANT", primaryText: 'Probation Warrant' }),
 	        _react2.default.createElement(_MenuItem2.default, { value: "DL/EXPIRED 6 MTHS+", primaryText: 'DL/EXPIRED 6 MTHS+' }),
 	        _react2.default.createElement(_MenuItem2.default, { value: "DWLS/KNOWINGL", primaryText: 'DWLS/KNOWINGLY' }),
-	        _react2.default.createElement(_MenuItem2.default, { value: "ARREST WARRANT", primaryText: 'ARREST WARRANT' }),
-	        _react2.default.createElement(_MenuItem2.default, { value: "DRUG PARAPHERNA/POSN", primaryText: 'DRUG PARAPHERNA/POSN' }),
-	        _react2.default.createElement(_MenuItem2.default, { value: "COCAINE/POSSESSION", primaryText: 'COCAINE/POSSESSION' }),
-	        _react2.default.createElement(_MenuItem2.default, { value: "ALC BEV/DRK IN PUBLC", primaryText: 'ALC BEV/DRK IN PUBLC' })
+	        _react2.default.createElement(_MenuItem2.default, { value: "ARREST WARRANT", primaryText: 'Arrest Warrant' }),
+	        _react2.default.createElement(_MenuItem2.default, { value: "DRUG PARAPHERNA/POSN", primaryText: 'Drug Paraherna Posession' }),
+	        _react2.default.createElement(_MenuItem2.default, { value: "ALC BEV/DRK IN PUBLC", primaryText: 'Drunk in Public' })
 	      )
 	    )
 	  );
@@ -52835,7 +52839,7 @@
 	        null,
 	        _react2.default.createElement(
 	            "button",
-	            { onClick: props.handleFormSubmit },
+	            { id: "searchformbtn", onClick: props.handleFormSubmit },
 	            "Submit"
 	        )
 	    );

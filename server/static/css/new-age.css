@@ -355,3 +355,16 @@ footer {
       background-position: center center;
 
   }
+  #searchformbtn{
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top: 10px;
+    border-radius: 2px;
+    background-color: red;
+    font-weight: 600;
+    font-size: 18px;
+    border: none;
+    color: white;
+  }
