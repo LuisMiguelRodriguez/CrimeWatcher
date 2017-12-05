@@ -12,7 +12,8 @@ import { Card, CardText } from 'material-ui/Card';
 const DateInput = props => (
   <div  id="dashboard-form-layout">
     <Card id="dashboard-form-card">
-    <h1 className="title">Crime Watcher Results</h1>
+    <h1 className="title">Find Your Next Story</h1>
+    <h3 className="title"> Start searching by selecting a date and the charge and hit submit</h3>
       <br/>
       <DropDownMenu
         type="text"
