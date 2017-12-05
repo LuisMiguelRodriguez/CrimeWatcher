@@ -17,7 +17,7 @@ const Dashboard = ({ secretData }) => (
     <div className="container">
         <div className="row">
             <div className="col-md-12">
-                <h1 className="title">Crime Watcher Results</h1>
+               
             </div>
         </div>
         <div className="row">

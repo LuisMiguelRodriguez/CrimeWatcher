@@ -7,7 +7,7 @@ const Main = () =>
         <div className="row h-100">
           <div className="col-lg-7 my-auto">
             <div className="header-content mx-auto">
-              <h1 className="mb-5">Crime Watcher is an app that will help users consume crime data in bite size pieces</h1>
+              <h1 className="mb-5">Cradsfadsfasdfasds an app that will help users consume crime data in bite size pieces</h1>
               <a href="#download" className="btn btn-outline btn-xl js-scroll-trigger">Sign Up Now for Free!</a>
             </div>
           </div>
