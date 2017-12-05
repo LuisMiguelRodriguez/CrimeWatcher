@@ -9,5 +9,11 @@ router.get('/dashboard', (req, res) => {
   });
 });
 
+router.get('/email', (req, res) => {
+  res.status(200).json({
+    message: "Your user id is " + res.locals.userId
+  });
+});
+
 
 module.exports = router;

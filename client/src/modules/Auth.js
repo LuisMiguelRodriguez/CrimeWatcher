@@ -7,7 +7,7 @@ class Auth {
    */
   static authenticateUser(token) {
     localStorage.setItem('token', token);
-  } 
+  }
 
   /**
    * Check if a user is authenticated - check if a token is saved in Local Storage
@@ -15,6 +15,8 @@ class Auth {
    * @returns {boolean}
    */
   static isUserAuthenticated() {
+      console.log('Inside of isUserAuthenticated');
+      console.log(localStorage.getItem('token'))
     return localStorage.getItem('token') !== null;
   }
 

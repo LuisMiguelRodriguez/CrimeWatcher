@@ -4,7 +4,7 @@ import DashboardPage from './containers/DashboardPage.jsx';
 import LoginPage from './containers/LoginPage.jsx';
 import SignUpPage from './containers/SignUpPage.jsx';
 import Auth from './modules/Auth';
-import Profile from './components/Profile';
+import ProfilePage from './containers/ProfilePage';
 import Analytics from './components/Analytics';
 import ContactPage from './containers/ContactPage';
 import AboutPage from './containers/AboutPage';
@@ -30,11 +30,15 @@ const routes = {
       component: LoginPage
     },
     {
-      path: '/ContactPage',
+      path: '/dashboard',
+      component: DashboardPage
+    },
+    {
+      path: '/contact',
       component: ContactPage
     },
     {
-      path: '/AboutPage',
+      path: '/about',
       component: AboutPage
     },
     {
@@ -43,7 +47,13 @@ const routes = {
     },
     {
       path: '/profile',
-      component: Profile
+      getComponent: (location, callback) => {
+        if (Auth.isUserAuthenticated()) {
+          callback(null, ProfilePage);
+        } else {
+          callback(null, HomePage);
+        }
+      }
     },
     {
         path: '/analytics',

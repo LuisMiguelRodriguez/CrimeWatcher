@@ -26,6 +26,8 @@ module.exports = (req, res, next) => {
       if (userErr || !user) {
         return res.status(401).end();
       }
+      res.locals.userId = userId;
+      console.log(userId);
 
       return next();
     });

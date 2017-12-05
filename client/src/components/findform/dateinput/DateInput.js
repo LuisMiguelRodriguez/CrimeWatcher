@@ -111,7 +111,7 @@ const DateInput = props => (
           value={props.charge}
           onChange={(event, index, value ) => props.handleInputChange(event, index, value, 'charge')}
           openImmediately={false}>
-          <MenuItem value={""} primaryText="Charge" />
+          <MenuItem value={"Charge"} primaryText="Charge" />
           <MenuItem value={"PETIT THEFT"} primaryText="PETIT THEFT" />
           <MenuItem value={"LOITERING OR PROWL"} primaryText="LOITERING OR PROWL" />
           <MenuItem value={"ALCOHOL/CONSUM/STORE"} primaryText="ALCOHOL/CONSUM/STORE" />

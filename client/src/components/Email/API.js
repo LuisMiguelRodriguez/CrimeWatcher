@@ -1,9 +1,22 @@
 import axios from "axios";
-const BASEURL = "/Email";
+const BASEURL = "/api/email";
+import Auth from '../../modules/Auth'
 
 export default {
-  search: function(query) {
-    return axios.get(BASEURL + query)
+  search: function() {
+    const xhr = new XMLHttpRequest();
+    xhr.open('get', '/api/email');
+    xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+    // set the authorization HTTP header
+    xhr.setRequestHeader('Authorization', `bearer ${Auth.getToken()}`);
+    xhr.responseType = 'json';
+    xhr.addEventListener('load', () => {
+      if (xhr.status === 200) {
+
+        console.log(xhr.response.message)
+      }
+    });
+    xhr.send();
   }
 };
 
