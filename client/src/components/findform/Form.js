@@ -134,9 +134,7 @@ class FindForm extends Component {
                     charge={this.state.charge}
                      />
                 <SubmitButton  handleFormSubmit={this.handleFormSubmit} />
-            <h2>Here are the results!</h2>
             <div>
-              <h4>Here are the API call results!</h4>
               <div className = "container">
                <div className = "row">
                 {this.state.result.map(item => (
