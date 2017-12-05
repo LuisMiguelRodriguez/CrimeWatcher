@@ -5,7 +5,7 @@ import Auth from '../../modules/Auth'
 export default {
   search: function() {
     const xhr = new XMLHttpRequest();
-    xhr.open('get', '/api/email');
+    xhr.open('get', '/api/email/send');
     xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
     // set the authorization HTTP header
     xhr.setRequestHeader('Authorization', `bearer ${Auth.getToken()}`);

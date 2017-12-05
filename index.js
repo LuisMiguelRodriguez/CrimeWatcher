@@ -6,7 +6,7 @@ const mongodb = require("mongodb");
 const ObjectID = mongodb.ObjectID;
 let port = process.env.PORT || 3000;
 let mongodbUri = process.env.MONGODB_URI || config.dbUri;
-
+require('dotenv').config()
 // connect to the database and load models
 require('./server/models').connect(mongodbUri);
 

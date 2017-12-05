@@ -35155,6 +35155,15 @@
 	                { className: 'nav-item' },
 	                _react2.default.createElement(
 	                  _reactRouter.Link,
+	                  { className: 'nav-link js-scroll-trigger', to: '/profile' },
+	                  'Profile'
+	                )
+	              ),
+	              _react2.default.createElement(
+	                'li',
+	                { className: 'nav-item' },
+	                _react2.default.createElement(
+	                  _reactRouter.Link,
 	                  { className: 'nav-link js-scroll-trigger', to: '/logout' },
 	                  'Logout'
 	                )
@@ -88994,17 +89003,29 @@
 
 	  _createClass(Email, [{
 	    key: "componentDidMount",
-	    value: function componentDidMount() {}
+	    value: function componentDidMount() {
+	      this.search();
+	    }
 	  }, {
 	    key: "render",
 	    value: function render() {
 	      return _react2.default.createElement(
 	        "div",
 	        { className: "container" },
+	        _react2.default.createElement("br", null),
+	        _react2.default.createElement("br", null),
+	        _react2.default.createElement("br", null),
 	        _react2.default.createElement(
 	          "h1",
 	          null,
 	          "Email Component"
+	        ),
+	        _react2.default.createElement(
+	          "h1",
+	          null,
+	          " ",
+	          this.props.secretData,
+	          " "
 	        )
 	      );
 	    }
@@ -89039,7 +89060,7 @@
 	exports.default = {
 	  search: function search() {
 	    var xhr = new XMLHttpRequest();
-	    xhr.open('get', '/api/email');
+	    xhr.open('get', '/api/email/send');
 	    xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
 	    // set the authorization HTTP header
 	    xhr.setRequestHeader('Authorization', "bearer " + _Auth2.default.getToken());

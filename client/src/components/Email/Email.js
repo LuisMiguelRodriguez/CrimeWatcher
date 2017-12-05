@@ -40,13 +40,17 @@ class Email extends Component {
    * This method will be executed after initial rendering.
    */
   componentDidMount() {
-    
+    this.search();
   }
 
     render() {
       return (
         <div className="container">
+          <br />
+          <br />
+          <br />
           <h1>Email Component</h1>
+          <h1> {this.props.secretData} </h1>
         </div>
       )
     }
