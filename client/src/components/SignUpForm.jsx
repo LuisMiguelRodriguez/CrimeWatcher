@@ -11,7 +11,7 @@ const SignUpForm = ({
   errors,
   user,
 }) => (
-  <div className="mainBackground">
+  <div >
     <Card className="container">
       <div className="card-container">
         <form action="/" onSubmit={onSubmit}>

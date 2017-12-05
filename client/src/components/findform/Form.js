@@ -127,7 +127,6 @@ class FindForm extends Component {
         <div className="container">
           <div className="form-group">
                 <DateInput
-                    
                     handleInputChange={this.handleInputChange}
                     month={this.state.month}
                     day={this.state.day}

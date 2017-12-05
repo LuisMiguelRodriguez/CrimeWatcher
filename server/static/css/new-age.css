@@ -373,3 +373,9 @@ footer {
     text-align: center;
     background-color: black;
   }
+  #login-signup {
+    width:800px;
+    margin-left: auto;
+    margin-right: auto;
+    min-height:1200px;
+  }

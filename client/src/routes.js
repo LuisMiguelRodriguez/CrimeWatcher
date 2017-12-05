@@ -8,6 +8,7 @@ import ProfilePage from './containers/ProfilePage';
 import Analytics from './components/Analytics';
 import ContactPage from './containers/ContactPage';
 import AboutPage from './containers/AboutPage';
+import SignLoginPage from './containers/SignLoginPage';
 
 
 const routes = {
@@ -26,8 +27,8 @@ const routes = {
       }
     },
     {
-      path: '/login',
-      component: LoginPage
+    path: '/signlogin',
+    component: SignLoginPage
     },
     {
       path: '/dashboard',
@@ -40,10 +41,6 @@ const routes = {
     {
       path: '/about',
       component: AboutPage
-    },
-    {
-      path: '/signup',
-      component: SignUpPage
     },
     {
       path: '/profile',

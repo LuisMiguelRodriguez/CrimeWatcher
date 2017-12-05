@@ -50,10 +50,7 @@ const Base = ({ children }) => (
                   <Link className="nav-link js-scroll-trigger" to="/about">AboutPage</Link>
                 </li>
                 <li className="nav-item">
-                  <Link className="nav-link js-scroll-trigger" to="/login">Login</Link>
-                </li>
-                <li className="nav-item">
-                  <Link className="nav-link js-scroll-trigger" to="/signup">Sign Up</Link>
+                  <Link className="nav-link js-scroll-trigger" to="/signlogin">Sign Up/ Login</Link>
                 </li>
               </ul>
 

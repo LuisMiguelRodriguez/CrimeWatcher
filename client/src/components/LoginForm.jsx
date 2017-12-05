@@ -12,7 +12,7 @@ const LoginForm = ({
   successMessage,
   user
 }) => (
-  <div className="mainBackground">
+  <div className="form-container" >
     <Card className="container ">
       <div className="card-container">
         <form action="/" onSubmit={onSubmit}>
