@@ -41385,20 +41385,6 @@
 	    _react2.default.createElement('br', null),
 	    _react2.default.createElement('br', null),
 	    _react2.default.createElement('br', null),
-	    _react2.default.createElement(
-	      'div',
-	      { className: 'container' },
-	      _react2.default.createElement(
-	        'div',
-	        { className: 'row' },
-	        _react2.default.createElement('div', { className: 'col-md-12' })
-	      ),
-	      _react2.default.createElement(
-	        'div',
-	        { className: 'row' },
-	        _react2.default.createElement('div', { className: 'col-md-12' })
-	      )
-	    ),
 	    _react2.default.createElement(_findform2.default, null)
 	  );
 	};
@@ -48200,97 +48186,105 @@
 	            "div",
 	            { id: "dashboard-form-layout" },
 	            _react2.default.createElement(
-	              _Card.Card,
-	              { id: "dashboard-form-card" },
-	              _react2.default.createElement(
-	                "h2",
-	                { className: "title" },
-	                "Find Your Next Story"
-	              ),
-	              _react2.default.createElement(
-	                "h4",
-	                null,
-	                " Start searching by selecting a date and the charge and hit submit"
-	              ),
-	              _react2.default.createElement("br", null),
-	              _react2.default.createElement(_dateinput2.default, {
-	                handleInputChange: this.handleInputChange,
-	                month: this.state.month,
-	                day: this.state.day,
-	                year: this.state.year,
-	                charge: this.state.charge
-	              }),
-	              _react2.default.createElement(_submitbutton2.default, { handleFormSubmit: this.handleFormSubmit })
-	            )
-	          ),
-	          _react2.default.createElement(
-	            "div",
-	            null,
-	            _react2.default.createElement(
 	              "div",
-	              { className: "container" },
+	              { className: "row" },
 	              _react2.default.createElement(
 	                "div",
-	                { className: "row" },
-	                this.state.result.map(function (item) {
-	                  return _react2.default.createElement(
-	                    "div",
-	                    { className: "col-md-4", key: item.dob },
+	                { className: "col-md-12" },
+	                _react2.default.createElement(
+	                  _Card.Card,
+	                  { id: "dashboard-form-card", style: { backgroundColor: "transparency" } },
+	                  _react2.default.createElement(
+	                    "h2",
+	                    { className: "title" },
+	                    "Find Your Next Story"
+	                  ),
+	                  _react2.default.createElement(
+	                    "h4",
+	                    null,
+	                    " Start searching by selecting a date and the charge and hit submit"
+	                  ),
+	                  _react2.default.createElement("br", null),
+	                  _react2.default.createElement(_dateinput2.default, {
+	                    handleInputChange: this.handleInputChange,
+	                    month: this.state.month,
+	                    day: this.state.day,
+	                    year: this.state.year,
+	                    charge: this.state.charge
+	                  }),
+	                  _react2.default.createElement(_submitbutton2.default, { handleFormSubmit: this.handleFormSubmit })
+	                )
+	              )
+	            )
+	          )
+	        ),
+	        _react2.default.createElement(
+	          "div",
+	          null,
+	          _react2.default.createElement(
+	            "div",
+	            { className: "container" },
+	            _react2.default.createElement(
+	              "div",
+	              { className: "row" },
+	              this.state.result.map(function (item) {
+	                return _react2.default.createElement(
+	                  "div",
+	                  { className: "col-md-4", key: item.dob },
+	                  _react2.default.createElement(
+	                    _Card.Card,
+	                    null,
 	                    _react2.default.createElement(
-	                      _Card.Card,
+	                      _Card.CardMedia,
+	                      {
+	                        overlay: _react2.default.createElement(_Card.CardTitle, { title: item.defendant, subtitle: "Overlay subtitle" })
+	                      },
+	                      _react2.default.createElement("img", { src: "img/mugshot.png" })
+	                    ),
+	                    _react2.default.createElement(_Card.CardTitle, { title: "Card title", subtitle: "Card subtitle" }),
+	                    _react2.default.createElement(
+	                      _Card.CardText,
 	                      null,
 	                      _react2.default.createElement(
-	                        _Card.CardMedia,
-	                        {
-	                          overlay: _react2.default.createElement(_Card.CardTitle, { title: item.defendant, subtitle: "Overlay subtitle" })
-	                        },
-	                        _react2.default.createElement("img", { src: "img/mugshot.png" })
-	                      ),
-	                      _react2.default.createElement(_Card.CardTitle, { title: "Card title", subtitle: "Card subtitle" }),
-	                      _react2.default.createElement(
-	                        _Card.CardText,
+	                        "p",
 	                        null,
-	                        _react2.default.createElement(
-	                          "p",
-	                          null,
-	                          "DOB: ",
-	                          item.dob
-	                        ),
-	                        _react2.default.createElement(
-	                          "p",
-	                          null,
-	                          "Residence: ",
-	                          item.location_1_address,
-	                          ", ",
-	                          item.location_1_city,
-	                          ", ",
-	                          item.location_1_state,
-	                          " ",
-	                          item.location_1_zip
-	                        ),
-	                        _react2.default.createElement(
-	                          "p",
-	                          null,
-	                          "Charges: ",
-	                          item.charge1,
-	                          ", ",
-	                          item.charge2
-	                        ),
-	                        _react2.default.createElement(_sentencerender2.default, {
-	                          nameInterpreter: _this2.nameInterpreter,
-	                          cityInterpreter: _this2.cityInterpreter,
-	                          chargesInterpreter: _this2.chargesInterpreter,
-	                          weekDayInterpreter: _this2.weekDayInterpreter,
-	                          defendant: item.defendant,
-	                          uninterpretedCity: item.location_1_city,
-	                          chargeOne: item.charge1,
-	                          uninterpretedDate: item.bookdate
-	                        })
-	                      )
+	                        "DOB: ",
+	                        item.dob
+	                      ),
+	                      _react2.default.createElement(
+	                        "p",
+	                        null,
+	                        "Residence: ",
+	                        item.location_1_address,
+	                        ", ",
+	                        item.location_1_city,
+	                        ", ",
+	                        item.location_1_state,
+	                        " ",
+	                        item.location_1_zip
+	                      ),
+	                      _react2.default.createElement(
+	                        "p",
+	                        null,
+	                        "Charges: ",
+	                        item.charge1,
+	                        ", ",
+	                        item.charge2
+	                      ),
+	                      _react2.default.createElement(_sentencerender2.default, {
+	                        nameInterpreter: _this2.nameInterpreter,
+	                        cityInterpreter: _this2.cityInterpreter,
+	                        chargesInterpreter: _this2.chargesInterpreter,
+	                        weekDayInterpreter: _this2.weekDayInterpreter,
+	                        defendant: item.defendant,
+	                        uninterpretedCity: item.location_1_city,
+	                        chargeOne: item.charge1,
+	                        uninterpretedDate: item.bookdate
+	                      })
 	                    )
-	                  );
-	                })
-	              )
+	                  )
+	                );
+	              })
 	            )
 	          )
 	        )

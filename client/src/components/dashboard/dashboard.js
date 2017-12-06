@@ -14,18 +14,7 @@ const Dashboard = ({ secretData }) => (
     <br/>
     <br/>
     <br/>
-    <div className="container">
-        <div className="row">
-            <div className="col-md-12">
-               
-            </div>
-        </div>
-        <div className="row">
-            <div className="col-md-12">
-            </div>
-        </div>
 
-    </div>
   <FindForm/>
 
   </div>
