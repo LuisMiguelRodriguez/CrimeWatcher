@@ -41,7 +41,7 @@ const Base = ({ children }) => (
               <ul className="navbar-nav ml-auto">
                 <li className="nav-item">
 
-                  <a className="nav-link js-scroll-trigger" href="#features">Features</a>
+                  <Link className="nav-link js-scroll-trigger" to="/#features">Features</Link>
                 </li>
                 <li className="nav-item">
                   <Link className="nav-link js-scroll-trigger" to="/about">About</Link>
