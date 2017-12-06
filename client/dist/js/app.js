@@ -115950,7 +115950,7 @@
 											null,
 											_react2.default.createElement(
 												"button",
-												{ type: "button", className: "btn btn-default submit" },
+												{ type: "button", className: "btn .btn-xl", id: "contactbtn" },
 												_react2.default.createElement("i", { className: "fa fa-paper-plane", "aria-hidden": "true" }),
 												"  Send Message"
 											)
