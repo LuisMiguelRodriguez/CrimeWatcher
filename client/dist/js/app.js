@@ -48196,14 +48196,33 @@
 	        _react2.default.createElement(
 	          "div",
 	          { className: "form-group" },
-	          _react2.default.createElement(_dateinput2.default, {
-	            handleInputChange: this.handleInputChange,
-	            month: this.state.month,
-	            day: this.state.day,
-	            year: this.state.year,
-	            charge: this.state.charge
-	          }),
-	          _react2.default.createElement(_submitbutton2.default, { handleFormSubmit: this.handleFormSubmit }),
+	          _react2.default.createElement(
+	            "div",
+	            { id: "dashboard-form-layout" },
+	            _react2.default.createElement(
+	              _Card.Card,
+	              { id: "dashboard-form-card" },
+	              _react2.default.createElement(
+	                "h2",
+	                { className: "title" },
+	                "Find Your Next Story"
+	              ),
+	              _react2.default.createElement(
+	                "h4",
+	                null,
+	                " Start searching by selecting a date and the charge and hit submit"
+	              ),
+	              _react2.default.createElement("br", null),
+	              _react2.default.createElement(_dateinput2.default, {
+	                handleInputChange: this.handleInputChange,
+	                month: this.state.month,
+	                day: this.state.day,
+	                year: this.state.year,
+	                charge: this.state.charge
+	              }),
+	              _react2.default.createElement(_submitbutton2.default, { handleFormSubmit: this.handleFormSubmit })
+	            )
+	          ),
 	          _react2.default.createElement(
 	            "div",
 	            null,
@@ -48342,146 +48361,131 @@
 	var DateInput = function DateInput(props) {
 	  return _react2.default.createElement(
 	    'div',
-	    { id: 'dashboard-form-layout' },
+	    null,
 	    _react2.default.createElement(
-	      _Card.Card,
-	      { id: 'dashboard-form-card' },
-	      _react2.default.createElement(
-	        'h1',
-	        { className: 'title' },
-	        'Find Your Next Story'
-	      ),
-	      _react2.default.createElement(
-	        'h3',
-	        { className: 'title' },
-	        ' Start searching by selecting a date and the charge and hit submit'
-	      ),
-	      _react2.default.createElement('br', null),
-	      _react2.default.createElement(
-	        _DropDownMenu2.default,
-	        {
-	          type: 'text',
-	          onChange: function onChange(event, index, value) {
-	            return props.handleInputChange(event, index, value, 'month');
-	          },
-	          name: 'month',
-	          value: props.month,
-	          placeholder: 'MM',
-	          openImmediately: false },
-	        _react2.default.createElement(_MenuItem2.default, { value: "Month", primaryText: 'Month' }),
-	        _react2.default.createElement(_MenuItem2.default, { value: "01", primaryText: 'January' }),
-	        _react2.default.createElement(_MenuItem2.default, { value: "02", primaryText: 'February' }),
-	        _react2.default.createElement(_MenuItem2.default, { value: "03", primaryText: 'March' }),
-	        _react2.default.createElement(_MenuItem2.default, { value: "04", primaryText: 'April' }),
-	        _react2.default.createElement(_MenuItem2.default, { value: "05", primaryText: 'May' }),
-	        _react2.default.createElement(_MenuItem2.default, { value: "06", primaryText: 'June' }),
-	        _react2.default.createElement(_MenuItem2.default, { value: "07", primaryText: 'July' }),
-	        _react2.default.createElement(_MenuItem2.default, { value: "08", primaryText: 'August' }),
-	        _react2.default.createElement(_MenuItem2.default, { value: "09", primaryText: 'September' }),
-	        _react2.default.createElement(_MenuItem2.default, { value: "10", primaryText: 'October' }),
-	        _react2.default.createElement(_MenuItem2.default, { value: "11", primaryText: 'November' }),
-	        _react2.default.createElement(_MenuItem2.default, { value: "12", primaryText: 'December' })
-	      ),
-	      _react2.default.createElement('br', null),
-	      _react2.default.createElement(
-	        _DropDownMenu2.default,
-	        {
-	          type: 'text',
-	          onChange: function onChange(event, index, value) {
-	            return props.handleInputChange(event, index, value, 'day');
-	          },
-	          name: 'day',
-	          value: props.day,
-	          placeholder: 'DD',
-	          openImmediately: false },
-	        _react2.default.createElement(_MenuItem2.default, { value: "Day", primaryText: 'Day' }),
-	        _react2.default.createElement(_MenuItem2.default, { value: "01", primaryText: '01' }),
-	        _react2.default.createElement(_MenuItem2.default, { value: "02", primaryText: '02' }),
-	        _react2.default.createElement(_MenuItem2.default, { value: "03", primaryText: '03' }),
-	        _react2.default.createElement(_MenuItem2.default, { value: "04", primaryText: '04' }),
-	        _react2.default.createElement(_MenuItem2.default, { value: "05", primaryText: '05' }),
-	        _react2.default.createElement(_MenuItem2.default, { value: "06", primaryText: '06' }),
-	        _react2.default.createElement(_MenuItem2.default, { value: "07", primaryText: '07' }),
-	        _react2.default.createElement(_MenuItem2.default, { value: "08", primaryText: '08' }),
-	        _react2.default.createElement(_MenuItem2.default, { value: "09", primaryText: '09' }),
-	        _react2.default.createElement(_MenuItem2.default, { value: "10", primaryText: '10' }),
-	        _react2.default.createElement(_MenuItem2.default, { value: "11", primaryText: '11' }),
-	        _react2.default.createElement(_MenuItem2.default, { value: "12", primaryText: '12' }),
-	        _react2.default.createElement(_MenuItem2.default, { value: "13", primaryText: '13' }),
-	        _react2.default.createElement(_MenuItem2.default, { value: "14", primaryText: '14' }),
-	        _react2.default.createElement(_MenuItem2.default, { value: "15", primaryText: '15' }),
-	        _react2.default.createElement(_MenuItem2.default, { value: "16", primaryText: '16' }),
-	        _react2.default.createElement(_MenuItem2.default, { value: "17", primaryText: '17' }),
-	        _react2.default.createElement(_MenuItem2.default, { value: "18", primaryText: '18' }),
-	        _react2.default.createElement(_MenuItem2.default, { value: "19", primaryText: '19' }),
-	        _react2.default.createElement(_MenuItem2.default, { value: "20", primaryText: '20' }),
-	        _react2.default.createElement(_MenuItem2.default, { value: "21", primaryText: '21' }),
-	        _react2.default.createElement(_MenuItem2.default, { value: "22", primaryText: '22' }),
-	        _react2.default.createElement(_MenuItem2.default, { value: "23", primaryText: '23' }),
-	        _react2.default.createElement(_MenuItem2.default, { value: "24", primaryText: '24' }),
-	        _react2.default.createElement(_MenuItem2.default, { value: "25", primaryText: '25' }),
-	        _react2.default.createElement(_MenuItem2.default, { value: "26", primaryText: '26' }),
-	        _react2.default.createElement(_MenuItem2.default, { value: "27", primaryText: '27' }),
-	        _react2.default.createElement(_MenuItem2.default, { value: "28", primaryText: '28' }),
-	        _react2.default.createElement(_MenuItem2.default, { value: "29", primaryText: '29' }),
-	        _react2.default.createElement(_MenuItem2.default, { value: "30", primaryText: '30' }),
-	        _react2.default.createElement(_MenuItem2.default, { value: "31", primaryText: '31' })
-	      ),
-	      _react2.default.createElement('br', null),
-	      _react2.default.createElement(
-	        _DropDownMenu2.default,
-	        {
-	          type: 'text',
-	          onChange: function onChange(event, index, value) {
-	            return props.handleInputChange(event, index, value, 'year');
-	          },
-	          name: 'year',
-	          value: props.year,
-	          placeholder: 'YYYY',
-	          openImmediately: false },
-	        _react2.default.createElement(_MenuItem2.default, { value: "Year", primaryText: 'Year' }),
-	        _react2.default.createElement(_MenuItem2.default, { value: "2004", primaryText: '2004' }),
-	        _react2.default.createElement(_MenuItem2.default, { value: "2005", primaryText: '2005' }),
-	        _react2.default.createElement(_MenuItem2.default, { value: "2006", primaryText: '2006' }),
-	        _react2.default.createElement(_MenuItem2.default, { value: "2007", primaryText: '2007' }),
-	        _react2.default.createElement(_MenuItem2.default, { value: "2008", primaryText: '2008' }),
-	        _react2.default.createElement(_MenuItem2.default, { value: "2009", primaryText: '2009' }),
-	        _react2.default.createElement(_MenuItem2.default, { value: "2010", primaryText: '2010' }),
-	        _react2.default.createElement(_MenuItem2.default, { value: "2011", primaryText: '2011' }),
-	        _react2.default.createElement(_MenuItem2.default, { value: "2012", primaryText: '2012' }),
-	        _react2.default.createElement(_MenuItem2.default, { value: "2013", primaryText: '2013' }),
-	        _react2.default.createElement(_MenuItem2.default, { value: "2014", primaryText: '2014' }),
-	        _react2.default.createElement(_MenuItem2.default, { value: "2015", primaryText: '2015' }),
-	        _react2.default.createElement(_MenuItem2.default, { value: "2016", primaryText: '2016' }),
-	        _react2.default.createElement(_MenuItem2.default, { value: "2017", primaryText: '2017' })
-	      ),
-	      _react2.default.createElement('br', null),
-	      _react2.default.createElement('br', null),
-	      _react2.default.createElement(
-	        _DropDownMenu2.default,
-	        {
-	          type: 'text',
-	          name: 'charge',
-	          value: props.charge,
-	          onChange: function onChange(event, index, value) {
-	            return props.handleInputChange(event, index, value, 'charge');
-	          },
-	          openImmediately: false },
-	        _react2.default.createElement(_MenuItem2.default, { value: "Charge", primaryText: 'Charge' }),
-	        _react2.default.createElement(_MenuItem2.default, { value: "PETIT THEFT", primaryText: 'Petty Theft' }),
-	        _react2.default.createElement(_MenuItem2.default, { value: "LOITERING OR PROWL", primaryText: 'Loitering' }),
-	        _react2.default.createElement(_MenuItem2.default, { value: "ALCOHOL/CONSUM/STORE", primaryText: 'ALCOHOL/CONSUM/STORE' }),
-	        _react2.default.createElement(_MenuItem2.default, { value: "CHILD ABUSE/NO HARM", primaryText: 'Child Abuse' }),
-	        _react2.default.createElement(_MenuItem2.default, { value: "COCAINE/POSSESSION", primaryText: 'Cocaine Possession' }),
-	        _react2.default.createElement(_MenuItem2.default, { value: "BENCH WARRANT", primaryText: 'BENCH WARRANT' }),
-	        _react2.default.createElement(_MenuItem2.default, { value: "TRES PROP/AFTER WARN", primaryText: 'TRES PROP/AFTER WARN' }),
-	        _react2.default.createElement(_MenuItem2.default, { value: "PROBATION WARRANT", primaryText: 'Probation Warrant' }),
-	        _react2.default.createElement(_MenuItem2.default, { value: "DL/EXPIRED 6 MTHS+", primaryText: 'DL/EXPIRED 6 MTHS+' }),
-	        _react2.default.createElement(_MenuItem2.default, { value: "DWLS/KNOWINGL", primaryText: 'DWLS/KNOWINGLY' }),
-	        _react2.default.createElement(_MenuItem2.default, { value: "ARREST WARRANT", primaryText: 'Arrest Warrant' }),
-	        _react2.default.createElement(_MenuItem2.default, { value: "DRUG PARAPHERNA/POSN", primaryText: 'Drug Paraherna Posession' }),
-	        _react2.default.createElement(_MenuItem2.default, { value: "ALC BEV/DRK IN PUBLC", primaryText: 'Drunk in Public' })
-	      )
+	      _DropDownMenu2.default,
+	      {
+	        type: 'text',
+	        onChange: function onChange(event, index, value) {
+	          return props.handleInputChange(event, index, value, 'month');
+	        },
+	        name: 'month',
+	        value: props.month,
+	        placeholder: 'MM',
+	        openImmediately: false },
+	      _react2.default.createElement(_MenuItem2.default, { value: "Month", primaryText: 'Month' }),
+	      _react2.default.createElement(_MenuItem2.default, { value: "01", primaryText: 'January' }),
+	      _react2.default.createElement(_MenuItem2.default, { value: "02", primaryText: 'February' }),
+	      _react2.default.createElement(_MenuItem2.default, { value: "03", primaryText: 'March' }),
+	      _react2.default.createElement(_MenuItem2.default, { value: "04", primaryText: 'April' }),
+	      _react2.default.createElement(_MenuItem2.default, { value: "05", primaryText: 'May' }),
+	      _react2.default.createElement(_MenuItem2.default, { value: "06", primaryText: 'June' }),
+	      _react2.default.createElement(_MenuItem2.default, { value: "07", primaryText: 'July' }),
+	      _react2.default.createElement(_MenuItem2.default, { value: "08", primaryText: 'August' }),
+	      _react2.default.createElement(_MenuItem2.default, { value: "09", primaryText: 'September' }),
+	      _react2.default.createElement(_MenuItem2.default, { value: "10", primaryText: 'October' }),
+	      _react2.default.createElement(_MenuItem2.default, { value: "11", primaryText: 'November' }),
+	      _react2.default.createElement(_MenuItem2.default, { value: "12", primaryText: 'December' })
+	    ),
+	    _react2.default.createElement('br', null),
+	    _react2.default.createElement(
+	      _DropDownMenu2.default,
+	      {
+	        type: 'text',
+	        onChange: function onChange(event, index, value) {
+	          return props.handleInputChange(event, index, value, 'day');
+	        },
+	        name: 'day',
+	        value: props.day,
+	        placeholder: 'DD',
+	        openImmediately: false },
+	      _react2.default.createElement(_MenuItem2.default, { value: "Day", primaryText: 'Day' }),
+	      _react2.default.createElement(_MenuItem2.default, { value: "01", primaryText: '01' }),
+	      _react2.default.createElement(_MenuItem2.default, { value: "02", primaryText: '02' }),
+	      _react2.default.createElement(_MenuItem2.default, { value: "03", primaryText: '03' }),
+	      _react2.default.createElement(_MenuItem2.default, { value: "04", primaryText: '04' }),
+	      _react2.default.createElement(_MenuItem2.default, { value: "05", primaryText: '05' }),
+	      _react2.default.createElement(_MenuItem2.default, { value: "06", primaryText: '06' }),
+	      _react2.default.createElement(_MenuItem2.default, { value: "07", primaryText: '07' }),
+	      _react2.default.createElement(_MenuItem2.default, { value: "08", primaryText: '08' }),
+	      _react2.default.createElement(_MenuItem2.default, { value: "09", primaryText: '09' }),
+	      _react2.default.createElement(_MenuItem2.default, { value: "10", primaryText: '10' }),
+	      _react2.default.createElement(_MenuItem2.default, { value: "11", primaryText: '11' }),
+	      _react2.default.createElement(_MenuItem2.default, { value: "12", primaryText: '12' }),
+	      _react2.default.createElement(_MenuItem2.default, { value: "13", primaryText: '13' }),
+	      _react2.default.createElement(_MenuItem2.default, { value: "14", primaryText: '14' }),
+	      _react2.default.createElement(_MenuItem2.default, { value: "15", primaryText: '15' }),
+	      _react2.default.createElement(_MenuItem2.default, { value: "16", primaryText: '16' }),
+	      _react2.default.createElement(_MenuItem2.default, { value: "17", primaryText: '17' }),
+	      _react2.default.createElement(_MenuItem2.default, { value: "18", primaryText: '18' }),
+	      _react2.default.createElement(_MenuItem2.default, { value: "19", primaryText: '19' }),
+	      _react2.default.createElement(_MenuItem2.default, { value: "20", primaryText: '20' }),
+	      _react2.default.createElement(_MenuItem2.default, { value: "21", primaryText: '21' }),
+	      _react2.default.createElement(_MenuItem2.default, { value: "22", primaryText: '22' }),
+	      _react2.default.createElement(_MenuItem2.default, { value: "23", primaryText: '23' }),
+	      _react2.default.createElement(_MenuItem2.default, { value: "24", primaryText: '24' }),
+	      _react2.default.createElement(_MenuItem2.default, { value: "25", primaryText: '25' }),
+	      _react2.default.createElement(_MenuItem2.default, { value: "26", primaryText: '26' }),
+	      _react2.default.createElement(_MenuItem2.default, { value: "27", primaryText: '27' }),
+	      _react2.default.createElement(_MenuItem2.default, { value: "28", primaryText: '28' }),
+	      _react2.default.createElement(_MenuItem2.default, { value: "29", primaryText: '29' }),
+	      _react2.default.createElement(_MenuItem2.default, { value: "30", primaryText: '30' }),
+	      _react2.default.createElement(_MenuItem2.default, { value: "31", primaryText: '31' })
+	    ),
+	    _react2.default.createElement('br', null),
+	    _react2.default.createElement(
+	      _DropDownMenu2.default,
+	      {
+	        type: 'text',
+	        onChange: function onChange(event, index, value) {
+	          return props.handleInputChange(event, index, value, 'year');
+	        },
+	        name: 'year',
+	        value: props.year,
+	        placeholder: 'YYYY',
+	        openImmediately: false },
+	      _react2.default.createElement(_MenuItem2.default, { value: "Year", primaryText: 'Year' }),
+	      _react2.default.createElement(_MenuItem2.default, { value: "2004", primaryText: '2004' }),
+	      _react2.default.createElement(_MenuItem2.default, { value: "2005", primaryText: '2005' }),
+	      _react2.default.createElement(_MenuItem2.default, { value: "2006", primaryText: '2006' }),
+	      _react2.default.createElement(_MenuItem2.default, { value: "2007", primaryText: '2007' }),
+	      _react2.default.createElement(_MenuItem2.default, { value: "2008", primaryText: '2008' }),
+	      _react2.default.createElement(_MenuItem2.default, { value: "2009", primaryText: '2009' }),
+	      _react2.default.createElement(_MenuItem2.default, { value: "2010", primaryText: '2010' }),
+	      _react2.default.createElement(_MenuItem2.default, { value: "2011", primaryText: '2011' }),
+	      _react2.default.createElement(_MenuItem2.default, { value: "2012", primaryText: '2012' }),
+	      _react2.default.createElement(_MenuItem2.default, { value: "2013", primaryText: '2013' }),
+	      _react2.default.createElement(_MenuItem2.default, { value: "2014", primaryText: '2014' }),
+	      _react2.default.createElement(_MenuItem2.default, { value: "2015", primaryText: '2015' }),
+	      _react2.default.createElement(_MenuItem2.default, { value: "2016", primaryText: '2016' }),
+	      _react2.default.createElement(_MenuItem2.default, { value: "2017", primaryText: '2017' })
+	    ),
+	    _react2.default.createElement('br', null),
+	    _react2.default.createElement('br', null),
+	    _react2.default.createElement(
+	      _DropDownMenu2.default,
+	      {
+	        type: 'text',
+	        name: 'charge',
+	        value: props.charge,
+	        onChange: function onChange(event, index, value) {
+	          return props.handleInputChange(event, index, value, 'charge');
+	        },
+	        openImmediately: false },
+	      _react2.default.createElement(_MenuItem2.default, { value: "Charge", primaryText: 'Charge' }),
+	      _react2.default.createElement(_MenuItem2.default, { value: "PETIT THEFT", primaryText: 'Petty Theft' }),
+	      _react2.default.createElement(_MenuItem2.default, { value: "LOITERING OR PROWL", primaryText: 'Loitering' }),
+	      _react2.default.createElement(_MenuItem2.default, { value: "ALCOHOL/CONSUM/STORE", primaryText: 'ALCOHOL/CONSUM/STORE' }),
+	      _react2.default.createElement(_MenuItem2.default, { value: "CHILD ABUSE/NO HARM", primaryText: 'Child Abuse' }),
+	      _react2.default.createElement(_MenuItem2.default, { value: "COCAINE/POSSESSION", primaryText: 'Cocaine Possession' }),
+	      _react2.default.createElement(_MenuItem2.default, { value: "BENCH WARRANT", primaryText: 'BENCH WARRANT' }),
+	      _react2.default.createElement(_MenuItem2.default, { value: "TRES PROP/AFTER WARN", primaryText: 'TRES PROP/AFTER WARN' }),
+	      _react2.default.createElement(_MenuItem2.default, { value: "PROBATION WARRANT", primaryText: 'Probation Warrant' }),
+	      _react2.default.createElement(_MenuItem2.default, { value: "DL/EXPIRED 6 MTHS+", primaryText: 'DL/EXPIRED 6 MTHS+' }),
+	      _react2.default.createElement(_MenuItem2.default, { value: "DWLS/KNOWINGL", primaryText: 'DWLS/KNOWINGLY' }),
+	      _react2.default.createElement(_MenuItem2.default, { value: "ARREST WARRANT", primaryText: 'Arrest Warrant' }),
+	      _react2.default.createElement(_MenuItem2.default, { value: "DRUG PARAPHERNA/POSN", primaryText: 'Drug Paraherna Posession' }),
+	      _react2.default.createElement(_MenuItem2.default, { value: "ALC BEV/DRK IN PUBLC", primaryText: 'Drunk in Public' })
 	    )
 	  );
 	};

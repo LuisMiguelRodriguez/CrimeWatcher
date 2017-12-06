@@ -322,6 +322,7 @@ footer {
   }
   .title{
       text-align: center;
+      padding-top: 50px;
   }
 
   .mainBackground {
@@ -353,13 +354,14 @@ footer {
     padding-left: 15px;
     padding-top: 5px;
     padding-bottom: 5px;
-    margin-top: 10px;
+    margin-top: 20px;
     border-radius: 2px;
     background-color: red;
     font-weight: 600;
     font-size: 18px;
     border: none;
     color: white;
+    margin-bottom: 20px;
   }
 
   #dashboard-form-card{

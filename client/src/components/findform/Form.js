@@ -126,6 +126,11 @@ class FindForm extends Component {
       return (
         <div className="container">
           <div className="form-group">
+            <div  id="dashboard-form-layout">
+              <Card id="dashboard-form-card">
+                <h2 className="title">Find Your Next Story</h2>
+                <h4> Start searching by selecting a date and the charge and hit submit</h4>
+                <br/>
                 <DateInput
                     handleInputChange={this.handleInputChange}
                     month={this.state.month}
@@ -134,6 +139,8 @@ class FindForm extends Component {
                     charge={this.state.charge}
                      />
                 <SubmitButton  handleFormSubmit={this.handleFormSubmit} />
+              </Card>
+            </div>
             <div>
               <div className = "container">
                <div className = "row">
