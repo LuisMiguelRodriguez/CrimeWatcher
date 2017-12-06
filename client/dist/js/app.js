@@ -35509,7 +35509,7 @@
 	                  _react2.default.createElement(
 	                    'div',
 	                    { className: 'feature-item' },
-	                    _react2.default.createElement('i', { className: 'icon-layers text-primary' }),
+	                    _react2.default.createElement('i', { className: 'icon-envelope text-primary' }),
 	                    _react2.default.createElement(
 	                      'h3',
 	                      null,
@@ -54502,7 +54502,7 @@
 /***/ (function(module, exports, __webpack_require__) {
 
 	var require;/* WEBPACK VAR INJECTION */(function(module) {//! moment.js
-	//! version : 2.19.3
+	//! version : 2.19.2
 	//! authors : Tim Wood, Iskren Chernev, Moment.js contributors
 	//! license : MIT
 	//! momentjs.com
@@ -55162,7 +55162,7 @@
 
 	// any word (or two) characters or numbers including two/three word month in arabic.
 	// includes scottish gaelic two word and hyphenated months
-	var matchWord = /[0-9]{0,256}['a-z\u00A0-\u05FF\u0700-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]{1,256}|[\u0600-\u06FF\/]{1,256}(\s*?[\u0600-\u06FF]{1,256}){1,2}/i;
+	var matchWord = /[0-9]*['a-z\u00A0-\u05FF\u0700-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]+|[\u0600-\u06FF\/]+(\s*?[\u0600-\u06FF]+){1,2}/i;
 
 
 	var regexes = {};
@@ -58981,7 +58981,7 @@
 	// Side effect imports
 
 
-	hooks.version = '2.19.3';
+	hooks.version = '2.19.2';
 
 	setHookCallback(createLocal);
 
@@ -62496,7 +62496,7 @@
 /***/ (function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
-	//! locale : Spanish (United States) [es-us]
+	//! locale : Spanish(United State) [es-us]
 	//! author : bustta : https://github.com/bustta
 
 	;(function (global, factory) {
@@ -64173,7 +64173,8 @@
 
 	var weekEndings = 'vasárnap hétfőn kedden szerdán csütörtökön pénteken szombaton'.split(' ');
 	function translate(number, withoutSuffix, key, isFuture) {
-	    var num = number;
+	    var num = number,
+	        suffix;
 	    switch (key) {
 	        case 's':
 	            return (isFuture || withoutSuffix) ? 'néhány másodperc' : 'néhány másodperce';

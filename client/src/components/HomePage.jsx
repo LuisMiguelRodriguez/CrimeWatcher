@@ -82,7 +82,7 @@ const HomePage = () => (
                 </div>
                 <div className="col-lg-6">
                   <div className="feature-item">
-                    <i className="icon-layers text-primary"></i>
+                    <i className="icon-envelope text-primary"></i>
                     <h3>Email</h3>
                     <p className="text-muted">We can email you the data for safe keeping.</p>
                   </div>
