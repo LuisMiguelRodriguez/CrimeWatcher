@@ -35509,7 +35509,7 @@
 	                  _react2.default.createElement(
 	                    'div',
 	                    { className: 'feature-item' },
-	                    _react2.default.createElement('i', { className: 'icon-layers text-primary' }),
+	                    _react2.default.createElement('i', { className: 'icon-envelope text-primary' }),
 	                    _react2.default.createElement(
 	                      'h3',
 	                      null,
