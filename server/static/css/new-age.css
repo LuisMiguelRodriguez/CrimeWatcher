@@ -62,14 +62,14 @@ section {
   font-weight: 200;
   letter-spacing: 1px; }
   #mainNav .navbar-brand {
-    color: #fdcc52;
+    color: #d80404;
     font-family: 'Catamaran', 'Helvetica', 'Arial', 'sans-serif';
     font-weight: 600;
     letter-spacing: 1px;
     font-size: 32px;
   }
     #mainNav .navbar-brand:hover, #mainNav .navbar-brand:focus {
-      color: #fcbd20; }
+      color: #d80404; }
   #mainNav .navbar-toggler {
     font-size: 18px;
     padding: 8px 10px;
@@ -112,13 +112,13 @@ section {
         #mainNav.navbar-shrink .navbar-brand {
           color: #222222; }
           #mainNav.navbar-shrink .navbar-brand:hover, #mainNav.navbar-shrink .navbar-brand:focus {
-            color: #fdcc52; }
+            color: #d80404; }
         #mainNav.navbar-shrink .navbar-nav > li > a,
         #mainNav.navbar-shrink .navbar-nav > li > a:focus {
           color: #222222; }
           #mainNav.navbar-shrink .navbar-nav > li > a:hover,
           #mainNav.navbar-shrink .navbar-nav > li > a:focus:hover {
-            color: #fdcc52; } }
+            color: #d80404; } }
 
 header.masthead {
   position: relative;
@@ -138,7 +138,9 @@ header.masthead {
   header.masthead .device-container {
     max-width: 325px;
     margin-right: auto;
-    margin-left: auto; }
+    margin-left: auto;
+    margin-top: 60px;
+  }
     header.masthead .device-container .screen img {
       border-radius: 3px; }
   @media (min-width: 992px) {
@@ -362,6 +364,14 @@ footer {
     margin-right: auto;
     min-height:1200px;
   }
+
+
+.form-style{
+  padding-top: 15px;
+  padding-bottom: 15px;
+
+}
+
 
   /*Contact Form*/
 

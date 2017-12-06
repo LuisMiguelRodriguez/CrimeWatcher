@@ -35191,7 +35191,7 @@
 	                _react2.default.createElement(
 	                  _reactRouter.Link,
 	                  { className: 'nav-link js-scroll-trigger', to: '/contact' },
-	                  'ContactPage'
+	                  'Contact'
 	                )
 	              ),
 	              _react2.default.createElement(
@@ -35200,7 +35200,7 @@
 	                _react2.default.createElement(
 	                  _reactRouter.Link,
 	                  { className: 'nav-link js-scroll-trigger', to: '/about' },
-	                  'AboutPage'
+	                  'About'
 	                )
 	              ),
 	              _react2.default.createElement(
@@ -35537,7 +35537,7 @@
 	          { className: 'container' },
 	          _react2.default.createElement(
 	            'h2',
-	            null,
+	            { id: 'feature-headline' },
 	            'Stop waiting.',
 	            _react2.default.createElement('br', null),
 	            'Start watching.'
@@ -88727,13 +88727,13 @@
 	    null,
 	    _react2.default.createElement(
 	      _Card.Card,
-	      { className: 'container' },
+	      { className: 'container form-container' },
 	      _react2.default.createElement(
 	        'div',
 	        { className: 'card-container' },
 	        _react2.default.createElement(
 	          'form',
-	          { action: '/', onSubmit: onSubmit },
+	          { className: 'form-style', action: '/', onSubmit: onSubmit },
 	          _react2.default.createElement(
 	            'h2',
 	            { className: 'card-heading' },
