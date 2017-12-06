@@ -12,9 +12,9 @@ const SignUpForm = ({
   user,
 }) => (
   <div >
-    <Card className="container">
+    <Card className="container form-container">
       <div className="card-container">
-        <form action="/" onSubmit={onSubmit}>
+        <form className="form-style"action="/" onSubmit={onSubmit}>
           <h2 className="card-heading">Sign Up</h2>
 
           {errors.summary && <p className="error-message">{errors.summary}</p>}

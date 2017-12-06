@@ -88727,13 +88727,13 @@
 	    null,
 	    _react2.default.createElement(
 	      _Card.Card,
-	      { className: 'container' },
+	      { className: 'container form-container' },
 	      _react2.default.createElement(
 	        'div',
 	        { className: 'card-container' },
 	        _react2.default.createElement(
 	          'form',
-	          { action: '/', onSubmit: onSubmit },
+	          { className: 'form-style', action: '/', onSubmit: onSubmit },
 	          _react2.default.createElement(
 	            'h2',
 	            { className: 'card-heading' },
