@@ -289,6 +289,7 @@ footer {
   color: white;
   border: 1px solid;
   border-color: white; }
+
   .btn-outline:hover, .btn-outline:focus, .btn-outline:active, .btn-outline.active {
     color: white;
     border-color: #d73925;
@@ -305,7 +306,7 @@ footer {
 }
 
 .btn-xl {
-  font-size: 11px;
+  font-size: 14px;
   padding: 15px 45px; }
 
 
@@ -407,3 +408,15 @@ footer {
   position: relative;
 
 }
+#contactbtn{
+  color: white;
+  border: 1px solid;
+  border-color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  font-size: 14px;
+}
+
+#contactbtn:hover, #contactbtn:focus, #contactbtn:active, #contactbtn.active {
+    color: white;
+    border-color: #d73925;
+    background-color: #d73925; }

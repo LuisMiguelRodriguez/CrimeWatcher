@@ -28,7 +28,7 @@ const ContactPage = () => (
 									<textarea  className="form-control" id="description" placeholder="Enter Your Message"></textarea>
 								</div>
 								<div>
-									<button type="button" className="btn btn-default submit"><i className="fa fa-paper-plane" aria-hidden="true"></i>  Send Message</button>
+									<button type="button" className="btn .btn-xl" id="contactbtn"><i className="fa fa-paper-plane" aria-hidden="true"></i>  Send Message</button>
 								</div>
 								</div>
 							</form>
