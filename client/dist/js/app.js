@@ -72,7 +72,7 @@
 
 	var _routes2 = _interopRequireDefault(_routes);
 
-	var _darkBaseTheme = __webpack_require__(710);
+	var _darkBaseTheme = __webpack_require__(706);
 
 	var _darkBaseTheme2 = _interopRequireDefault(_darkBaseTheme);
 
@@ -35021,15 +35021,15 @@
 
 	var _Analytics2 = _interopRequireDefault(_Analytics);
 
-	var _ContactPage = __webpack_require__(701);
+	var _ContactPage = __webpack_require__(697);
 
 	var _ContactPage2 = _interopRequireDefault(_ContactPage);
 
-	var _AboutPage = __webpack_require__(702);
+	var _AboutPage = __webpack_require__(698);
 
 	var _AboutPage2 = _interopRequireDefault(_AboutPage);
 
-	var _SignLoginPage = __webpack_require__(703);
+	var _SignLoginPage = __webpack_require__(699);
 
 	var _SignLoginPage2 = _interopRequireDefault(_SignLoginPage);
 
@@ -48345,7 +48345,7 @@
 	'use strict';
 
 	Object.defineProperty(exports, "__esModule", {
-	      value: true
+	  value: true
 	});
 
 	var _react = __webpack_require__(1);
@@ -48373,135 +48373,135 @@
 	// import 'react-datepicker/dist/react-datepicker.css';
 
 	var DateInput = function DateInput(props) {
-	      return _react2.default.createElement(
-	            'div',
-	            null,
-	            _react2.default.createElement(
-	                  _DropDownMenu2.default,
-	                  {
-	                        type: 'text',
-	                        onChange: function onChange(event, index, value) {
-	                              return props.handleInputChange(event, index, value, 'month');
-	                        },
-	                        name: 'month',
-	                        value: props.month,
-	                        placeholder: 'MM',
-	                        openImmediately: false },
-	                  _react2.default.createElement(_MenuItem2.default, { value: "Month", primaryText: 'Month' }),
-	                  _react2.default.createElement(_MenuItem2.default, { value: "01", primaryText: 'January' }),
-	                  _react2.default.createElement(_MenuItem2.default, { value: "02", primaryText: 'February' }),
-	                  _react2.default.createElement(_MenuItem2.default, { value: "03", primaryText: 'March' }),
-	                  _react2.default.createElement(_MenuItem2.default, { value: "04", primaryText: 'April' }),
-	                  _react2.default.createElement(_MenuItem2.default, { value: "05", primaryText: 'May' }),
-	                  _react2.default.createElement(_MenuItem2.default, { value: "06", primaryText: 'June' }),
-	                  _react2.default.createElement(_MenuItem2.default, { value: "07", primaryText: 'July' }),
-	                  _react2.default.createElement(_MenuItem2.default, { value: "08", primaryText: 'August' }),
-	                  _react2.default.createElement(_MenuItem2.default, { value: "09", primaryText: 'September' }),
-	                  _react2.default.createElement(_MenuItem2.default, { value: "10", primaryText: 'October' }),
-	                  _react2.default.createElement(_MenuItem2.default, { value: "11", primaryText: 'November' }),
-	                  _react2.default.createElement(_MenuItem2.default, { value: "12", primaryText: 'December' })
-	            ),
-	            _react2.default.createElement('br', null),
-	            _react2.default.createElement(
-	                  _DropDownMenu2.default,
-	                  {
-	                        type: 'text',
-	                        onChange: function onChange(event, index, value) {
-	                              return props.handleInputChange(event, index, value, 'day');
-	                        },
-	                        name: 'day',
-	                        value: props.day,
-	                        placeholder: 'DD',
-	                        openImmediately: false },
-	                  _react2.default.createElement(_MenuItem2.default, { value: "Day", primaryText: 'Day' }),
-	                  _react2.default.createElement(_MenuItem2.default, { value: "01", primaryText: '01' }),
-	                  _react2.default.createElement(_MenuItem2.default, { value: "02", primaryText: '02' }),
-	                  _react2.default.createElement(_MenuItem2.default, { value: "03", primaryText: '03' }),
-	                  _react2.default.createElement(_MenuItem2.default, { value: "04", primaryText: '04' }),
-	                  _react2.default.createElement(_MenuItem2.default, { value: "05", primaryText: '05' }),
-	                  _react2.default.createElement(_MenuItem2.default, { value: "06", primaryText: '06' }),
-	                  _react2.default.createElement(_MenuItem2.default, { value: "07", primaryText: '07' }),
-	                  _react2.default.createElement(_MenuItem2.default, { value: "08", primaryText: '08' }),
-	                  _react2.default.createElement(_MenuItem2.default, { value: "09", primaryText: '09' }),
-	                  _react2.default.createElement(_MenuItem2.default, { value: "10", primaryText: '10' }),
-	                  _react2.default.createElement(_MenuItem2.default, { value: "11", primaryText: '11' }),
-	                  _react2.default.createElement(_MenuItem2.default, { value: "12", primaryText: '12' }),
-	                  _react2.default.createElement(_MenuItem2.default, { value: "13", primaryText: '13' }),
-	                  _react2.default.createElement(_MenuItem2.default, { value: "14", primaryText: '14' }),
-	                  _react2.default.createElement(_MenuItem2.default, { value: "15", primaryText: '15' }),
-	                  _react2.default.createElement(_MenuItem2.default, { value: "16", primaryText: '16' }),
-	                  _react2.default.createElement(_MenuItem2.default, { value: "17", primaryText: '17' }),
-	                  _react2.default.createElement(_MenuItem2.default, { value: "18", primaryText: '18' }),
-	                  _react2.default.createElement(_MenuItem2.default, { value: "19", primaryText: '19' }),
-	                  _react2.default.createElement(_MenuItem2.default, { value: "20", primaryText: '20' }),
-	                  _react2.default.createElement(_MenuItem2.default, { value: "21", primaryText: '21' }),
-	                  _react2.default.createElement(_MenuItem2.default, { value: "22", primaryText: '22' }),
-	                  _react2.default.createElement(_MenuItem2.default, { value: "23", primaryText: '23' }),
-	                  _react2.default.createElement(_MenuItem2.default, { value: "24", primaryText: '24' }),
-	                  _react2.default.createElement(_MenuItem2.default, { value: "25", primaryText: '25' }),
-	                  _react2.default.createElement(_MenuItem2.default, { value: "26", primaryText: '26' }),
-	                  _react2.default.createElement(_MenuItem2.default, { value: "27", primaryText: '27' }),
-	                  _react2.default.createElement(_MenuItem2.default, { value: "28", primaryText: '28' }),
-	                  _react2.default.createElement(_MenuItem2.default, { value: "29", primaryText: '29' }),
-	                  _react2.default.createElement(_MenuItem2.default, { value: "30", primaryText: '30' }),
-	                  _react2.default.createElement(_MenuItem2.default, { value: "31", primaryText: '31' })
-	            ),
-	            _react2.default.createElement('br', null),
-	            _react2.default.createElement(
-	                  _DropDownMenu2.default,
-	                  {
-	                        type: 'text',
-	                        onChange: function onChange(event, index, value) {
-	                              return props.handleInputChange(event, index, value, 'year');
-	                        },
-	                        name: 'year',
-	                        value: props.year,
-	                        placeholder: 'YYYY',
-	                        openImmediately: false },
-	                  _react2.default.createElement(_MenuItem2.default, { value: "Year", primaryText: 'Year' }),
-	                  _react2.default.createElement(_MenuItem2.default, { value: "2004", primaryText: '2004' }),
-	                  _react2.default.createElement(_MenuItem2.default, { value: "2005", primaryText: '2005' }),
-	                  _react2.default.createElement(_MenuItem2.default, { value: "2006", primaryText: '2006' }),
-	                  _react2.default.createElement(_MenuItem2.default, { value: "2007", primaryText: '2007' }),
-	                  _react2.default.createElement(_MenuItem2.default, { value: "2008", primaryText: '2008' }),
-	                  _react2.default.createElement(_MenuItem2.default, { value: "2009", primaryText: '2009' }),
-	                  _react2.default.createElement(_MenuItem2.default, { value: "2010", primaryText: '2010' }),
-	                  _react2.default.createElement(_MenuItem2.default, { value: "2011", primaryText: '2011' }),
-	                  _react2.default.createElement(_MenuItem2.default, { value: "2012", primaryText: '2012' }),
-	                  _react2.default.createElement(_MenuItem2.default, { value: "2013", primaryText: '2013' }),
-	                  _react2.default.createElement(_MenuItem2.default, { value: "2014", primaryText: '2014' }),
-	                  _react2.default.createElement(_MenuItem2.default, { value: "2015", primaryText: '2015' }),
-	                  _react2.default.createElement(_MenuItem2.default, { value: "2016", primaryText: '2016' }),
-	                  _react2.default.createElement(_MenuItem2.default, { value: "2017", primaryText: '2017' })
-	            ),
-	            _react2.default.createElement('br', null),
-	            _react2.default.createElement('br', null),
-	            _react2.default.createElement(
-	                  _DropDownMenu2.default,
-	                  {
-	                        type: 'text',
-	                        name: 'charge',
-	                        value: props.charge,
-	                        onChange: function onChange(event, index, value) {
-	                              return props.handleInputChange(event, index, value, 'charge');
-	                        },
-	                        openImmediately: false },
-	                  _react2.default.createElement(_MenuItem2.default, { value: "Charge", primaryText: 'Charge' }),
-	                  _react2.default.createElement(_MenuItem2.default, { value: "PETIT THEFT", primaryText: 'Petty Theft' }),
-	                  _react2.default.createElement(_MenuItem2.default, { value: "LOITERING OR PROWL", primaryText: 'Loitering' }),
-	                  _react2.default.createElement(_MenuItem2.default, { value: "ALCOHOL/CONSUM/STORE", primaryText: 'ALCOHOL/CONSUM/STORE' }),
-	                  _react2.default.createElement(_MenuItem2.default, { value: "CHILD ABUSE/NO HARM", primaryText: 'Child Abuse' }),
-	                  _react2.default.createElement(_MenuItem2.default, { value: "COCAINE/POSSESSION", primaryText: 'Cocaine Possession' }),
-	                  _react2.default.createElement(_MenuItem2.default, { value: "BENCH WARRANT", primaryText: 'BENCH WARRANT' }),
-	                  _react2.default.createElement(_MenuItem2.default, { value: "TRES PROP/AFTER WARN", primaryText: 'TRES PROP/AFTER WARN' }),
-	                  _react2.default.createElement(_MenuItem2.default, { value: "PROBATION WARRANT", primaryText: 'Probation Warrant' }),
-	                  _react2.default.createElement(_MenuItem2.default, { value: "DL/EXPIRED 6 MTHS+", primaryText: 'DL/EXPIRED 6 MTHS+' }),
-	                  _react2.default.createElement(_MenuItem2.default, { value: "DWLS/KNOWINGL", primaryText: 'DWLS/KNOWINGLY' }),
-	                  _react2.default.createElement(_MenuItem2.default, { value: "ARREST WARRANT", primaryText: 'Arrest Warrant' }),
-	                  _react2.default.createElement(_MenuItem2.default, { value: "DRUG PARAPHERNA/POSN", primaryText: 'Drug Paraherna Posession' }),
-	                  _react2.default.createElement(_MenuItem2.default, { value: "ALC BEV/DRK IN PUBLC", primaryText: 'Drunk in Public' })
-	            )
-	      );
+	  return _react2.default.createElement(
+	    'div',
+	    null,
+	    _react2.default.createElement(
+	      _DropDownMenu2.default,
+	      {
+	        type: 'text',
+	        onChange: function onChange(event, index, value) {
+	          return props.handleInputChange(event, index, value, 'month');
+	        },
+	        name: 'month',
+	        value: props.month,
+	        placeholder: 'MM',
+	        openImmediately: false },
+	      _react2.default.createElement(_MenuItem2.default, { value: "Month", primaryText: 'Month' }),
+	      _react2.default.createElement(_MenuItem2.default, { value: "01", primaryText: 'January' }),
+	      _react2.default.createElement(_MenuItem2.default, { value: "02", primaryText: 'February' }),
+	      _react2.default.createElement(_MenuItem2.default, { value: "03", primaryText: 'March' }),
+	      _react2.default.createElement(_MenuItem2.default, { value: "04", primaryText: 'April' }),
+	      _react2.default.createElement(_MenuItem2.default, { value: "05", primaryText: 'May' }),
+	      _react2.default.createElement(_MenuItem2.default, { value: "06", primaryText: 'June' }),
+	      _react2.default.createElement(_MenuItem2.default, { value: "07", primaryText: 'July' }),
+	      _react2.default.createElement(_MenuItem2.default, { value: "08", primaryText: 'August' }),
+	      _react2.default.createElement(_MenuItem2.default, { value: "09", primaryText: 'September' }),
+	      _react2.default.createElement(_MenuItem2.default, { value: "10", primaryText: 'October' }),
+	      _react2.default.createElement(_MenuItem2.default, { value: "11", primaryText: 'November' }),
+	      _react2.default.createElement(_MenuItem2.default, { value: "12", primaryText: 'December' })
+	    ),
+	    _react2.default.createElement('br', null),
+	    _react2.default.createElement(
+	      _DropDownMenu2.default,
+	      {
+	        type: 'text',
+	        onChange: function onChange(event, index, value) {
+	          return props.handleInputChange(event, index, value, 'day');
+	        },
+	        name: 'day',
+	        value: props.day,
+	        placeholder: 'DD',
+	        openImmediately: false },
+	      _react2.default.createElement(_MenuItem2.default, { value: "Day", primaryText: 'Day' }),
+	      _react2.default.createElement(_MenuItem2.default, { value: "01", primaryText: '01' }),
+	      _react2.default.createElement(_MenuItem2.default, { value: "02", primaryText: '02' }),
+	      _react2.default.createElement(_MenuItem2.default, { value: "03", primaryText: '03' }),
+	      _react2.default.createElement(_MenuItem2.default, { value: "04", primaryText: '04' }),
+	      _react2.default.createElement(_MenuItem2.default, { value: "05", primaryText: '05' }),
+	      _react2.default.createElement(_MenuItem2.default, { value: "06", primaryText: '06' }),
+	      _react2.default.createElement(_MenuItem2.default, { value: "07", primaryText: '07' }),
+	      _react2.default.createElement(_MenuItem2.default, { value: "08", primaryText: '08' }),
+	      _react2.default.createElement(_MenuItem2.default, { value: "09", primaryText: '09' }),
+	      _react2.default.createElement(_MenuItem2.default, { value: "10", primaryText: '10' }),
+	      _react2.default.createElement(_MenuItem2.default, { value: "11", primaryText: '11' }),
+	      _react2.default.createElement(_MenuItem2.default, { value: "12", primaryText: '12' }),
+	      _react2.default.createElement(_MenuItem2.default, { value: "13", primaryText: '13' }),
+	      _react2.default.createElement(_MenuItem2.default, { value: "14", primaryText: '14' }),
+	      _react2.default.createElement(_MenuItem2.default, { value: "15", primaryText: '15' }),
+	      _react2.default.createElement(_MenuItem2.default, { value: "16", primaryText: '16' }),
+	      _react2.default.createElement(_MenuItem2.default, { value: "17", primaryText: '17' }),
+	      _react2.default.createElement(_MenuItem2.default, { value: "18", primaryText: '18' }),
+	      _react2.default.createElement(_MenuItem2.default, { value: "19", primaryText: '19' }),
+	      _react2.default.createElement(_MenuItem2.default, { value: "20", primaryText: '20' }),
+	      _react2.default.createElement(_MenuItem2.default, { value: "21", primaryText: '21' }),
+	      _react2.default.createElement(_MenuItem2.default, { value: "22", primaryText: '22' }),
+	      _react2.default.createElement(_MenuItem2.default, { value: "23", primaryText: '23' }),
+	      _react2.default.createElement(_MenuItem2.default, { value: "24", primaryText: '24' }),
+	      _react2.default.createElement(_MenuItem2.default, { value: "25", primaryText: '25' }),
+	      _react2.default.createElement(_MenuItem2.default, { value: "26", primaryText: '26' }),
+	      _react2.default.createElement(_MenuItem2.default, { value: "27", primaryText: '27' }),
+	      _react2.default.createElement(_MenuItem2.default, { value: "28", primaryText: '28' }),
+	      _react2.default.createElement(_MenuItem2.default, { value: "29", primaryText: '29' }),
+	      _react2.default.createElement(_MenuItem2.default, { value: "30", primaryText: '30' }),
+	      _react2.default.createElement(_MenuItem2.default, { value: "31", primaryText: '31' })
+	    ),
+	    _react2.default.createElement('br', null),
+	    _react2.default.createElement(
+	      _DropDownMenu2.default,
+	      {
+	        type: 'text',
+	        onChange: function onChange(event, index, value) {
+	          return props.handleInputChange(event, index, value, 'year');
+	        },
+	        name: 'year',
+	        value: props.year,
+	        placeholder: 'YYYY',
+	        openImmediately: false },
+	      _react2.default.createElement(_MenuItem2.default, { value: "Year", primaryText: 'Year' }),
+	      _react2.default.createElement(_MenuItem2.default, { value: "2004", primaryText: '2004' }),
+	      _react2.default.createElement(_MenuItem2.default, { value: "2005", primaryText: '2005' }),
+	      _react2.default.createElement(_MenuItem2.default, { value: "2006", primaryText: '2006' }),
+	      _react2.default.createElement(_MenuItem2.default, { value: "2007", primaryText: '2007' }),
+	      _react2.default.createElement(_MenuItem2.default, { value: "2008", primaryText: '2008' }),
+	      _react2.default.createElement(_MenuItem2.default, { value: "2009", primaryText: '2009' }),
+	      _react2.default.createElement(_MenuItem2.default, { value: "2010", primaryText: '2010' }),
+	      _react2.default.createElement(_MenuItem2.default, { value: "2011", primaryText: '2011' }),
+	      _react2.default.createElement(_MenuItem2.default, { value: "2012", primaryText: '2012' }),
+	      _react2.default.createElement(_MenuItem2.default, { value: "2013", primaryText: '2013' }),
+	      _react2.default.createElement(_MenuItem2.default, { value: "2014", primaryText: '2014' }),
+	      _react2.default.createElement(_MenuItem2.default, { value: "2015", primaryText: '2015' }),
+	      _react2.default.createElement(_MenuItem2.default, { value: "2016", primaryText: '2016' }),
+	      _react2.default.createElement(_MenuItem2.default, { value: "2017", primaryText: '2017' })
+	    ),
+	    _react2.default.createElement('br', null),
+	    _react2.default.createElement('br', null),
+	    _react2.default.createElement(
+	      _DropDownMenu2.default,
+	      {
+	        type: 'text',
+	        name: 'charge',
+	        value: props.charge,
+	        onChange: function onChange(event, index, value) {
+	          return props.handleInputChange(event, index, value, 'charge');
+	        },
+	        openImmediately: false },
+	      _react2.default.createElement(_MenuItem2.default, { value: "Charge", primaryText: 'Charge' }),
+	      _react2.default.createElement(_MenuItem2.default, { value: "PETIT THEFT", primaryText: 'Petty Theft' }),
+	      _react2.default.createElement(_MenuItem2.default, { value: "LOITERING OR PROWL", primaryText: 'Loitering' }),
+	      _react2.default.createElement(_MenuItem2.default, { value: "ALCOHOL/CONSUM/STORE", primaryText: 'ALCOHOL/CONSUM/STORE' }),
+	      _react2.default.createElement(_MenuItem2.default, { value: "CHILD ABUSE/NO HARM", primaryText: 'Child Abuse' }),
+	      _react2.default.createElement(_MenuItem2.default, { value: "COCAINE/POSSESSION", primaryText: 'Cocaine Possession' }),
+	      _react2.default.createElement(_MenuItem2.default, { value: "BENCH WARRANT", primaryText: 'BENCH WARRANT' }),
+	      _react2.default.createElement(_MenuItem2.default, { value: "TRES PROP/AFTER WARN", primaryText: 'TRES PROP/AFTER WARN' }),
+	      _react2.default.createElement(_MenuItem2.default, { value: "PROBATION WARRANT", primaryText: 'Probation Warrant' }),
+	      _react2.default.createElement(_MenuItem2.default, { value: "DL/EXPIRED 6 MTHS+", primaryText: 'DL/EXPIRED 6 MTHS+' }),
+	      _react2.default.createElement(_MenuItem2.default, { value: "DWLS/KNOWINGL", primaryText: 'DWLS/KNOWINGLY' }),
+	      _react2.default.createElement(_MenuItem2.default, { value: "ARREST WARRANT", primaryText: 'Arrest Warrant' }),
+	      _react2.default.createElement(_MenuItem2.default, { value: "DRUG PARAPHERNA/POSN", primaryText: 'Drug Paraherna Posession' }),
+	      _react2.default.createElement(_MenuItem2.default, { value: "ALC BEV/DRK IN PUBLC", primaryText: 'Drunk in Public' })
+	    )
+	  );
 	};
 	exports.default = DateInput;
 
@@ -54502,7 +54502,7 @@
 /***/ (function(module, exports, __webpack_require__) {
 
 	var require;/* WEBPACK VAR INJECTION */(function(module) {//! moment.js
-	//! version : 2.19.2
+	//! version : 2.19.3
 	//! authors : Tim Wood, Iskren Chernev, Moment.js contributors
 	//! license : MIT
 	//! momentjs.com
@@ -55162,7 +55162,7 @@
 
 	// any word (or two) characters or numbers including two/three word month in arabic.
 	// includes scottish gaelic two word and hyphenated months
-	var matchWord = /[0-9]*['a-z\u00A0-\u05FF\u0700-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]+|[\u0600-\u06FF\/]+(\s*?[\u0600-\u06FF]+){1,2}/i;
+	var matchWord = /[0-9]{0,256}['a-z\u00A0-\u05FF\u0700-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]{1,256}|[\u0600-\u06FF\/]{1,256}(\s*?[\u0600-\u06FF]{1,256}){1,2}/i;
 
 
 	var regexes = {};
@@ -58981,7 +58981,7 @@
 	// Side effect imports
 
 
-	hooks.version = '2.19.2';
+	hooks.version = '2.19.3';
 
 	setHookCallback(createLocal);
 
@@ -62496,7 +62496,7 @@
 /***/ (function(module, exports, __webpack_require__) {
 
 	//! moment.js locale configuration
-	//! locale : Spanish(United State) [es-us]
+	//! locale : Spanish (United States) [es-us]
 	//! author : bustta : https://github.com/bustta
 
 	;(function (global, factory) {
@@ -64173,8 +64173,7 @@
 
 	var weekEndings = 'vasárnap hétfőn kedden szerdán csütörtökön pénteken szombaton'.split(' ');
 	function translate(number, withoutSuffix, key, isFuture) {
-	    var num = number,
-	        suffix;
+	    var num = number;
 	    switch (key) {
 	        case 's':
 	            return (isFuture || withoutSuffix) ? 'néhány másodperc' : 'néhány másodperce';
@@ -89132,15 +89131,13 @@
 
 	var _reactRouter = __webpack_require__(338);
 
-	var _Grid = __webpack_require__(689);
+	var _Form = __webpack_require__(689);
 
-	var _Form = __webpack_require__(693);
-
-	var _Nvd3Analytics = __webpack_require__(697);
+	var _Nvd3Analytics = __webpack_require__(693);
 
 	var _Nvd3Analytics2 = _interopRequireDefault(_Nvd3Analytics);
 
-	var _reactNvd = __webpack_require__(698);
+	var _reactNvd = __webpack_require__(694);
 
 	var _reactNvd2 = _interopRequireDefault(_reactNvd);
 
@@ -89153,6 +89150,8 @@
 	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
 
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+	// import { Col, Row, Container } from "../Grid";
+
 
 	var Analytics = function (_Component) {
 	  _inherits(Analytics, _Component);
@@ -89163,11 +89162,17 @@
 	    var _this = _possibleConstructorReturn(this, (Analytics.__proto__ || Object.getPrototypeOf(Analytics)).call(this, props));
 
 	    _this.state = {
-	      startDate: "",
-	      endDate: "",
+	      startMonth: "",
+	      startDay: "",
+	      startYear: "",
+	      endDay: "",
+	      endMonth: "",
+	      endYear: "",
+	      startDate: "2015-05-05",
+	      endDate: "2015-07-07",
 	      crimeData: [],
 	      sortType: "",
-	      chartType: "pieChart",
+	      chartType: "",
 	      showGraph: false,
 	      datum: [],
 	      chartVal: "pieChart",
@@ -89193,10 +89198,14 @@
 	        datum: []
 	      });
 
+	      console.log("------- logging state here -------");
+	      console.log(_this.state);
+	      console.log("------- end logging state here -------");
 	      event.preventDefault();
 	      if (_this.state.startDate && _this.state.endDate) {
+	        var URL = "https://opendata.miamidade.gov/resource/k7xd-qgzt.json?$where=bookdate between '" + _this.state.startYear + "-" + _this.state.startMonth + "-" + _this.state.startDay + "T12:00:00' and '" + _this.state.endYear + "-" + _this.state.endMonth + "-" + _this.state.endDay + "T14:00:00'";
 
-	        var URL = "https://opendata.miamidade.gov/resource/k7xd-qgzt.json?$where=bookdate between '" + _this.state.startDate + "T12:00:00' and '" + _this.state.endDate + "T14:00:00'";
+	        // let URL = `https://opendata.miamidade.gov/resource/k7xd-qgzt.json?$where=bookdate between '${this.state.startDate}T12:00:00' and '${this.state.endDate}T14:00:00'`;
 	        console.log(URL);
 	        _API2.default.getData(URL).then(function (res) {
 	          _this.setState({ crimeData: res.data });
@@ -89240,10 +89249,6 @@
 
 	                      dataArray.push(tmpObject);
 	                    });
-	                    console.log("---- This is the data Array -----");
-	                    console.log(dataArray.slice(0, 10));
-	                    console.log("---- This is the data Array -----");
-
 	                    _this.setState({
 	                      datum: [{
 	                        key: "Cumulative Return",
@@ -89262,9 +89267,6 @@
 
 	                      dataArray.push(tmpObject);
 	                    });
-	                    console.log("---- This is the data Array -----");
-	                    console.log(dataArray.slice(0, 10));
-	                    console.log("---- This is the data Array -----");
 
 	                    _this.setState({
 	                      datum: [{
@@ -89284,9 +89286,6 @@
 
 	                      dataArray.push(tmpObject);
 	                    });
-	                    console.log("---- This is the data Array -----");
-	                    console.log(dataArray.slice(0, 10));
-	                    console.log("---- This is the data Array -----");
 
 	                    _this.setState({
 	                      datum: [{
@@ -89314,9 +89313,6 @@
 
 	                      dataArray.push(tmpObject);
 	                    });
-	                    console.log("---- This is the data Array -----");
-	                    console.log(dataArray.slice(0, 10));
-	                    console.log("---- This is the data Array -----");
 
 	                    _this.setState({
 	                      datum: dataArray.slice(0, 10)
@@ -89334,9 +89330,6 @@
 
 	                      dataArray.push(tmpObject);
 	                    });
-	                    console.log("---- This is the pieChart -----");
-	                    console.log(dataArray.slice(0, 10));
-	                    console.log("---- This is the pieChart -----");
 
 	                    _this.setState({
 	                      datum: dataArray.slice(0, 10)
@@ -89354,9 +89347,6 @@
 
 	                      dataArray.push(tmpObject);
 	                    });
-	                    console.log("---- This is the data Array -----");
-	                    console.log(dataArray.slice(0, 10));
-	                    console.log("---- This is the data Array -----");
 
 	                    _this.setState({
 	                      datum: dataArray.slice(0, 10)
@@ -89388,134 +89378,932 @@
 	    key: "render",
 	    value: function render() {
 	      return _react2.default.createElement(
-	        _Grid.Container,
-	        { fluid: true },
+	        "div",
+	        { id: "analytics-hero" },
 	        _react2.default.createElement(
-	          _Grid.Row,
-	          null,
+	          "div",
+	          { className: "container" },
 	          _react2.default.createElement(
-	            _Grid.Col,
-	            { size: "md-12" },
+	            "div",
+	            { className: "row" },
 	            _react2.default.createElement(
-	              "h1",
-	              null,
-	              "MIAMI - Crime Analytics"
-	            ),
-	            _react2.default.createElement(
-	              "form",
-	              null,
-	              _react2.default.createElement(_Form.Input, {
-	                value: this.state.startDate,
-	                onChange: this.handleInputChange,
-	                name: "startDate",
-	                placeholder: "startDate  (required)"
-	              }),
-	              _react2.default.createElement(_Form.Input, {
-	                value: this.state.endDate,
-	                onChange: this.handleInputChange,
-	                name: "endDate",
-	                placeholder: "endDate  (required)"
-	              }),
-	              _react2.default.createElement(_Form.Input, {
-	                value: this.state.chartType,
-	                onChange: this.handleInputChange,
-	                name: "chartType",
-	                placeholder: "chart Type  (required)"
-	              }),
-	              _react2.default.createElement(_Form.Input, {
-	                value: this.state.sortType,
-	                onChange: this.handleInputChange,
-	                name: "sortType",
-	                placeholder: "sort by  (required)"
-	              }),
+	              "div",
+	              { className: "col-md-12" },
+	              _react2.default.createElement("br", null),
+	              _react2.default.createElement("br", null),
+	              _react2.default.createElement("hr", null),
+	              _react2.default.createElement("hr", null),
+	              _react2.default.createElement("hr", null),
 	              _react2.default.createElement(
-	                _Form.FormBtn,
-	                {
-	                  disabled: !(this.state.startDate && this.state.endDate),
-	                  onClick: this.callTheAPI
-	                },
-	                "Initiate Analytics"
+	                "h1",
+	                { id: "analyticsHeader" },
+	                " Analytics Dashboard "
 	              )
 	            )
-	          )
-	        ),
-	        _react2.default.createElement(
-	          "div",
-	          { "class": "row" },
-	          _react2.default.createElement(
-	            "div",
-	            { "class": "col-md-4" },
-	            "Max Age : ",
-	            this.state.age.maxAge
 	          ),
 	          _react2.default.createElement(
 	            "div",
-	            { "class": "col-md-4" },
-	            "Min Age : ",
-	            this.state.age.minAge
+	            { id: "analyticsForm" },
+	            _react2.default.createElement(
+	              "div",
+	              { className: "row" },
+	              _react2.default.createElement(
+	                "div",
+	                { className: "col-md-4" },
+	                _react2.default.createElement(
+	                  "div",
+	                  { className: "form-group" },
+	                  _react2.default.createElement(
+	                    "label",
+	                    null,
+	                    "Start Day"
+	                  ),
+	                  _react2.default.createElement(
+	                    "select",
+	                    {
+	                      className: "form-control",
+	                      value: this.state.startDay,
+	                      onChange: this.handleInputChange,
+	                      name: "startDay" },
+	                    _react2.default.createElement(
+	                      "option",
+	                      null,
+	                      "01"
+	                    ),
+	                    _react2.default.createElement(
+	                      "option",
+	                      null,
+	                      "02"
+	                    ),
+	                    _react2.default.createElement(
+	                      "option",
+	                      null,
+	                      "03"
+	                    ),
+	                    _react2.default.createElement(
+	                      "option",
+	                      null,
+	                      "04"
+	                    ),
+	                    _react2.default.createElement(
+	                      "option",
+	                      null,
+	                      "05"
+	                    ),
+	                    _react2.default.createElement(
+	                      "option",
+	                      null,
+	                      "06"
+	                    ),
+	                    _react2.default.createElement(
+	                      "option",
+	                      null,
+	                      "07"
+	                    ),
+	                    _react2.default.createElement(
+	                      "option",
+	                      null,
+	                      "08"
+	                    ),
+	                    _react2.default.createElement(
+	                      "option",
+	                      null,
+	                      "09"
+	                    ),
+	                    _react2.default.createElement(
+	                      "option",
+	                      null,
+	                      "10"
+	                    ),
+	                    _react2.default.createElement(
+	                      "option",
+	                      null,
+	                      "11"
+	                    ),
+	                    _react2.default.createElement(
+	                      "option",
+	                      null,
+	                      "12"
+	                    ),
+	                    _react2.default.createElement(
+	                      "option",
+	                      null,
+	                      "13"
+	                    ),
+	                    _react2.default.createElement(
+	                      "option",
+	                      null,
+	                      "14"
+	                    ),
+	                    _react2.default.createElement(
+	                      "option",
+	                      null,
+	                      "15"
+	                    ),
+	                    _react2.default.createElement(
+	                      "option",
+	                      null,
+	                      "16"
+	                    ),
+	                    _react2.default.createElement(
+	                      "option",
+	                      null,
+	                      "17"
+	                    ),
+	                    _react2.default.createElement(
+	                      "option",
+	                      null,
+	                      "18"
+	                    ),
+	                    _react2.default.createElement(
+	                      "option",
+	                      null,
+	                      "19"
+	                    ),
+	                    _react2.default.createElement(
+	                      "option",
+	                      null,
+	                      "20"
+	                    ),
+	                    _react2.default.createElement(
+	                      "option",
+	                      null,
+	                      "21"
+	                    ),
+	                    _react2.default.createElement(
+	                      "option",
+	                      null,
+	                      "22"
+	                    ),
+	                    _react2.default.createElement(
+	                      "option",
+	                      null,
+	                      "23"
+	                    ),
+	                    _react2.default.createElement(
+	                      "option",
+	                      null,
+	                      "24"
+	                    ),
+	                    _react2.default.createElement(
+	                      "option",
+	                      null,
+	                      "25"
+	                    ),
+	                    _react2.default.createElement(
+	                      "option",
+	                      null,
+	                      "26"
+	                    ),
+	                    _react2.default.createElement(
+	                      "option",
+	                      null,
+	                      "27"
+	                    ),
+	                    _react2.default.createElement(
+	                      "option",
+	                      null,
+	                      "28"
+	                    ),
+	                    _react2.default.createElement(
+	                      "option",
+	                      null,
+	                      "29"
+	                    ),
+	                    _react2.default.createElement(
+	                      "option",
+	                      null,
+	                      "30"
+	                    ),
+	                    _react2.default.createElement(
+	                      "option",
+	                      null,
+	                      "31"
+	                    )
+	                  )
+	                )
+	              ),
+	              _react2.default.createElement(
+	                "div",
+	                { className: "col-md-4" },
+	                _react2.default.createElement(
+	                  "div",
+	                  { className: "form-group" },
+	                  _react2.default.createElement(
+	                    "label",
+	                    null,
+	                    "Start Month"
+	                  ),
+	                  _react2.default.createElement(
+	                    "select",
+	                    {
+	                      className: "form-control",
+	                      value: this.state.startMonth,
+	                      onChange: this.handleInputChange,
+	                      name: "startMonth" },
+	                    _react2.default.createElement(
+	                      "option",
+	                      null,
+	                      "01"
+	                    ),
+	                    _react2.default.createElement(
+	                      "option",
+	                      null,
+	                      "02"
+	                    ),
+	                    _react2.default.createElement(
+	                      "option",
+	                      null,
+	                      "03"
+	                    ),
+	                    _react2.default.createElement(
+	                      "option",
+	                      null,
+	                      "04"
+	                    ),
+	                    _react2.default.createElement(
+	                      "option",
+	                      null,
+	                      "05"
+	                    ),
+	                    _react2.default.createElement(
+	                      "option",
+	                      null,
+	                      "06"
+	                    ),
+	                    _react2.default.createElement(
+	                      "option",
+	                      null,
+	                      "07"
+	                    ),
+	                    _react2.default.createElement(
+	                      "option",
+	                      null,
+	                      "08"
+	                    ),
+	                    _react2.default.createElement(
+	                      "option",
+	                      null,
+	                      "09"
+	                    ),
+	                    _react2.default.createElement(
+	                      "option",
+	                      null,
+	                      "10"
+	                    ),
+	                    _react2.default.createElement(
+	                      "option",
+	                      null,
+	                      "11"
+	                    ),
+	                    _react2.default.createElement(
+	                      "option",
+	                      null,
+	                      "12"
+	                    )
+	                  )
+	                )
+	              ),
+	              _react2.default.createElement(
+	                "div",
+	                { className: "col-md-4" },
+	                _react2.default.createElement(
+	                  "div",
+	                  { className: "form-group" },
+	                  _react2.default.createElement(
+	                    "label",
+	                    null,
+	                    "Start Year"
+	                  ),
+	                  _react2.default.createElement(
+	                    "select",
+	                    {
+	                      className: "form-control",
+	                      value: this.state.startYear,
+	                      onChange: this.handleInputChange,
+	                      name: "startYear" },
+	                    _react2.default.createElement(
+	                      "option",
+	                      null,
+	                      "2000"
+	                    ),
+	                    _react2.default.createElement(
+	                      "option",
+	                      null,
+	                      "2001"
+	                    ),
+	                    _react2.default.createElement(
+	                      "option",
+	                      null,
+	                      "2002"
+	                    ),
+	                    _react2.default.createElement(
+	                      "option",
+	                      null,
+	                      "2003"
+	                    ),
+	                    _react2.default.createElement(
+	                      "option",
+	                      null,
+	                      "2004"
+	                    ),
+	                    _react2.default.createElement(
+	                      "option",
+	                      null,
+	                      "2005"
+	                    ),
+	                    _react2.default.createElement(
+	                      "option",
+	                      null,
+	                      "2006"
+	                    ),
+	                    _react2.default.createElement(
+	                      "option",
+	                      null,
+	                      "2007"
+	                    ),
+	                    _react2.default.createElement(
+	                      "option",
+	                      null,
+	                      "2008"
+	                    ),
+	                    _react2.default.createElement(
+	                      "option",
+	                      null,
+	                      "2009"
+	                    ),
+	                    _react2.default.createElement(
+	                      "option",
+	                      null,
+	                      "2010"
+	                    ),
+	                    _react2.default.createElement(
+	                      "option",
+	                      null,
+	                      "2011"
+	                    ),
+	                    _react2.default.createElement(
+	                      "option",
+	                      null,
+	                      "2012"
+	                    ),
+	                    _react2.default.createElement(
+	                      "option",
+	                      null,
+	                      "2013"
+	                    ),
+	                    _react2.default.createElement(
+	                      "option",
+	                      null,
+	                      "2014"
+	                    ),
+	                    _react2.default.createElement(
+	                      "option",
+	                      null,
+	                      "2015"
+	                    ),
+	                    _react2.default.createElement(
+	                      "option",
+	                      null,
+	                      "2016"
+	                    ),
+	                    _react2.default.createElement(
+	                      "option",
+	                      null,
+	                      "2017"
+	                    )
+	                  )
+	                )
+	              )
+	            ),
+	            _react2.default.createElement("br", null),
+	            _react2.default.createElement(
+	              "div",
+	              { className: "row" },
+	              _react2.default.createElement(
+	                "div",
+	                { className: "col-md-4" },
+	                _react2.default.createElement(
+	                  "div",
+	                  { className: "form-group" },
+	                  _react2.default.createElement(
+	                    "label",
+	                    null,
+	                    "End Day"
+	                  ),
+	                  _react2.default.createElement(
+	                    "select",
+	                    {
+	                      className: "form-control",
+	                      value: this.state.endDay,
+	                      onChange: this.handleInputChange,
+	                      name: "endDay" },
+	                    _react2.default.createElement(
+	                      "option",
+	                      null,
+	                      "01"
+	                    ),
+	                    _react2.default.createElement(
+	                      "option",
+	                      null,
+	                      "02"
+	                    ),
+	                    _react2.default.createElement(
+	                      "option",
+	                      null,
+	                      "03"
+	                    ),
+	                    _react2.default.createElement(
+	                      "option",
+	                      null,
+	                      "04"
+	                    ),
+	                    _react2.default.createElement(
+	                      "option",
+	                      null,
+	                      "05"
+	                    ),
+	                    _react2.default.createElement(
+	                      "option",
+	                      null,
+	                      "06"
+	                    ),
+	                    _react2.default.createElement(
+	                      "option",
+	                      null,
+	                      "07"
+	                    ),
+	                    _react2.default.createElement(
+	                      "option",
+	                      null,
+	                      "08"
+	                    ),
+	                    _react2.default.createElement(
+	                      "option",
+	                      null,
+	                      "09"
+	                    ),
+	                    _react2.default.createElement(
+	                      "option",
+	                      null,
+	                      "10"
+	                    ),
+	                    _react2.default.createElement(
+	                      "option",
+	                      null,
+	                      "11"
+	                    ),
+	                    _react2.default.createElement(
+	                      "option",
+	                      null,
+	                      "12"
+	                    ),
+	                    _react2.default.createElement(
+	                      "option",
+	                      null,
+	                      "13"
+	                    ),
+	                    _react2.default.createElement(
+	                      "option",
+	                      null,
+	                      "14"
+	                    ),
+	                    _react2.default.createElement(
+	                      "option",
+	                      null,
+	                      "15"
+	                    ),
+	                    _react2.default.createElement(
+	                      "option",
+	                      null,
+	                      "16"
+	                    ),
+	                    _react2.default.createElement(
+	                      "option",
+	                      null,
+	                      "17"
+	                    ),
+	                    _react2.default.createElement(
+	                      "option",
+	                      null,
+	                      "18"
+	                    ),
+	                    _react2.default.createElement(
+	                      "option",
+	                      null,
+	                      "19"
+	                    ),
+	                    _react2.default.createElement(
+	                      "option",
+	                      null,
+	                      "20"
+	                    ),
+	                    _react2.default.createElement(
+	                      "option",
+	                      null,
+	                      "21"
+	                    ),
+	                    _react2.default.createElement(
+	                      "option",
+	                      null,
+	                      "22"
+	                    ),
+	                    _react2.default.createElement(
+	                      "option",
+	                      null,
+	                      "23"
+	                    ),
+	                    _react2.default.createElement(
+	                      "option",
+	                      null,
+	                      "24"
+	                    ),
+	                    _react2.default.createElement(
+	                      "option",
+	                      null,
+	                      "25"
+	                    ),
+	                    _react2.default.createElement(
+	                      "option",
+	                      null,
+	                      "26"
+	                    ),
+	                    _react2.default.createElement(
+	                      "option",
+	                      null,
+	                      "27"
+	                    ),
+	                    _react2.default.createElement(
+	                      "option",
+	                      null,
+	                      "28"
+	                    ),
+	                    _react2.default.createElement(
+	                      "option",
+	                      null,
+	                      "29"
+	                    ),
+	                    _react2.default.createElement(
+	                      "option",
+	                      null,
+	                      "30"
+	                    ),
+	                    _react2.default.createElement(
+	                      "option",
+	                      null,
+	                      "31"
+	                    )
+	                  )
+	                )
+	              ),
+	              _react2.default.createElement(
+	                "div",
+	                { className: "col-md-4" },
+	                _react2.default.createElement(
+	                  "div",
+	                  { className: "form-group" },
+	                  _react2.default.createElement(
+	                    "label",
+	                    null,
+	                    "End Month"
+	                  ),
+	                  _react2.default.createElement(
+	                    "select",
+	                    {
+	                      className: "form-control",
+	                      value: this.state.endMonth,
+	                      onChange: this.handleInputChange,
+	                      name: "endMonth" },
+	                    _react2.default.createElement(
+	                      "option",
+	                      null,
+	                      "01"
+	                    ),
+	                    _react2.default.createElement(
+	                      "option",
+	                      null,
+	                      "02"
+	                    ),
+	                    _react2.default.createElement(
+	                      "option",
+	                      null,
+	                      "03"
+	                    ),
+	                    _react2.default.createElement(
+	                      "option",
+	                      null,
+	                      "04"
+	                    ),
+	                    _react2.default.createElement(
+	                      "option",
+	                      null,
+	                      "05"
+	                    ),
+	                    _react2.default.createElement(
+	                      "option",
+	                      null,
+	                      "06"
+	                    ),
+	                    _react2.default.createElement(
+	                      "option",
+	                      null,
+	                      "07"
+	                    ),
+	                    _react2.default.createElement(
+	                      "option",
+	                      null,
+	                      "08"
+	                    ),
+	                    _react2.default.createElement(
+	                      "option",
+	                      null,
+	                      "09"
+	                    ),
+	                    _react2.default.createElement(
+	                      "option",
+	                      null,
+	                      "10"
+	                    ),
+	                    _react2.default.createElement(
+	                      "option",
+	                      null,
+	                      "11"
+	                    ),
+	                    _react2.default.createElement(
+	                      "option",
+	                      null,
+	                      "12"
+	                    )
+	                  )
+	                )
+	              ),
+	              _react2.default.createElement(
+	                "div",
+	                { className: "col-md-4" },
+	                _react2.default.createElement(
+	                  "div",
+	                  { className: "form-group" },
+	                  _react2.default.createElement(
+	                    "label",
+	                    null,
+	                    "End Year"
+	                  ),
+	                  _react2.default.createElement(
+	                    "select",
+	                    {
+	                      className: "form-control",
+	                      value: this.state.endYear,
+	                      onChange: this.handleInputChange,
+	                      name: "endYear" },
+	                    _react2.default.createElement(
+	                      "option",
+	                      null,
+	                      "2000"
+	                    ),
+	                    _react2.default.createElement(
+	                      "option",
+	                      null,
+	                      "2001"
+	                    ),
+	                    _react2.default.createElement(
+	                      "option",
+	                      null,
+	                      "2002"
+	                    ),
+	                    _react2.default.createElement(
+	                      "option",
+	                      null,
+	                      "2003"
+	                    ),
+	                    _react2.default.createElement(
+	                      "option",
+	                      null,
+	                      "2004"
+	                    ),
+	                    _react2.default.createElement(
+	                      "option",
+	                      null,
+	                      "2005"
+	                    ),
+	                    _react2.default.createElement(
+	                      "option",
+	                      null,
+	                      "2006"
+	                    ),
+	                    _react2.default.createElement(
+	                      "option",
+	                      null,
+	                      "2007"
+	                    ),
+	                    _react2.default.createElement(
+	                      "option",
+	                      null,
+	                      "2008"
+	                    ),
+	                    _react2.default.createElement(
+	                      "option",
+	                      null,
+	                      "2009"
+	                    ),
+	                    _react2.default.createElement(
+	                      "option",
+	                      null,
+	                      "2010"
+	                    ),
+	                    _react2.default.createElement(
+	                      "option",
+	                      null,
+	                      "2011"
+	                    ),
+	                    _react2.default.createElement(
+	                      "option",
+	                      null,
+	                      "2012"
+	                    ),
+	                    _react2.default.createElement(
+	                      "option",
+	                      null,
+	                      "2013"
+	                    ),
+	                    _react2.default.createElement(
+	                      "option",
+	                      null,
+	                      "2014"
+	                    ),
+	                    _react2.default.createElement(
+	                      "option",
+	                      null,
+	                      "2015"
+	                    ),
+	                    _react2.default.createElement(
+	                      "option",
+	                      null,
+	                      "2016"
+	                    ),
+	                    _react2.default.createElement(
+	                      "option",
+	                      null,
+	                      "2017"
+	                    )
+	                  )
+	                )
+	              )
+	            ),
+	            _react2.default.createElement(
+	              "div",
+	              { className: "row" },
+	              _react2.default.createElement(
+	                "div",
+	                { className: "col-md-12" },
+	                _react2.default.createElement(
+	                  "div",
+	                  { className: "form-group" },
+	                  _react2.default.createElement(
+	                    "label",
+	                    null,
+	                    "Sort By"
+	                  ),
+	                  _react2.default.createElement(
+	                    "select",
+	                    {
+	                      className: "form-control form-control-lg",
+	                      value: this.state.sortType,
+	                      onChange: this.handleInputChange,
+	                      name: "sortType" },
+	                    _react2.default.createElement(
+	                      "option",
+	                      null,
+	                      "crime"
+	                    ),
+	                    _react2.default.createElement(
+	                      "option",
+	                      null,
+	                      "day"
+	                    ),
+	                    _react2.default.createElement(
+	                      "option",
+	                      null,
+	                      "age"
+	                    )
+	                  )
+	                )
+	              )
+	            ),
+	            _react2.default.createElement(
+	              "div",
+	              { className: "row" },
+	              _react2.default.createElement(
+	                "div",
+	                { className: "col-md-12" },
+	                _react2.default.createElement(
+	                  "div",
+	                  { className: "form-group" },
+	                  _react2.default.createElement(
+	                    "label",
+	                    null,
+	                    "Chart Type"
+	                  ),
+	                  _react2.default.createElement(
+	                    "select",
+	                    {
+	                      className: "form-control form-control-lg",
+	                      value: this.state.chartType,
+	                      onChange: this.handleInputChange,
+	                      name: "chartType" },
+	                    _react2.default.createElement(
+	                      "option",
+	                      null,
+	                      "pieChart"
+	                    ),
+	                    _react2.default.createElement(
+	                      "option",
+	                      null,
+	                      "discreteBarChart"
+	                    )
+	                  )
+	                )
+	              )
+	            ),
+	            _react2.default.createElement(
+	              "div",
+	              { className: "row" },
+	              _react2.default.createElement(
+	                "div",
+	                { className: "col-md-12" },
+	                _react2.default.createElement(
+	                  "button",
+	                  { type: "button", className: "btn btn-primary btn-lg", onClick: this.callTheAPI },
+	                  "Initiate Analytics"
+	                )
+	              )
+	            )
 	          ),
 	          _react2.default.createElement(
 	            "div",
-	            { "class": "col-md-4" },
-	            "Age that commited the most crimes : ",
-	            this.state.age.maxCrimeAge
-	          )
-	        ),
-	        _react2.default.createElement(
-	          "div",
-	          { "class": "row" },
-	          _react2.default.createElement(
-	            "div",
-	            { "class": "col-md-6" },
-	            "Lowest crimes commited on : ",
-	            this.state.day.minCrimeDay,
-	            " || Number of Crimes commited : ",
-	            this.state.day.minCrimeDayCount
+	            { className: "row" },
+	            _react2.default.createElement(
+	              "div",
+	              { className: "col-md-6" },
+	              "Lowest crimes commited on : ",
+	              this.state.day.minCrimeDay,
+	              " || Number of Crimes commited : ",
+	              this.state.day.minCrimeDayCount
+	            ),
+	            _react2.default.createElement(
+	              "div",
+	              { className: "col-md-6" },
+	              "Highest crimes commited on : ",
+	              this.state.day.maxCrimeDay,
+	              " || Number of Crimes commited : ",
+	              this.state.day.maxCrimeDayCount
+	            )
 	          ),
 	          _react2.default.createElement(
 	            "div",
-	            { "class": "col-md-6" },
-	            "Highest crimes commited on : ",
-	            this.state.day.maxCrimeDay,
-	            " || Number of Crimes commited : ",
-	            this.state.day.maxCrimeDayCount
-	          )
-	        ),
-	        _react2.default.createElement(
-	          "div",
-	          { "class": "row" },
-	          _react2.default.createElement(
-	            "div",
-	            { "class": "col-md-6" },
-	            "Most commited crime : ",
-	            this.state.crime.maxCrimeType
+	            { className: "row" },
+	            _react2.default.createElement(
+	              "div",
+	              { className: "col-md-6" },
+	              "Most commited crime : ",
+	              this.state.crime.maxCrimeType
+	            ),
+	            _react2.default.createElement(
+	              "div",
+	              { className: "col-md-6" },
+	              "Least commited crime : ",
+	              this.state.crime.minCrimeType
+	            )
 	          ),
 	          _react2.default.createElement(
 	            "div",
-	            { "class": "col-md-6" },
-	            "Least commited crime : ",
-	            this.state.crime.minCrimeType
+	            { id: "graphingRegion" },
+	            _react2.default.createElement(
+	              "div",
+	              { className: "row" },
+	              _react2.default.createElement("div", { className: "col-md-1" }),
+	              _react2.default.createElement(
+	                "div",
+	                { className: "col-md-10" },
+	                _react2.default.createElement(_reactNvd2.default, {
+	                  id: "chart",
+	                  width: 500,
+	                  height: 500,
+	                  type: this.state.chartVal,
+	                  datum: this.state.datum,
+	                  x: "key",
+	                  y: "count",
+	                  showValues: false,
+	                  showLegend: false,
+	                  showControls: false,
+	                  showLabels: false,
+	                  showXAxis: false,
+	                  labelType: "percent",
+	                  noData: "Awaiting Data"
+	                })
+	              ),
+	              _react2.default.createElement("div", { className: "col-md-1" })
+	            )
 	          )
-	        ),
-	        _react2.default.createElement(
-	          _Grid.Row,
-	          null,
-	          _react2.default.createElement(_reactNvd2.default, {
-	            id: "chart",
-	            width: 700,
-	            height: 570,
-	            type: this.state.chartVal,
-	            datum: this.state.datum,
-	            x: "key",
-	            y: "count",
-	            showValues: false,
-	            showLegend: false,
-	            showControls: false,
-	            showLabels: false,
-	            showXAxis: false,
-	            labelType: "percent",
-	            noData: "Awaiting Data"
-	          })
 	        )
 	      );
 	    }
@@ -89559,136 +90347,7 @@
 	  value: true
 	});
 
-	var _Col = __webpack_require__(690);
-
-	Object.keys(_Col).forEach(function (key) {
-	  if (key === "default" || key === "__esModule") return;
-	  Object.defineProperty(exports, key, {
-	    enumerable: true,
-	    get: function get() {
-	      return _Col[key];
-	    }
-	  });
-	});
-
-	var _Container = __webpack_require__(691);
-
-	Object.keys(_Container).forEach(function (key) {
-	  if (key === "default" || key === "__esModule") return;
-	  Object.defineProperty(exports, key, {
-	    enumerable: true,
-	    get: function get() {
-	      return _Container[key];
-	    }
-	  });
-	});
-
-	var _Row = __webpack_require__(692);
-
-	Object.keys(_Row).forEach(function (key) {
-	  if (key === "default" || key === "__esModule") return;
-	  Object.defineProperty(exports, key, {
-	    enumerable: true,
-	    get: function get() {
-	      return _Row[key];
-	    }
-	  });
-	});
-
-/***/ }),
-/* 690 */
-/***/ (function(module, exports, __webpack_require__) {
-
-	"use strict";
-
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	exports.Col = undefined;
-
-	var _react = __webpack_require__(1);
-
-	var _react2 = _interopRequireDefault(_react);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	var Col = exports.Col = function Col(_ref) {
-	  var size = _ref.size,
-	      children = _ref.children;
-	  return _react2.default.createElement(
-	    "div",
-	    { className: size.split(" ").map(function (size) {
-	        return "col-" + size;
-	      }).join(" ") },
-	    children
-	  );
-	};
-
-/***/ }),
-/* 691 */
-/***/ (function(module, exports, __webpack_require__) {
-
-	"use strict";
-
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	exports.Container = undefined;
-
-	var _react = __webpack_require__(1);
-
-	var _react2 = _interopRequireDefault(_react);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	var Container = exports.Container = function Container(_ref) {
-	  var fluid = _ref.fluid,
-	      children = _ref.children;
-	  return _react2.default.createElement(
-	    "div",
-	    { className: "container" + (fluid ? "-fluid" : "") },
-	    children
-	  );
-	};
-
-/***/ }),
-/* 692 */
-/***/ (function(module, exports, __webpack_require__) {
-
-	"use strict";
-
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	exports.Row = undefined;
-
-	var _react = __webpack_require__(1);
-
-	var _react2 = _interopRequireDefault(_react);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	var Row = exports.Row = function Row(_ref) {
-	  var fluid = _ref.fluid,
-	      children = _ref.children;
-	  return _react2.default.createElement(
-	    "div",
-	    { className: "row" + (fluid ? "-fluid" : "") },
-	    children
-	  );
-	};
-
-/***/ }),
-/* 693 */
-/***/ (function(module, exports, __webpack_require__) {
-
-	"use strict";
-
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-
-	var _Input = __webpack_require__(694);
+	var _Input = __webpack_require__(690);
 
 	Object.keys(_Input).forEach(function (key) {
 	  if (key === "default" || key === "__esModule") return;
@@ -89700,7 +90359,7 @@
 	  });
 	});
 
-	var _TextArea = __webpack_require__(695);
+	var _TextArea = __webpack_require__(691);
 
 	Object.keys(_TextArea).forEach(function (key) {
 	  if (key === "default" || key === "__esModule") return;
@@ -89712,7 +90371,7 @@
 	  });
 	});
 
-	var _FormBtn = __webpack_require__(696);
+	var _FormBtn = __webpack_require__(692);
 
 	Object.keys(_FormBtn).forEach(function (key) {
 	  if (key === "default" || key === "__esModule") return;
@@ -89725,7 +90384,7 @@
 	});
 
 /***/ }),
-/* 694 */
+/* 690 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -89752,7 +90411,7 @@
 	};
 
 /***/ }),
-/* 695 */
+/* 691 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -89779,7 +90438,7 @@
 	};
 
 /***/ }),
-/* 696 */
+/* 692 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -89806,7 +90465,7 @@
 	};
 
 /***/ }),
-/* 697 */
+/* 693 */
 /***/ (function(module, exports) {
 
 	"use strict";
@@ -89950,13 +90609,13 @@
 	};
 
 /***/ }),
-/* 698 */
+/* 694 */
 /***/ (function(module, exports, __webpack_require__) {
 
-	!function(t,e){ true?module.exports=e(__webpack_require__(1),__webpack_require__(699),__webpack_require__(700)):"function"==typeof define&&define.amd?define(["react","d3","nvd3"],e):"object"==typeof exports?exports.NVD3Chart=e(require("react"),require("d3"),require("nvd3")):t.NVD3Chart=e(t.React,t.d3,t.nv)}(this,function(t,e,n){return function(t){function e(r){if(n[r])return n[r].exports;var o=n[r]={exports:{},id:r,loaded:!1};return t[r].call(o.exports,o,o.exports,e),o.loaded=!0,o.exports}var n={};return e.m=t,e.c=n,e.p="",e(0)}([function(t,e,n){"use strict";function r(t){return t&&t.__esModule?t:{"default":t}}Object.defineProperty(e,"__esModule",{value:!0});var o=n(1),i=r(o),u=n(2),c=r(u),s=n(17),a=r(s),f=n(21),p=r(f),l=n(22),d=r(l),h=n(25),y=r(h),v=n(48),b=r(v),g=n(55),m=r(g),_=n(56),x=r(_),O=n(57),j=r(O),w=n(58),S=["x","y","type","datum","configure"],P=["width","height"],E="margin",M="containerStyle",k="renderStart",C="renderEnd",D="ready",F=function(t){function e(){return(0,p["default"])(this,e),(0,y["default"])(this,(0,a["default"])(e).apply(this,arguments))}return(0,b["default"])(e,t),(0,d["default"])(e,[{key:"componentDidMount",value:function(){var t=this;j["default"].addGraph(this.renderChart.bind(this),function(e){(0,w.isCallable)(t.props.ready)&&t.props.ready(e,D)})}},{key:"componentDidUpdate",value:function(){this.renderChart()}},{key:"componentWillUnmount",value:function(){this.resizeHandler&&this.resizeHandler.clear()}},{key:"renderChart",value:function(){var t=void 0;switch(this.chart=this.chart&&!this.rendering?this.chart:j["default"].models[this.props.type](),(0,w.isCallable)(this.props.renderStart)&&this.props.renderStart(this.chart,k),this.parsedProps=(0,w.bindFunctions)(this.props,this.props.context),this.chart.x&&this.chart.x((0,w.getValueFunction)(this.parsedProps.x,"x")),this.chart.y&&this.chart.y((0,w.getValueFunction)(this.parsedProps.y,"y")),this.props.margin&&this.chart.margin(this.options(E,w.pick).margin||(0,w.propsByPrefix)("margin",this.props)||{}),this.configureComponents(this.chart,this.options(S.concat(M),w.without)),!this.props.configure||this.props.configure(this.chart),this.selection=x["default"].select(this.refs.svg).datum(this.props.datum).call(this.chart),this.resizeHandler||(this.resizeHandler=j["default"].utils.windowResize(this.chart.update)),this.props.type){case"pieChart":t=this.chart.pie.dispatch;break;case"lineChart":t=this.chart.lines.dispatch;break;default:t=this.chart.dispatch}return t.renderEnd&&t.on("renderEnd",this.renderEnd.bind(this)),this.rendering=!0,this.chart}},{key:"renderEnd",value:function(t){(0,w.isCallable)(this.props.renderEnd)&&this.props.renderEnd(this.chart,C),this.rendering=!1}},{key:"configureComponents",value:function(t,e){for(var n in e){var r=e[n];t&&((0,w.isPlainObject)(r)?this.configureComponents(t[n],r):"function"==typeof t[n]&&t[n](r))}}},{key:"options",value:function(t,e){var n=this.parsedProps.options||this.parsedProps||this.props.chartOptions;return(e=e||w.pick)(n,t)}},{key:"render",value:function(){var t=(0,w.pick)(this.props,P),e=(0,c["default"])({},t,this.props.containerStyle);return m["default"].createElement("div",{ref:"root",className:"nv-chart",style:e},m["default"].createElement("svg",(0,i["default"])({ref:"svg"},t)))}}]),e}(m["default"].Component);e["default"]=F,t.exports=F},function(t,e,n){"use strict";var r=n(2)["default"];e["default"]=r||function(t){for(var e=1;e<arguments.length;e++){var n=arguments[e];for(var r in n)Object.prototype.hasOwnProperty.call(n,r)&&(t[r]=n[r])}return t},e.__esModule=!0},function(t,e,n){t.exports={"default":n(3),__esModule:!0}},function(t,e,n){n(4),t.exports=n(7).Object.assign},function(t,e,n){var r=n(5);r(r.S+r.F,"Object",{assign:n(10)})},function(t,e,n){var r=n(6),o=n(7),i=n(8),u="prototype",c=function(t,e,n){var s,a,f,p=t&c.F,l=t&c.G,d=t&c.S,h=t&c.P,y=t&c.B,v=t&c.W,b=l?o:o[e]||(o[e]={}),g=l?r:d?r[e]:(r[e]||{})[u];l&&(n=e);for(s in n)a=!p&&g&&s in g,a&&s in b||(f=a?g[s]:n[s],b[s]=l&&"function"!=typeof g[s]?n[s]:y&&a?i(f,r):v&&g[s]==f?function(t){var e=function(e){return this instanceof t?new t(e):t(e)};return e[u]=t[u],e}(f):h&&"function"==typeof f?i(Function.call,f):f,h&&((b[u]||(b[u]={}))[s]=f))};c.F=1,c.G=2,c.S=4,c.P=8,c.B=16,c.W=32,t.exports=c},function(t,e){var n=t.exports="undefined"!=typeof window&&window.Math==Math?window:"undefined"!=typeof self&&self.Math==Math?self:Function("return this")();"number"==typeof __g&&(__g=n)},function(t,e){var n=t.exports={version:"1.2.6"};"number"==typeof __e&&(__e=n)},function(t,e,n){var r=n(9);t.exports=function(t,e,n){if(r(t),void 0===e)return t;switch(n){case 1:return function(n){return t.call(e,n)};case 2:return function(n,r){return t.call(e,n,r)};case 3:return function(n,r,o){return t.call(e,n,r,o)}}return function(){return t.apply(e,arguments)}}},function(t,e){t.exports=function(t){if("function"!=typeof t)throw TypeError(t+" is not a function!");return t}},function(t,e,n){var r=n(11),o=n(12),i=n(14);t.exports=n(16)(function(){var t=Object.assign,e={},n={},r=Symbol(),o="abcdefghijklmnopqrst";return e[r]=7,o.split("").forEach(function(t){n[t]=t}),7!=t({},e)[r]||Object.keys(t({},n)).join("")!=o})?function(t,e){for(var n=o(t),u=arguments,c=u.length,s=1,a=r.getKeys,f=r.getSymbols,p=r.isEnum;c>s;)for(var l,d=i(u[s++]),h=f?a(d).concat(f(d)):a(d),y=h.length,v=0;y>v;)p.call(d,l=h[v++])&&(n[l]=d[l]);return n}:Object.assign},function(t,e){var n=Object;t.exports={create:n.create,getProto:n.getPrototypeOf,isEnum:{}.propertyIsEnumerable,getDesc:n.getOwnPropertyDescriptor,setDesc:n.defineProperty,setDescs:n.defineProperties,getKeys:n.keys,getNames:n.getOwnPropertyNames,getSymbols:n.getOwnPropertySymbols,each:[].forEach}},function(t,e,n){var r=n(13);t.exports=function(t){return Object(r(t))}},function(t,e){t.exports=function(t){if(void 0==t)throw TypeError("Can't call method on  "+t);return t}},function(t,e,n){var r=n(15);t.exports=Object("z").propertyIsEnumerable(0)?Object:function(t){return"String"==r(t)?t.split(""):Object(t)}},function(t,e){var n={}.toString;t.exports=function(t){return n.call(t).slice(8,-1)}},function(t,e){t.exports=function(t){try{return!!t()}catch(e){return!0}}},function(t,e,n){t.exports={"default":n(18),__esModule:!0}},function(t,e,n){n(19),t.exports=n(7).Object.getPrototypeOf},function(t,e,n){var r=n(12);n(20)("getPrototypeOf",function(t){return function(e){return t(r(e))}})},function(t,e,n){var r=n(5),o=n(7),i=n(16);t.exports=function(t,e){var n=(o.Object||{})[t]||Object[t],u={};u[t]=e(n),r(r.S+r.F*i(function(){n(1)}),"Object",u)}},function(t,e){"use strict";e["default"]=function(t,e){if(!(t instanceof e))throw new TypeError("Cannot call a class as a function")},e.__esModule=!0},function(t,e,n){"use strict";function r(t){return t&&t.__esModule?t:{"default":t}}var o=n(23),i=r(o);e["default"]=function(){function t(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enumerable=r.enumerable||!1,r.configurable=!0,"value"in r&&(r.writable=!0),(0,i["default"])(t,r.key,r)}}return function(e,n,r){return n&&t(e.prototype,n),r&&t(e,r),e}}(),e.__esModule=!0},function(t,e,n){t.exports={"default":n(24),__esModule:!0}},function(t,e,n){var r=n(11);t.exports=function(t,e,n){return r.setDesc(t,e,n)}},function(t,e,n){"use strict";function r(t){return t&&t.__esModule?t:{"default":t}}var o=n(26),i=r(o);e["default"]=function(t,e){if(!t)throw new ReferenceError("this hasn't been initialised - super() hasn't been called");return!e||"object"!==("undefined"==typeof e?"undefined":(0,i["default"])(e))&&"function"!=typeof e?t:e},e.__esModule=!0},function(t,e,n){"use strict";var r=n(27)["default"];e["default"]=function(t){return t&&t.constructor===r?"symbol":typeof t},e.__esModule=!0},function(t,e,n){t.exports={"default":n(28),__esModule:!0}},function(t,e,n){n(29),n(47),t.exports=n(7).Symbol},function(t,e,n){"use strict";var r=n(11),o=n(6),i=n(30),u=n(31),c=n(5),s=n(32),a=n(16),f=n(35),p=n(36),l=n(38),d=n(37),h=n(39),y=n(41),v=n(42),b=n(43),g=n(44),m=n(40),_=n(34),x=r.getDesc,O=r.setDesc,j=r.create,w=y.get,S=o.Symbol,P=o.JSON,E=P&&P.stringify,M=!1,k=d("_hidden"),C=r.isEnum,D=f("symbol-registry"),F=f("symbols"),N="function"==typeof S,T=Object.prototype,q=u&&a(function(){return 7!=j(O({},"a",{get:function(){return O(this,"a",{value:7}).a}})).a})?function(t,e,n){var r=x(T,e);r&&delete T[e],O(t,e,n),r&&t!==T&&O(T,e,r)}:O,z=function(t){var e=F[t]=j(S.prototype);return e._k=t,u&&M&&q(T,t,{configurable:!0,set:function(e){i(this,k)&&i(this[k],t)&&(this[k][t]=!1),q(this,t,_(1,e))}}),e},A=function(t){return"symbol"==typeof t},V=function(t,e,n){return n&&i(F,e)?(n.enumerable?(i(t,k)&&t[k][e]&&(t[k][e]=!1),n=j(n,{enumerable:_(0,!1)})):(i(t,k)||O(t,k,_(1,{})),t[k][e]=!0),q(t,e,n)):O(t,e,n)},W=function(t,e){g(t);for(var n,r=v(e=m(e)),o=0,i=r.length;i>o;)V(t,n=r[o++],e[n]);return t},B=function(t,e){return void 0===e?j(t):W(j(t),e)},G=function(t){var e=C.call(this,t);return e||!i(this,t)||!i(F,t)||i(this,k)&&this[k][t]?e:!0},H=function(t,e){var n=x(t=m(t),e);return!n||!i(F,e)||i(t,k)&&t[k][e]||(n.enumerable=!0),n},I=function(t){for(var e,n=w(m(t)),r=[],o=0;n.length>o;)i(F,e=n[o++])||e==k||r.push(e);return r},J=function(t){for(var e,n=w(m(t)),r=[],o=0;n.length>o;)i(F,e=n[o++])&&r.push(F[e]);return r},K=function(t){if(void 0!==t&&!A(t)){for(var e,n,r=[t],o=1,i=arguments;i.length>o;)r.push(i[o++]);return e=r[1],"function"==typeof e&&(n=e),(n||!b(e))&&(e=function(t,e){return n&&(e=n.call(this,t,e)),A(e)?void 0:e}),r[1]=e,E.apply(P,r)}},R=a(function(){var t=S();return"[null]"!=E([t])||"{}"!=E({a:t})||"{}"!=E(Object(t))});N||(S=function(){if(A(this))throw TypeError("Symbol is not a constructor");return z(l(arguments.length>0?arguments[0]:void 0))},s(S.prototype,"toString",function(){return this._k}),A=function(t){return t instanceof S},r.create=B,r.isEnum=G,r.getDesc=H,r.setDesc=V,r.setDescs=W,r.getNames=y.get=I,r.getSymbols=J,u&&!n(46)&&s(T,"propertyIsEnumerable",G,!0));var U={"for":function(t){return i(D,t+="")?D[t]:D[t]=S(t)},keyFor:function(t){return h(D,t)},useSetter:function(){M=!0},useSimple:function(){M=!1}};r.each.call("hasInstance,isConcatSpreadable,iterator,match,replace,search,species,split,toPrimitive,toStringTag,unscopables".split(","),function(t){var e=d(t);U[t]=N?e:z(e)}),M=!0,c(c.G+c.W,{Symbol:S}),c(c.S,"Symbol",U),c(c.S+c.F*!N,"Object",{create:B,defineProperty:V,defineProperties:W,getOwnPropertyDescriptor:H,getOwnPropertyNames:I,getOwnPropertySymbols:J}),P&&c(c.S+c.F*(!N||R),"JSON",{stringify:K}),p(S,"Symbol"),p(Math,"Math",!0),p(o.JSON,"JSON",!0)},function(t,e){var n={}.hasOwnProperty;t.exports=function(t,e){return n.call(t,e)}},function(t,e,n){t.exports=!n(16)(function(){return 7!=Object.defineProperty({},"a",{get:function(){return 7}}).a})},function(t,e,n){t.exports=n(33)},function(t,e,n){var r=n(11),o=n(34);t.exports=n(31)?function(t,e,n){return r.setDesc(t,e,o(1,n))}:function(t,e,n){return t[e]=n,t}},function(t,e){t.exports=function(t,e){return{enumerable:!(1&t),configurable:!(2&t),writable:!(4&t),value:e}}},function(t,e,n){var r=n(6),o="__core-js_shared__",i=r[o]||(r[o]={});t.exports=function(t){return i[t]||(i[t]={})}},function(t,e,n){var r=n(11).setDesc,o=n(30),i=n(37)("toStringTag");t.exports=function(t,e,n){t&&!o(t=n?t:t.prototype,i)&&r(t,i,{configurable:!0,value:e})}},function(t,e,n){var r=n(35)("wks"),o=n(38),i=n(6).Symbol;t.exports=function(t){return r[t]||(r[t]=i&&i[t]||(i||o)("Symbol."+t))}},function(t,e){var n=0,r=Math.random();t.exports=function(t){return"Symbol(".concat(void 0===t?"":t,")_",(++n+r).toString(36))}},function(t,e,n){var r=n(11),o=n(40);t.exports=function(t,e){for(var n,i=o(t),u=r.getKeys(i),c=u.length,s=0;c>s;)if(i[n=u[s++]]===e)return n}},function(t,e,n){var r=n(14),o=n(13);t.exports=function(t){return r(o(t))}},function(t,e,n){var r=n(40),o=n(11).getNames,i={}.toString,u="object"==typeof window&&Object.getOwnPropertyNames?Object.getOwnPropertyNames(window):[],c=function(t){try{return o(t)}catch(e){return u.slice()}};t.exports.get=function(t){return u&&"[object Window]"==i.call(t)?c(t):o(r(t))}},function(t,e,n){var r=n(11);t.exports=function(t){var e=r.getKeys(t),n=r.getSymbols;if(n)for(var o,i=n(t),u=r.isEnum,c=0;i.length>c;)u.call(t,o=i[c++])&&e.push(o);return e}},function(t,e,n){var r=n(15);t.exports=Array.isArray||function(t){return"Array"==r(t)}},function(t,e,n){var r=n(45);t.exports=function(t){if(!r(t))throw TypeError(t+" is not an object!");return t}},function(t,e){t.exports=function(t){return"object"==typeof t?null!==t:"function"==typeof t}},function(t,e){t.exports=!0},function(t,e){},function(t,e,n){"use strict";var r=n(49)["default"],o=n(51)["default"];e["default"]=function(t,e){if("function"!=typeof e&&null!==e)throw new TypeError("Super expression must either be null or a function, not "+typeof e);t.prototype=r(e&&e.prototype,{constructor:{value:t,enumerable:!1,writable:!0,configurable:!0}}),e&&(o?o(t,e):t.__proto__=e)},e.__esModule=!0},function(t,e,n){t.exports={"default":n(50),__esModule:!0}},function(t,e,n){var r=n(11);t.exports=function(t,e){return r.create(t,e)}},function(t,e,n){t.exports={"default":n(52),__esModule:!0}},function(t,e,n){n(53),t.exports=n(7).Object.setPrototypeOf},function(t,e,n){var r=n(5);r(r.S,"Object",{setPrototypeOf:n(54).set})},function(t,e,n){var r=n(11).getDesc,o=n(45),i=n(44),u=function(t,e){if(i(t),!o(e)&&null!==e)throw TypeError(e+": can't set as prototype!")};t.exports={set:Object.setPrototypeOf||("__proto__"in{}?function(t,e,o){try{o=n(8)(Function.call,r(Object.prototype,"__proto__").set,2),o(t,[]),e=!(t instanceof Array)}catch(i){e=!0}return function(t,n){return u(t,n),e?t.__proto__=n:o(t,n),t}}({},!1):void 0),check:u}},function(e,n){e.exports=t},function(t,n){t.exports=e},function(t,e){t.exports=n},function(t,e,n){"use strict";function r(t){return t&&t.__esModule?t:{"default":t}}function o(t,e){return t.indexOf(e)>=0}function i(t){return function(){return!t.apply(this,arguments)}}function u(t,e,n){for(var r={},o=(0,m["default"])(t),i=0,u=o.length;u>i;i++){var c=o[i],s=t[c];n(e,c)&&(r[c]=s)}return r}function c(t,e){return u(t,e,o)}function s(t,e){return u(t,e,i(o))}function a(t){if("object"==("undefined"==typeof t?"undefined":(0,b["default"])(t))&&null!==t){if("function"==typeof y["default"]){var e=(0,y["default"])(t);return e===Object.prototype||null===e}return"[object Object]"==Object.prototype.toString.call(t)}return!1}function f(t,e){var n,r,o;n=Array.isArray(t)?[]:{};for(o in t)r=t[o],null!=r&&("object"===("undefined"==typeof r?"undefined":(0,b["default"])(r))&&null!==r&&"function"!==r.type?n[o]=f(r,e):"function"===r.type?n[o]=e[r.name]:n[o]=r);return n}function p(t,e){return"function"==typeof t?t:function(n){return"undefined"!=typeof n[t]?n[t]:n[e]}}function l(t,e){return console.warn("Set margin with prefixes is deprecated use an object instead"),t+="-",(0,m["default"])(e).reduce(function(n,r){return r.substr(0,t.length)===t&&(n[r.replace(t,"")]=e[r]),n},{})}function d(t){return t&&"function"==typeof t}Object.defineProperty(e,"__esModule",{value:!0}),e.includes=o,e.negate=i,e.filterObject=u,e.pick=c,e.without=s,e.isPlainObject=a,e.bindFunctions=f,e.getValueFunction=p,e.propsByPrefix=l,e.isCallable=d;var h=n(17),y=r(h),v=n(26),b=r(v),g=n(59),m=r(g)},function(t,e,n){t.exports={"default":n(60),__esModule:!0}},function(t,e,n){n(61),t.exports=n(7).Object.keys},function(t,e,n){var r=n(12);n(20)("keys",function(t){return function(e){return t(r(e))}})}])});
+	!function(t,e){ true?module.exports=e(__webpack_require__(1),__webpack_require__(695),__webpack_require__(696)):"function"==typeof define&&define.amd?define(["react","d3","nvd3"],e):"object"==typeof exports?exports.NVD3Chart=e(require("react"),require("d3"),require("nvd3")):t.NVD3Chart=e(t.React,t.d3,t.nv)}(this,function(t,e,n){return function(t){function e(r){if(n[r])return n[r].exports;var o=n[r]={exports:{},id:r,loaded:!1};return t[r].call(o.exports,o,o.exports,e),o.loaded=!0,o.exports}var n={};return e.m=t,e.c=n,e.p="",e(0)}([function(t,e,n){"use strict";function r(t){return t&&t.__esModule?t:{"default":t}}Object.defineProperty(e,"__esModule",{value:!0});var o=n(1),i=r(o),u=n(2),c=r(u),s=n(17),a=r(s),f=n(21),p=r(f),l=n(22),d=r(l),h=n(25),y=r(h),v=n(48),b=r(v),g=n(55),m=r(g),_=n(56),x=r(_),O=n(57),j=r(O),w=n(58),S=["x","y","type","datum","configure"],P=["width","height"],E="margin",M="containerStyle",k="renderStart",C="renderEnd",D="ready",F=function(t){function e(){return(0,p["default"])(this,e),(0,y["default"])(this,(0,a["default"])(e).apply(this,arguments))}return(0,b["default"])(e,t),(0,d["default"])(e,[{key:"componentDidMount",value:function(){var t=this;j["default"].addGraph(this.renderChart.bind(this),function(e){(0,w.isCallable)(t.props.ready)&&t.props.ready(e,D)})}},{key:"componentDidUpdate",value:function(){this.renderChart()}},{key:"componentWillUnmount",value:function(){this.resizeHandler&&this.resizeHandler.clear()}},{key:"renderChart",value:function(){var t=void 0;switch(this.chart=this.chart&&!this.rendering?this.chart:j["default"].models[this.props.type](),(0,w.isCallable)(this.props.renderStart)&&this.props.renderStart(this.chart,k),this.parsedProps=(0,w.bindFunctions)(this.props,this.props.context),this.chart.x&&this.chart.x((0,w.getValueFunction)(this.parsedProps.x,"x")),this.chart.y&&this.chart.y((0,w.getValueFunction)(this.parsedProps.y,"y")),this.props.margin&&this.chart.margin(this.options(E,w.pick).margin||(0,w.propsByPrefix)("margin",this.props)||{}),this.configureComponents(this.chart,this.options(S.concat(M),w.without)),!this.props.configure||this.props.configure(this.chart),this.selection=x["default"].select(this.refs.svg).datum(this.props.datum).call(this.chart),this.resizeHandler||(this.resizeHandler=j["default"].utils.windowResize(this.chart.update)),this.props.type){case"pieChart":t=this.chart.pie.dispatch;break;case"lineChart":t=this.chart.lines.dispatch;break;default:t=this.chart.dispatch}return t.renderEnd&&t.on("renderEnd",this.renderEnd.bind(this)),this.rendering=!0,this.chart}},{key:"renderEnd",value:function(t){(0,w.isCallable)(this.props.renderEnd)&&this.props.renderEnd(this.chart,C),this.rendering=!1}},{key:"configureComponents",value:function(t,e){for(var n in e){var r=e[n];t&&((0,w.isPlainObject)(r)?this.configureComponents(t[n],r):"function"==typeof t[n]&&t[n](r))}}},{key:"options",value:function(t,e){var n=this.parsedProps.options||this.parsedProps||this.props.chartOptions;return(e=e||w.pick)(n,t)}},{key:"render",value:function(){var t=(0,w.pick)(this.props,P),e=(0,c["default"])({},t,this.props.containerStyle);return m["default"].createElement("div",{ref:"root",className:"nv-chart",style:e},m["default"].createElement("svg",(0,i["default"])({ref:"svg"},t)))}}]),e}(m["default"].Component);e["default"]=F,t.exports=F},function(t,e,n){"use strict";var r=n(2)["default"];e["default"]=r||function(t){for(var e=1;e<arguments.length;e++){var n=arguments[e];for(var r in n)Object.prototype.hasOwnProperty.call(n,r)&&(t[r]=n[r])}return t},e.__esModule=!0},function(t,e,n){t.exports={"default":n(3),__esModule:!0}},function(t,e,n){n(4),t.exports=n(7).Object.assign},function(t,e,n){var r=n(5);r(r.S+r.F,"Object",{assign:n(10)})},function(t,e,n){var r=n(6),o=n(7),i=n(8),u="prototype",c=function(t,e,n){var s,a,f,p=t&c.F,l=t&c.G,d=t&c.S,h=t&c.P,y=t&c.B,v=t&c.W,b=l?o:o[e]||(o[e]={}),g=l?r:d?r[e]:(r[e]||{})[u];l&&(n=e);for(s in n)a=!p&&g&&s in g,a&&s in b||(f=a?g[s]:n[s],b[s]=l&&"function"!=typeof g[s]?n[s]:y&&a?i(f,r):v&&g[s]==f?function(t){var e=function(e){return this instanceof t?new t(e):t(e)};return e[u]=t[u],e}(f):h&&"function"==typeof f?i(Function.call,f):f,h&&((b[u]||(b[u]={}))[s]=f))};c.F=1,c.G=2,c.S=4,c.P=8,c.B=16,c.W=32,t.exports=c},function(t,e){var n=t.exports="undefined"!=typeof window&&window.Math==Math?window:"undefined"!=typeof self&&self.Math==Math?self:Function("return this")();"number"==typeof __g&&(__g=n)},function(t,e){var n=t.exports={version:"1.2.6"};"number"==typeof __e&&(__e=n)},function(t,e,n){var r=n(9);t.exports=function(t,e,n){if(r(t),void 0===e)return t;switch(n){case 1:return function(n){return t.call(e,n)};case 2:return function(n,r){return t.call(e,n,r)};case 3:return function(n,r,o){return t.call(e,n,r,o)}}return function(){return t.apply(e,arguments)}}},function(t,e){t.exports=function(t){if("function"!=typeof t)throw TypeError(t+" is not a function!");return t}},function(t,e,n){var r=n(11),o=n(12),i=n(14);t.exports=n(16)(function(){var t=Object.assign,e={},n={},r=Symbol(),o="abcdefghijklmnopqrst";return e[r]=7,o.split("").forEach(function(t){n[t]=t}),7!=t({},e)[r]||Object.keys(t({},n)).join("")!=o})?function(t,e){for(var n=o(t),u=arguments,c=u.length,s=1,a=r.getKeys,f=r.getSymbols,p=r.isEnum;c>s;)for(var l,d=i(u[s++]),h=f?a(d).concat(f(d)):a(d),y=h.length,v=0;y>v;)p.call(d,l=h[v++])&&(n[l]=d[l]);return n}:Object.assign},function(t,e){var n=Object;t.exports={create:n.create,getProto:n.getPrototypeOf,isEnum:{}.propertyIsEnumerable,getDesc:n.getOwnPropertyDescriptor,setDesc:n.defineProperty,setDescs:n.defineProperties,getKeys:n.keys,getNames:n.getOwnPropertyNames,getSymbols:n.getOwnPropertySymbols,each:[].forEach}},function(t,e,n){var r=n(13);t.exports=function(t){return Object(r(t))}},function(t,e){t.exports=function(t){if(void 0==t)throw TypeError("Can't call method on  "+t);return t}},function(t,e,n){var r=n(15);t.exports=Object("z").propertyIsEnumerable(0)?Object:function(t){return"String"==r(t)?t.split(""):Object(t)}},function(t,e){var n={}.toString;t.exports=function(t){return n.call(t).slice(8,-1)}},function(t,e){t.exports=function(t){try{return!!t()}catch(e){return!0}}},function(t,e,n){t.exports={"default":n(18),__esModule:!0}},function(t,e,n){n(19),t.exports=n(7).Object.getPrototypeOf},function(t,e,n){var r=n(12);n(20)("getPrototypeOf",function(t){return function(e){return t(r(e))}})},function(t,e,n){var r=n(5),o=n(7),i=n(16);t.exports=function(t,e){var n=(o.Object||{})[t]||Object[t],u={};u[t]=e(n),r(r.S+r.F*i(function(){n(1)}),"Object",u)}},function(t,e){"use strict";e["default"]=function(t,e){if(!(t instanceof e))throw new TypeError("Cannot call a class as a function")},e.__esModule=!0},function(t,e,n){"use strict";function r(t){return t&&t.__esModule?t:{"default":t}}var o=n(23),i=r(o);e["default"]=function(){function t(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enumerable=r.enumerable||!1,r.configurable=!0,"value"in r&&(r.writable=!0),(0,i["default"])(t,r.key,r)}}return function(e,n,r){return n&&t(e.prototype,n),r&&t(e,r),e}}(),e.__esModule=!0},function(t,e,n){t.exports={"default":n(24),__esModule:!0}},function(t,e,n){var r=n(11);t.exports=function(t,e,n){return r.setDesc(t,e,n)}},function(t,e,n){"use strict";function r(t){return t&&t.__esModule?t:{"default":t}}var o=n(26),i=r(o);e["default"]=function(t,e){if(!t)throw new ReferenceError("this hasn't been initialised - super() hasn't been called");return!e||"object"!==("undefined"==typeof e?"undefined":(0,i["default"])(e))&&"function"!=typeof e?t:e},e.__esModule=!0},function(t,e,n){"use strict";var r=n(27)["default"];e["default"]=function(t){return t&&t.constructor===r?"symbol":typeof t},e.__esModule=!0},function(t,e,n){t.exports={"default":n(28),__esModule:!0}},function(t,e,n){n(29),n(47),t.exports=n(7).Symbol},function(t,e,n){"use strict";var r=n(11),o=n(6),i=n(30),u=n(31),c=n(5),s=n(32),a=n(16),f=n(35),p=n(36),l=n(38),d=n(37),h=n(39),y=n(41),v=n(42),b=n(43),g=n(44),m=n(40),_=n(34),x=r.getDesc,O=r.setDesc,j=r.create,w=y.get,S=o.Symbol,P=o.JSON,E=P&&P.stringify,M=!1,k=d("_hidden"),C=r.isEnum,D=f("symbol-registry"),F=f("symbols"),N="function"==typeof S,T=Object.prototype,q=u&&a(function(){return 7!=j(O({},"a",{get:function(){return O(this,"a",{value:7}).a}})).a})?function(t,e,n){var r=x(T,e);r&&delete T[e],O(t,e,n),r&&t!==T&&O(T,e,r)}:O,z=function(t){var e=F[t]=j(S.prototype);return e._k=t,u&&M&&q(T,t,{configurable:!0,set:function(e){i(this,k)&&i(this[k],t)&&(this[k][t]=!1),q(this,t,_(1,e))}}),e},A=function(t){return"symbol"==typeof t},V=function(t,e,n){return n&&i(F,e)?(n.enumerable?(i(t,k)&&t[k][e]&&(t[k][e]=!1),n=j(n,{enumerable:_(0,!1)})):(i(t,k)||O(t,k,_(1,{})),t[k][e]=!0),q(t,e,n)):O(t,e,n)},W=function(t,e){g(t);for(var n,r=v(e=m(e)),o=0,i=r.length;i>o;)V(t,n=r[o++],e[n]);return t},B=function(t,e){return void 0===e?j(t):W(j(t),e)},G=function(t){var e=C.call(this,t);return e||!i(this,t)||!i(F,t)||i(this,k)&&this[k][t]?e:!0},H=function(t,e){var n=x(t=m(t),e);return!n||!i(F,e)||i(t,k)&&t[k][e]||(n.enumerable=!0),n},I=function(t){for(var e,n=w(m(t)),r=[],o=0;n.length>o;)i(F,e=n[o++])||e==k||r.push(e);return r},J=function(t){for(var e,n=w(m(t)),r=[],o=0;n.length>o;)i(F,e=n[o++])&&r.push(F[e]);return r},K=function(t){if(void 0!==t&&!A(t)){for(var e,n,r=[t],o=1,i=arguments;i.length>o;)r.push(i[o++]);return e=r[1],"function"==typeof e&&(n=e),(n||!b(e))&&(e=function(t,e){return n&&(e=n.call(this,t,e)),A(e)?void 0:e}),r[1]=e,E.apply(P,r)}},R=a(function(){var t=S();return"[null]"!=E([t])||"{}"!=E({a:t})||"{}"!=E(Object(t))});N||(S=function(){if(A(this))throw TypeError("Symbol is not a constructor");return z(l(arguments.length>0?arguments[0]:void 0))},s(S.prototype,"toString",function(){return this._k}),A=function(t){return t instanceof S},r.create=B,r.isEnum=G,r.getDesc=H,r.setDesc=V,r.setDescs=W,r.getNames=y.get=I,r.getSymbols=J,u&&!n(46)&&s(T,"propertyIsEnumerable",G,!0));var U={"for":function(t){return i(D,t+="")?D[t]:D[t]=S(t)},keyFor:function(t){return h(D,t)},useSetter:function(){M=!0},useSimple:function(){M=!1}};r.each.call("hasInstance,isConcatSpreadable,iterator,match,replace,search,species,split,toPrimitive,toStringTag,unscopables".split(","),function(t){var e=d(t);U[t]=N?e:z(e)}),M=!0,c(c.G+c.W,{Symbol:S}),c(c.S,"Symbol",U),c(c.S+c.F*!N,"Object",{create:B,defineProperty:V,defineProperties:W,getOwnPropertyDescriptor:H,getOwnPropertyNames:I,getOwnPropertySymbols:J}),P&&c(c.S+c.F*(!N||R),"JSON",{stringify:K}),p(S,"Symbol"),p(Math,"Math",!0),p(o.JSON,"JSON",!0)},function(t,e){var n={}.hasOwnProperty;t.exports=function(t,e){return n.call(t,e)}},function(t,e,n){t.exports=!n(16)(function(){return 7!=Object.defineProperty({},"a",{get:function(){return 7}}).a})},function(t,e,n){t.exports=n(33)},function(t,e,n){var r=n(11),o=n(34);t.exports=n(31)?function(t,e,n){return r.setDesc(t,e,o(1,n))}:function(t,e,n){return t[e]=n,t}},function(t,e){t.exports=function(t,e){return{enumerable:!(1&t),configurable:!(2&t),writable:!(4&t),value:e}}},function(t,e,n){var r=n(6),o="__core-js_shared__",i=r[o]||(r[o]={});t.exports=function(t){return i[t]||(i[t]={})}},function(t,e,n){var r=n(11).setDesc,o=n(30),i=n(37)("toStringTag");t.exports=function(t,e,n){t&&!o(t=n?t:t.prototype,i)&&r(t,i,{configurable:!0,value:e})}},function(t,e,n){var r=n(35)("wks"),o=n(38),i=n(6).Symbol;t.exports=function(t){return r[t]||(r[t]=i&&i[t]||(i||o)("Symbol."+t))}},function(t,e){var n=0,r=Math.random();t.exports=function(t){return"Symbol(".concat(void 0===t?"":t,")_",(++n+r).toString(36))}},function(t,e,n){var r=n(11),o=n(40);t.exports=function(t,e){for(var n,i=o(t),u=r.getKeys(i),c=u.length,s=0;c>s;)if(i[n=u[s++]]===e)return n}},function(t,e,n){var r=n(14),o=n(13);t.exports=function(t){return r(o(t))}},function(t,e,n){var r=n(40),o=n(11).getNames,i={}.toString,u="object"==typeof window&&Object.getOwnPropertyNames?Object.getOwnPropertyNames(window):[],c=function(t){try{return o(t)}catch(e){return u.slice()}};t.exports.get=function(t){return u&&"[object Window]"==i.call(t)?c(t):o(r(t))}},function(t,e,n){var r=n(11);t.exports=function(t){var e=r.getKeys(t),n=r.getSymbols;if(n)for(var o,i=n(t),u=r.isEnum,c=0;i.length>c;)u.call(t,o=i[c++])&&e.push(o);return e}},function(t,e,n){var r=n(15);t.exports=Array.isArray||function(t){return"Array"==r(t)}},function(t,e,n){var r=n(45);t.exports=function(t){if(!r(t))throw TypeError(t+" is not an object!");return t}},function(t,e){t.exports=function(t){return"object"==typeof t?null!==t:"function"==typeof t}},function(t,e){t.exports=!0},function(t,e){},function(t,e,n){"use strict";var r=n(49)["default"],o=n(51)["default"];e["default"]=function(t,e){if("function"!=typeof e&&null!==e)throw new TypeError("Super expression must either be null or a function, not "+typeof e);t.prototype=r(e&&e.prototype,{constructor:{value:t,enumerable:!1,writable:!0,configurable:!0}}),e&&(o?o(t,e):t.__proto__=e)},e.__esModule=!0},function(t,e,n){t.exports={"default":n(50),__esModule:!0}},function(t,e,n){var r=n(11);t.exports=function(t,e){return r.create(t,e)}},function(t,e,n){t.exports={"default":n(52),__esModule:!0}},function(t,e,n){n(53),t.exports=n(7).Object.setPrototypeOf},function(t,e,n){var r=n(5);r(r.S,"Object",{setPrototypeOf:n(54).set})},function(t,e,n){var r=n(11).getDesc,o=n(45),i=n(44),u=function(t,e){if(i(t),!o(e)&&null!==e)throw TypeError(e+": can't set as prototype!")};t.exports={set:Object.setPrototypeOf||("__proto__"in{}?function(t,e,o){try{o=n(8)(Function.call,r(Object.prototype,"__proto__").set,2),o(t,[]),e=!(t instanceof Array)}catch(i){e=!0}return function(t,n){return u(t,n),e?t.__proto__=n:o(t,n),t}}({},!1):void 0),check:u}},function(e,n){e.exports=t},function(t,n){t.exports=e},function(t,e){t.exports=n},function(t,e,n){"use strict";function r(t){return t&&t.__esModule?t:{"default":t}}function o(t,e){return t.indexOf(e)>=0}function i(t){return function(){return!t.apply(this,arguments)}}function u(t,e,n){for(var r={},o=(0,m["default"])(t),i=0,u=o.length;u>i;i++){var c=o[i],s=t[c];n(e,c)&&(r[c]=s)}return r}function c(t,e){return u(t,e,o)}function s(t,e){return u(t,e,i(o))}function a(t){if("object"==("undefined"==typeof t?"undefined":(0,b["default"])(t))&&null!==t){if("function"==typeof y["default"]){var e=(0,y["default"])(t);return e===Object.prototype||null===e}return"[object Object]"==Object.prototype.toString.call(t)}return!1}function f(t,e){var n,r,o;n=Array.isArray(t)?[]:{};for(o in t)r=t[o],null!=r&&("object"===("undefined"==typeof r?"undefined":(0,b["default"])(r))&&null!==r&&"function"!==r.type?n[o]=f(r,e):"function"===r.type?n[o]=e[r.name]:n[o]=r);return n}function p(t,e){return"function"==typeof t?t:function(n){return"undefined"!=typeof n[t]?n[t]:n[e]}}function l(t,e){return console.warn("Set margin with prefixes is deprecated use an object instead"),t+="-",(0,m["default"])(e).reduce(function(n,r){return r.substr(0,t.length)===t&&(n[r.replace(t,"")]=e[r]),n},{})}function d(t){return t&&"function"==typeof t}Object.defineProperty(e,"__esModule",{value:!0}),e.includes=o,e.negate=i,e.filterObject=u,e.pick=c,e.without=s,e.isPlainObject=a,e.bindFunctions=f,e.getValueFunction=p,e.propsByPrefix=l,e.isCallable=d;var h=n(17),y=r(h),v=n(26),b=r(v),g=n(59),m=r(g)},function(t,e,n){t.exports={"default":n(60),__esModule:!0}},function(t,e,n){n(61),t.exports=n(7).Object.keys},function(t,e,n){var r=n(12);n(20)("keys",function(t){return function(e){return t(r(e))}})}])});
 
 /***/ }),
-/* 699 */
+/* 695 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_RESULT__;!function() {
@@ -99515,7 +100174,7 @@
 	}();
 
 /***/ }),
-/* 700 */
+/* 696 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	/* nvd3 version 1.8.6 (https://github.com/novus/nvd3) 2017-08-23 */
@@ -99535,7 +100194,7 @@
 
 	// Node/CommonJS - require D3
 	if (typeof(module) !== 'undefined' && typeof(exports) !== 'undefined' && typeof(d3) == 'undefined') {
-	    d3 = __webpack_require__(699);
+	    d3 = __webpack_require__(695);
 	}
 
 	nv.dispatch = d3.dispatch('render_start', 'render_end');
@@ -115192,7 +115851,7 @@
 	//# sourceMappingURL=nv.d3.js.map
 
 /***/ }),
-/* 701 */
+/* 697 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -115308,7 +115967,7 @@
 	exports.default = ContactPage;
 
 /***/ }),
-/* 702 */
+/* 698 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -115338,7 +115997,7 @@
 	exports.default = AboutPage;
 
 /***/ }),
-/* 703 */
+/* 699 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -115353,13 +116012,13 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _Tabs = __webpack_require__(704);
+	var _Tabs = __webpack_require__(700);
 
 	var _LoginPage = __webpack_require__(676);
 
 	var _LoginPage2 = _interopRequireDefault(_LoginPage);
 
-	var _SignupPage = __webpack_require__(709);
+	var _SignupPage = __webpack_require__(705);
 
 	var _SignupPage2 = _interopRequireDefault(_SignupPage);
 
@@ -115447,7 +116106,7 @@
 	exports.default = SignLoginPage;
 
 /***/ }),
-/* 704 */
+/* 700 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -115457,11 +116116,11 @@
 	});
 	exports.default = exports.Tabs = exports.Tab = undefined;
 
-	var _Tab2 = __webpack_require__(705);
+	var _Tab2 = __webpack_require__(701);
 
 	var _Tab3 = _interopRequireDefault(_Tab2);
 
-	var _Tabs2 = __webpack_require__(706);
+	var _Tabs2 = __webpack_require__(702);
 
 	var _Tabs3 = _interopRequireDefault(_Tabs2);
 
@@ -115472,7 +116131,7 @@
 	exports.default = _Tabs3.default;
 
 /***/ }),
-/* 705 */
+/* 701 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {'use strict';
@@ -115689,7 +116348,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(3)))
 
 /***/ }),
-/* 706 */
+/* 702 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {'use strict';
@@ -115738,11 +116397,11 @@
 
 	var _warning2 = _interopRequireDefault(_warning);
 
-	var _TabTemplate = __webpack_require__(707);
+	var _TabTemplate = __webpack_require__(703);
 
 	var _TabTemplate2 = _interopRequireDefault(_TabTemplate);
 
-	var _InkBar = __webpack_require__(708);
+	var _InkBar = __webpack_require__(704);
 
 	var _InkBar2 = _interopRequireDefault(_InkBar);
 
@@ -116010,7 +116669,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(3)))
 
 /***/ }),
-/* 707 */
+/* 703 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {'use strict';
@@ -116063,7 +116722,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(3)))
 
 /***/ }),
-/* 708 */
+/* 704 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {'use strict';
@@ -116163,7 +116822,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(3)))
 
 /***/ }),
-/* 709 */
+/* 705 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -116314,7 +116973,7 @@
 	exports.default = SignUpPage;
 
 /***/ }),
-/* 710 */
+/* 706 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
