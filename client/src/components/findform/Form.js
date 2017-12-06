@@ -42,14 +42,29 @@ class FindForm extends Component {
     this.handleFormSubmit = event => {
       // Stops the page from refreshing:
       event.preventDefault();
-      // Checks whether all date and charge fields have been filled out. If they have:
-      if (this.state.month && this.state.day && this.state.year && this.state.charge) {
-          // We call the API with both parameters:
-          this.searchLogs("?bookdate=" + this.state.year + "-" + this.state.month + "-" + this.state.day + "T00:00:00.000" + "&charge1=" + this.state.charge );
-          // If we have the date fields but no charge, we call the API with the date:
-      } else if (this.state.month && this.state.day && this.state.year && !this.state.charge) {
-          this.searchLogs("?bookdate=" + this.state.year + "-" + this.state.month + "-" + this.state.day + "T00:00:00.000");
+      // Checks whether none of the date and charge fields have been filled out. If they all contain the default info:
+      // We give the user an error:
+      if (this.state.month==="Month" && this.state.day==="Day" && this.state.year==="Year" && this.state.charge==="Charge") {
+        console.log("Please input some data.")
+      // Else if they put in a date but no charge:
+      } else if (this.state.month && this.state.day && this.state.year && this.state.charge==="Charge") {
+        // We search for all crimes every recorded for that charge:
+        this.searchLogs("?bookdate=" + this.state.year + "-" + this.state.month + "-" + this.state.day + "T00:00:00.000");
+        console.log("Getting all the arrests on that date.");
+      // Else if they didn't input one of the date fields:
+      } else if (this.state.month==="Month" || this.state.day==="Day" || this.state.year==="Year" && this.state.charge) {
+        // We search for that crime between 1 a.m. Jan. 1, 2000 and 1 a.m. Jan. 1, 2016:
+        this.searchLogs("?where=bookdate between '2015-01-01T01:00:00.000' and '2016-01-16T01:00:00.000'" + "&charge1=" + this.state.charge);
+        console.log("All records from 1 a.m. Jan. 1, 2000 to 1 a.m. jan. 1, 2016.");
+      // Else if they filled in all the fields:
+      } else if (this.state.month && this.state.day && this.state.year && this.state.charge) {
+          // We call the API with all parameters:
+          this.searchLogs("?bookdate=" + this.state.year + "-" + this.state.month + "-" + this.state.day + "T00:00:00.000" + "&charge1=" + this.state.charge);
+          console.log("Searching for specific charges on a specific date.")
       }
+      //https://data.cityofchicago.org/resource/6zsd-86xi.json?$where=date between '2015-01-10T12:00:00' and '2015-01-10T14:00:00'
+      // THIS WORKS! https://opendata.miamidade.gov/resource/k7xd-qgzt.json?$where=bookdate between '2015-01-10T12:00:00.000' and '2016-01-10T14:00:00.000'
+
       this.setState({
           result: [],
           month: "Month",

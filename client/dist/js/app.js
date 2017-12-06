@@ -48029,7 +48029,7 @@
 	"use strict";
 
 	Object.defineProperty(exports, "__esModule", {
-	    value: true
+	  value: true
 	});
 
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -48083,215 +48083,230 @@
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 	var FindForm = function (_Component) {
-	    _inherits(FindForm, _Component);
+	  _inherits(FindForm, _Component);
 
-	    function FindForm(props) {
-	        _classCallCheck(this, FindForm);
+	  function FindForm(props) {
+	    _classCallCheck(this, FindForm);
 
-	        var _this = _possibleConstructorReturn(this, (FindForm.__proto__ || Object.getPrototypeOf(FindForm)).call(this, props));
+	    var _this = _possibleConstructorReturn(this, (FindForm.__proto__ || Object.getPrototypeOf(FindForm)).call(this, props));
 
-	        _this.state = {
-	            result: [],
-	            month: "Month",
-	            day: "Day",
-	            year: "Year",
-	            charge: "Charge"
+	    _this.state = {
+	      result: [],
+	      month: "Month",
+	      day: "Day",
+	      year: "Year",
+	      charge: "Charge"
 
-	            // This gets user input for charges and sends it to <ChargesInput />:
-	        };_this.handleInputChange = function (event, index, value, name) {
+	      // This gets user input for charges and sends it to <ChargesInput />:
+	    };_this.handleInputChange = function (event, index, value, name) {
 
-	            console.log(name);
+	      console.log(name);
 
-	            console.log(value);
+	      console.log(value);
 
-	            _this.setState(_defineProperty({}, name, value));
-	        };
+	      _this.setState(_defineProperty({}, name, value));
+	    };
 
-	        // This is for the submit button:
-	        _this.handleFormSubmit = function (event) {
-	            // Stops the page from refreshing:
-	            event.preventDefault();
-	            // Checks whether all date and charge fields have been filled out. If they have:
-	            if (_this.state.month && _this.state.day && _this.state.year && _this.state.charge) {
-	                // We call the API with both parameters:
-	                _this.searchLogs("?bookdate=" + _this.state.year + "-" + _this.state.month + "-" + _this.state.day + "T00:00:00.000" + "&charge1=" + _this.state.charge);
-	                // If we have the date fields but no charge, we call the API with the date:
-	            } else if (_this.state.month && _this.state.day && _this.state.year && !_this.state.charge) {
-	                _this.searchLogs("?bookdate=" + _this.state.year + "-" + _this.state.month + "-" + _this.state.day + "T00:00:00.000");
-	            }
-	            _this.setState({
-	                result: [],
-	                month: "Month",
-	                day: "Day",
-	                year: "Year",
-	                charge: "Charge"
-	            });
-	        };
+	    // This is for the submit button:
+	    _this.handleFormSubmit = function (event) {
+	      // Stops the page from refreshing:
+	      event.preventDefault();
+	      // Checks whether none of the date and charge fields have been filled out. If they all contain the default info:
+	      // We give the user an error:
+	      if (_this.state.month === "Month" && _this.state.day === "Day" && _this.state.year === "Year" && _this.state.charge === "Charge") {
+	        console.log("Please input some data.");
+	        // Else if they put in a date but no charge:
+	      } else if (_this.state.month && _this.state.day && _this.state.year && _this.state.charge === "Charge") {
+	        // We search for all crimes every recorded for that charge:
+	        _this.searchLogs("?bookdate=" + _this.state.year + "-" + _this.state.month + "-" + _this.state.day + "T00:00:00.000");
+	        console.log("Getting all the arrests on that date.");
+	        // Else if they didn't input one of the date fields:
+	      } else if (_this.state.month === "Month" || _this.state.day === "Day" || _this.state.year === "Year" && _this.state.charge) {
+	        // We search for that crime between 1 a.m. Jan. 1, 2000 and 1 a.m. Jan. 1, 2016:
+	        _this.searchLogs("?where=bookdate between '2015-01-01T01:00:00.000' and '2016-01-16T01:00:00.000'" + "&charge1=" + _this.state.charge);
+	        console.log("All records from 1 a.m. Jan. 1, 2000 to 1 a.m. jan. 1, 2016.");
+	        // Else if they filled in all the fields:
+	      } else if (_this.state.month && _this.state.day && _this.state.year && _this.state.charge) {
+	        // We call the API with all parameters:
+	        _this.searchLogs("?bookdate=" + _this.state.year + "-" + _this.state.month + "-" + _this.state.day + "T00:00:00.000" + "&charge1=" + _this.state.charge);
+	        console.log("Searching for specific charges on a specific date.");
+	      }
+	      //https://data.cityofchicago.org/resource/6zsd-86xi.json?$where=date between '2015-01-10T12:00:00' and '2015-01-10T14:00:00'
+	      // THIS WORKS! https://opendata.miamidade.gov/resource/k7xd-qgzt.json?$where=bookdate between '2015-01-10T12:00:00.000' and '2016-01-10T14:00:00.000'
 
-	        _this.searchLogs = function (query) {
-	            _findAPI2.default.search(query).then(function (res) {
-	                return _this.setState({ result: res.data });
-	            }).catch(function (err) {
-	                return console.log(err);
-	            });
-	        };
+	      _this.setState({
+	        result: [],
+	        month: "Month",
+	        day: "Day",
+	        year: "Year",
+	        charge: "Charge"
+	      });
+	    };
 
-	        // CODE FOR SENTENCERENDER:
-	        // Splits the defendant value and assigns them to vars firstName and lastName.
-	        _this.nameInterpreter = function (defendant) {
-	            var fullName = defendant;
-	            var lowerCaseName = fullName.toLowerCase();
-	            var splitName = lowerCaseName.split(",");
-	            var lowerCaseFirst = splitName[1].trim();
-	            var lowerCaseLast = splitName[0].trim();
-	            var firstName = lowerCaseFirst.charAt(0).toUpperCase() + lowerCaseFirst.substr(1);
-	            var lastName = lowerCaseLast.charAt(0).toUpperCase() + lowerCaseLast.substr(1);
-	            var interpretedFullName = firstName + " " + lastName;
-	            return interpretedFullName;
-	        };
+	    _this.searchLogs = function (query) {
+	      _findAPI2.default.search(query).then(function (res) {
+	        return _this.setState({ result: res.data });
+	      }).catch(function (err) {
+	        return console.log(err);
+	      });
+	    };
 
-	        // Presents city name with proper capitalization:
-	        _this.cityInterpreter = function (uninterpretedCity) {
-	            var original = uninterpretedCity;
-	            var lowerCaseCity = original.toLowerCase();
-	            var splitCity = lowerCaseCity.split(" ");
-	            var interpretedWord = [];
-	            var interpretedCity = [];
-	            for (var i = 0; i < splitCity.length; i++) {
-	                interpretedWord = splitCity[i].charAt(0).toUpperCase() + splitCity[i].substr(1, splitCity[i].length - 1);
-	                interpretedCity.push(interpretedWord);
-	            }
-	            interpretedCity = interpretedCity.toString();
-	            interpretedCity = interpretedCity.replace(",", " ");
-	            return interpretedCity;
-	        };
+	    // CODE FOR SENTENCERENDER:
+	    // Splits the defendant value and assigns them to vars firstName and lastName.
+	    _this.nameInterpreter = function (defendant) {
+	      var fullName = defendant;
+	      var lowerCaseName = fullName.toLowerCase();
+	      var splitName = lowerCaseName.split(",");
+	      var lowerCaseFirst = splitName[1].trim();
+	      var lowerCaseLast = splitName[0].trim();
+	      var firstName = lowerCaseFirst.charAt(0).toUpperCase() + lowerCaseFirst.substr(1);
+	      var lastName = lowerCaseLast.charAt(0).toUpperCase() + lowerCaseLast.substr(1);
+	      var interpretedFullName = firstName + " " + lastName;
+	      return interpretedFullName;
+	    };
 
-	        // Presents charges with proper capitalization:
-	        _this.chargesInterpreter = function (chargeOne) {
-	            var original = chargeOne;
-	            var charge = original.toLowerCase();
-	            return charge;
-	        };
+	    // Presents city name with proper capitalization:
+	    _this.cityInterpreter = function (uninterpretedCity) {
+	      var original = uninterpretedCity;
+	      var lowerCaseCity = original.toLowerCase();
+	      var splitCity = lowerCaseCity.split(" ");
+	      var interpretedWord = [];
+	      var interpretedCity = [];
+	      for (var i = 0; i < splitCity.length; i++) {
+	        interpretedWord = splitCity[i].charAt(0).toUpperCase() + splitCity[i].substr(1, splitCity[i].length - 1);
+	        interpretedCity.push(interpretedWord);
+	      }
+	      interpretedCity = interpretedCity.toString();
+	      interpretedCity = interpretedCity.replace(",", " ");
+	      return interpretedCity;
+	    };
 
-	        _this.weekDayInterpreter = function (uninterpretedDate) {
-	            var original = uninterpretedDate;
-	            var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-	            var interpretedDate = new Date(original);
-	            var dayIndex = interpretedDate.getDay();
-	            var day = days[dayIndex];
-	            var monthIndex = interpretedDate.getMonth();
-	            var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
-	            var month = months[monthIndex];
-	            var date = interpretedDate.getDate();
-	            return day + ", " + month + " " + date;
-	        };
+	    // Presents charges with proper capitalization:
+	    _this.chargesInterpreter = function (chargeOne) {
+	      var original = chargeOne;
+	      var charge = original.toLowerCase();
+	      return charge;
+	    };
 
-	        return _this;
+	    _this.weekDayInterpreter = function (uninterpretedDate) {
+	      var original = uninterpretedDate;
+	      var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+	      var interpretedDate = new Date(original);
+	      var dayIndex = interpretedDate.getDay();
+	      var day = days[dayIndex];
+	      var monthIndex = interpretedDate.getMonth();
+	      var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+	      var month = months[monthIndex];
+	      var date = interpretedDate.getDate();
+	      return day + ", " + month + " " + date;
+	    };
+
+	    return _this;
+	  }
+
+	  // Makes sure the component mounts:
+
+
+	  _createClass(FindForm, [{
+	    key: "componentDidMount",
+	    value: function componentDidMount() {
+	      console.log("<Form /> mounted!");
 	    }
+	  }, {
+	    key: "render",
+	    value: function render() {
+	      var _this2 = this;
 
-	    // Makes sure the component mounts:
-
-
-	    _createClass(FindForm, [{
-	        key: "componentDidMount",
-	        value: function componentDidMount() {
-	            console.log("<Form /> mounted!");
-	        }
-	    }, {
-	        key: "render",
-	        value: function render() {
-	            var _this2 = this;
-
-	            return _react2.default.createElement(
+	      return _react2.default.createElement(
+	        "div",
+	        { className: "container" },
+	        _react2.default.createElement(
+	          "div",
+	          { id: "search-form", className: "form-group" },
+	          _react2.default.createElement(_dateinput2.default, {
+	            handleInputChange: this.handleInputChange,
+	            month: this.state.month,
+	            day: this.state.day,
+	            year: this.state.year,
+	            charge: this.state.charge
+	          }),
+	          _react2.default.createElement(_submitbutton2.default, { handleFormSubmit: this.handleFormSubmit }),
+	          _react2.default.createElement(
+	            "div",
+	            null,
+	            _react2.default.createElement(
+	              "div",
+	              { className: "container" },
+	              _react2.default.createElement(
 	                "div",
-	                { className: "container" },
-	                _react2.default.createElement(
+	                { className: "row" },
+	                this.state.result.map(function (item) {
+	                  return _react2.default.createElement(
 	                    "div",
-	                    { id: "search-form", className: "form-group" },
-	                    _react2.default.createElement(_dateinput2.default, {
-	                        handleInputChange: this.handleInputChange,
-	                        month: this.state.month,
-	                        day: this.state.day,
-	                        year: this.state.year,
-	                        charge: this.state.charge
-	                    }),
-	                    _react2.default.createElement(_submitbutton2.default, { handleFormSubmit: this.handleFormSubmit }),
+	                    { className: "col-md-4", key: item.dob },
 	                    _react2.default.createElement(
-	                        "div",
+	                      _Card.Card,
+	                      null,
+	                      _react2.default.createElement(
+	                        _Card.CardMedia,
+	                        {
+	                          overlay: _react2.default.createElement(_Card.CardTitle, { title: item.defendant, subtitle: "Overlay subtitle" })
+	                        },
+	                        _react2.default.createElement("img", { src: "img/mugshot.png" })
+	                      ),
+	                      _react2.default.createElement(_Card.CardTitle, { title: "Card title", subtitle: "Card subtitle" }),
+	                      _react2.default.createElement(
+	                        _Card.CardText,
 	                        null,
 	                        _react2.default.createElement(
-	                            "div",
-	                            { className: "container" },
-	                            _react2.default.createElement(
-	                                "div",
-	                                { className: "row" },
-	                                this.state.result.map(function (item) {
-	                                    return _react2.default.createElement(
-	                                        "div",
-	                                        { className: "col-md-4", key: item.dob },
-	                                        _react2.default.createElement(
-	                                            _Card.Card,
-	                                            null,
-	                                            _react2.default.createElement(
-	                                                _Card.CardMedia,
-	                                                {
-	                                                    overlay: _react2.default.createElement(_Card.CardTitle, { title: item.defendant, subtitle: "Overlay subtitle" })
-	                                                },
-	                                                _react2.default.createElement("img", { src: "img/mugshot.png" })
-	                                            ),
-	                                            _react2.default.createElement(_Card.CardTitle, { title: "Card title", subtitle: "Card subtitle" }),
-	                                            _react2.default.createElement(
-	                                                _Card.CardText,
-	                                                null,
-	                                                _react2.default.createElement(
-	                                                    "p",
-	                                                    null,
-	                                                    "DOB: ",
-	                                                    item.dob
-	                                                ),
-	                                                _react2.default.createElement(
-	                                                    "p",
-	                                                    null,
-	                                                    "Residence: ",
-	                                                    item.location_1_address,
-	                                                    ", ",
-	                                                    item.location_1_city,
-	                                                    ", ",
-	                                                    item.location_1_state,
-	                                                    " ",
-	                                                    item.location_1_zip
-	                                                ),
-	                                                _react2.default.createElement(
-	                                                    "p",
-	                                                    null,
-	                                                    "Charges: ",
-	                                                    item.charge1,
-	                                                    ", ",
-	                                                    item.charge2
-	                                                ),
-	                                                _react2.default.createElement(_sentencerender2.default, {
-	                                                    nameInterpreter: _this2.nameInterpreter,
-	                                                    cityInterpreter: _this2.cityInterpreter,
-	                                                    chargesInterpreter: _this2.chargesInterpreter,
-	                                                    weekDayInterpreter: _this2.weekDayInterpreter,
-	                                                    defendant: item.defendant,
-	                                                    uninterpretedCity: item.location_1_city,
-	                                                    chargeOne: item.charge1,
-	                                                    uninterpretedDate: item.bookdate
-	                                                })
-	                                            )
-	                                        )
-	                                    );
-	                                })
-	                            )
-	                        )
+	                          "p",
+	                          null,
+	                          "DOB: ",
+	                          item.dob
+	                        ),
+	                        _react2.default.createElement(
+	                          "p",
+	                          null,
+	                          "Residence: ",
+	                          item.location_1_address,
+	                          ", ",
+	                          item.location_1_city,
+	                          ", ",
+	                          item.location_1_state,
+	                          " ",
+	                          item.location_1_zip
+	                        ),
+	                        _react2.default.createElement(
+	                          "p",
+	                          null,
+	                          "Charges: ",
+	                          item.charge1,
+	                          ", ",
+	                          item.charge2
+	                        ),
+	                        _react2.default.createElement(_sentencerender2.default, {
+	                          nameInterpreter: _this2.nameInterpreter,
+	                          cityInterpreter: _this2.cityInterpreter,
+	                          chargesInterpreter: _this2.chargesInterpreter,
+	                          weekDayInterpreter: _this2.weekDayInterpreter,
+	                          defendant: item.defendant,
+	                          uninterpretedCity: item.location_1_city,
+	                          chargeOne: item.charge1,
+	                          uninterpretedDate: item.bookdate
+	                        })
+	                      )
 	                    )
-	                )
-	            );
-	        }
-	    }]);
+	                  );
+	                })
+	              )
+	            )
+	          )
+	        )
+	      );
+	    }
+	  }]);
 
-	    return FindForm;
+	  return FindForm;
 	}(_react.Component);
 
 	exports.default = FindForm;
