@@ -44,10 +44,10 @@ const Base = ({ children }) => (
                   <a className="nav-link js-scroll-trigger" href="#features">Features</a>
                 </li>
                 <li className="nav-item">
-                  <Link className="nav-link js-scroll-trigger" to="/contact">ContactPage</Link>
+                  <Link className="nav-link js-scroll-trigger" to="/about">About</Link>
                 </li>
                 <li className="nav-item">
-                  <Link className="nav-link js-scroll-trigger" to="/about">AboutPage</Link>
+                  <Link className="nav-link js-scroll-trigger" to="/contact">Contact</Link>
                 </li>
                 <li className="nav-item">
                   <Link className="nav-link js-scroll-trigger" to="/signlogin">Sign Up/ Login</Link>

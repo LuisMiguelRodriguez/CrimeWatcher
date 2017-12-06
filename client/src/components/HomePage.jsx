@@ -96,7 +96,7 @@ const HomePage = () => (
     <section className="cta">
       <div className="cta-content">
         <div className="container">
-          <h2>Stop waiting.<br/>Start watching.</h2>
+          <h2 id="feature-headline">Stop waiting.<br/>Start watching.</h2>
           <a href="/login" className="btn btn-outline btn-xl js-scroll-trigger">Let's Get Started!</a>
         </div>
       </div>
