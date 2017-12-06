@@ -19,7 +19,7 @@ a {
   -moz-transition: all .35s;
   transition: all .35s; }
   a:hover, a:focus {
-    color: #d80404; 
+    color: #d80404;
   }
   label{
     color: #ffffff;
@@ -394,3 +394,16 @@ footer {
     margin-left: auto;
     margin-right: auto;
   }
+
+#down-arrow {
+  color:white;
+  font-size: 82px;
+  text-align: center;
+}
+
+.arrow-container {
+  text-align: center;
+  bottom: -759px;
+  position: relative;
+
+}

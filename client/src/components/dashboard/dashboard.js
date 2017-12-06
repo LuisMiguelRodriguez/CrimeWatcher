@@ -9,7 +9,11 @@ import FindForm from "../findform";
 
 const Dashboard = ({ secretData }) => (
   <div>
-    <div id="dashboard-hero"></div>
+    <div id="dashboard-hero">
+      <div className="arrow-container">
+        <a href="/#search-form"><i id="down-arrow" className="fa fa-arrow-circle-o-down" aria-hidden="true" ></i></a>        
+      </div>
+    </div>
     <br/>
     <br/>
     <br/>
@@ -17,17 +21,16 @@ const Dashboard = ({ secretData }) => (
     <div className="container">
         <div className="row">
             <div className="col-md-12">
-               
+
             </div>
         </div>
         <div className="row">
             <div className="col-md-12">
+
             </div>
         </div>
-
     </div>
-  <FindForm/>
-
+    <FindForm/>
   </div>
 );
 
