@@ -366,7 +366,7 @@ footer {
 
   #dashboard-form-card{
     text-align: center;
-    background-color: black;
+    margin-bottom: 50px;
   }
   #login-signup {
     width:800px;

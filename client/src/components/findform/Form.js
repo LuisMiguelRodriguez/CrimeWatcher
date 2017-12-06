@@ -128,7 +128,7 @@ class FindForm extends Component {
         <div className="container">
           <div className="form-group">
             <div  id="dashboard-form-layout">
-              <Card id="dashboard-form-card">
+              <Card id="dashboard-form-card" style={{ backgroundColor: "rgba(0,0,0,0)" }}>
                 <h2 className="title">Find Your Next Story</h2>
                 <h4> Start searching by selecting a date and the charge and hit submit</h4>
                 <br/>
