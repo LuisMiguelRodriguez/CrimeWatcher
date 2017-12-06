@@ -35322,6 +35322,8 @@
 
 	var _Card = __webpack_require__(399);
 
+	var _reactRouter = __webpack_require__(338);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	var HomePage = function HomePage() {
@@ -35354,8 +35356,8 @@
 	                'Give us a few basic details and we\'ll do the leg work. Booking logs, crime statistics, a wealth of information at your fingertips.'
 	              ),
 	              _react2.default.createElement(
-	                'a',
-	                { href: '#download', className: 'btn btn-outline btn-xl js-scroll-trigger' },
+	                _reactRouter.Link,
+	                { to: '/signlogin', className: 'btn btn-outline btn-xl js-scroll-trigger' },
 	                'Sign Up Now for Free!'
 	              )
 	            )
@@ -35375,7 +35377,7 @@
 	                  _react2.default.createElement(
 	                    'div',
 	                    { className: 'screen' },
-	                    _react2.default.createElement('img', { src: 'img/demo-screen-1.jpg', className: 'img-fluid', alt: '' })
+	                    _react2.default.createElement('img', { src: 'img/iPhoneImage.jpg', className: 'img-fluid', alt: '' })
 	                  ),
 	                  _react2.default.createElement('div', { className: 'button' })
 	                )
@@ -35424,7 +35426,7 @@
 	                  _react2.default.createElement(
 	                    'div',
 	                    { className: 'screen' },
-	                    _react2.default.createElement('img', { src: 'img/demo-screen-1.jpg', className: 'img-fluid', alt: '' })
+	                    _react2.default.createElement('img', { src: 'img/iPhoneImage.jpg', className: 'img-fluid', alt: '' })
 	                  ),
 	                  _react2.default.createElement('div', { className: 'button' })
 	                )
@@ -35543,8 +35545,8 @@
 	            'Start watching.'
 	          ),
 	          _react2.default.createElement(
-	            'a',
-	            { href: '/login', className: 'btn btn-outline btn-xl js-scroll-trigger' },
+	            _reactRouter.Link,
+	            { to: '/signlogin', className: 'btn btn-outline btn-xl js-scroll-trigger' },
 	            'Let\'s Get Started!'
 	          )
 	        )
