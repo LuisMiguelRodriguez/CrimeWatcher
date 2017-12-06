@@ -35375,7 +35375,7 @@
 	                  _react2.default.createElement(
 	                    'div',
 	                    { className: 'screen' },
-	                    _react2.default.createElement('img', { src: 'img/demo-screen-1.jpg', className: 'img-fluid', alt: '' })
+	                    _react2.default.createElement('img', { src: 'img/iPhoneImage.jpg', className: 'img-fluid', alt: '' })
 	                  ),
 	                  _react2.default.createElement('div', { className: 'button' })
 	                )
@@ -35424,7 +35424,7 @@
 	                  _react2.default.createElement(
 	                    'div',
 	                    { className: 'screen' },
-	                    _react2.default.createElement('img', { src: 'img/demo-screen-1.jpg', className: 'img-fluid', alt: '' })
+	                    _react2.default.createElement('img', { src: 'img/iPhoneImage.jpg', className: 'img-fluid', alt: '' })
 	                  ),
 	                  _react2.default.createElement('div', { className: 'button' })
 	                )
