@@ -123,9 +123,11 @@ class FindForm extends Component {
       }
 
     render() {
+
       return (
         <div className="container">
-          <div className="form-group">
+          <div id="search-form"className="form-group">
+
                 <DateInput
                     handleInputChange={this.handleInputChange}
                     month={this.state.month}
@@ -134,6 +136,7 @@ class FindForm extends Component {
                     charge={this.state.charge}
                      />
                 <SubmitButton  handleFormSubmit={this.handleFormSubmit} />
+
             <div>
               <div className = "container">
                <div className = "row">
