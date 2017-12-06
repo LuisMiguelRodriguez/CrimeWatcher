@@ -21,7 +21,8 @@ class FindForm extends Component {
       month: "Month",
       day: "Day",
       year: "Year",
-      charge: "Charge"
+      charge: "Charge",
+      message: ""
     }
 
     // This gets user input for charges and sends it to <ChargesInput />:
@@ -70,7 +71,8 @@ class FindForm extends Component {
           month: "Month",
           day: "Day",
           year: "Year",
-          charge: "Charge"
+          charge: "Charge",
+          message: ""
       })
     }
 
