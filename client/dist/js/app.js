@@ -48017,7 +48017,7 @@
 	"use strict";
 
 	Object.defineProperty(exports, "__esModule", {
-	  value: true
+	    value: true
 	});
 
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -48071,215 +48071,215 @@
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 	var FindForm = function (_Component) {
-	  _inherits(FindForm, _Component);
+	    _inherits(FindForm, _Component);
 
-	  function FindForm(props) {
-	    _classCallCheck(this, FindForm);
+	    function FindForm(props) {
+	        _classCallCheck(this, FindForm);
 
-	    var _this = _possibleConstructorReturn(this, (FindForm.__proto__ || Object.getPrototypeOf(FindForm)).call(this, props));
+	        var _this = _possibleConstructorReturn(this, (FindForm.__proto__ || Object.getPrototypeOf(FindForm)).call(this, props));
 
-	    _this.state = {
-	      result: [],
-	      month: "Month",
-	      day: "Day",
-	      year: "Year",
-	      charge: "Charge"
+	        _this.state = {
+	            result: [],
+	            month: "Month",
+	            day: "Day",
+	            year: "Year",
+	            charge: "Charge"
 
-	      // This gets user input for charges and sends it to <ChargesInput />:
-	    };_this.handleInputChange = function (event, index, value, name) {
+	            // This gets user input for charges and sends it to <ChargesInput />:
+	        };_this.handleInputChange = function (event, index, value, name) {
 
-	      console.log(name);
+	            console.log(name);
 
-	      console.log(value);
+	            console.log(value);
 
-	      _this.setState(_defineProperty({}, name, value));
-	    };
+	            _this.setState(_defineProperty({}, name, value));
+	        };
 
-	    // This is for the submit button:
-	    _this.handleFormSubmit = function (event) {
-	      // Stops the page from refreshing:
-	      event.preventDefault();
-	      // Checks whether all date and charge fields have been filled out. If they have:
-	      if (_this.state.month && _this.state.day && _this.state.year && _this.state.charge) {
-	        // We call the API with both parameters:
-	        _this.searchLogs("?bookdate=" + _this.state.year + "-" + _this.state.month + "-" + _this.state.day + "T00:00:00.000" + "&charge1=" + _this.state.charge);
-	        // If we have the date fields but no charge, we call the API with the date:
-	      } else if (_this.state.month && _this.state.day && _this.state.year && !_this.state.charge) {
-	        _this.searchLogs("?bookdate=" + _this.state.year + "-" + _this.state.month + "-" + _this.state.day + "T00:00:00.000");
-	      }
-	      _this.setState({
-	        result: [],
-	        month: "Month",
-	        day: "Day",
-	        year: "Year",
-	        charge: "Charge"
-	      });
-	    };
+	        // This is for the submit button:
+	        _this.handleFormSubmit = function (event) {
+	            // Stops the page from refreshing:
+	            event.preventDefault();
+	            // Checks whether all date and charge fields have been filled out. If they have:
+	            if (_this.state.month && _this.state.day && _this.state.year && _this.state.charge) {
+	                // We call the API with both parameters:
+	                _this.searchLogs("?bookdate=" + _this.state.year + "-" + _this.state.month + "-" + _this.state.day + "T00:00:00.000" + "&charge1=" + _this.state.charge);
+	                // If we have the date fields but no charge, we call the API with the date:
+	            } else if (_this.state.month && _this.state.day && _this.state.year && !_this.state.charge) {
+	                _this.searchLogs("?bookdate=" + _this.state.year + "-" + _this.state.month + "-" + _this.state.day + "T00:00:00.000");
+	            }
+	            _this.setState({
+	                result: [],
+	                month: "Month",
+	                day: "Day",
+	                year: "Year",
+	                charge: "Charge"
+	            });
+	        };
 
-	    _this.searchLogs = function (query) {
-	      _findAPI2.default.search(query).then(function (res) {
-	        return _this.setState({ result: res.data });
-	      }).catch(function (err) {
-	        return console.log(err);
-	      });
-	    };
+	        _this.searchLogs = function (query) {
+	            _findAPI2.default.search(query).then(function (res) {
+	                return _this.setState({ result: res.data });
+	            }).catch(function (err) {
+	                return console.log(err);
+	            });
+	        };
 
-	    // CODE FOR SENTENCERENDER:
-	    // Splits the defendant value and assigns them to vars firstName and lastName.
-	    _this.nameInterpreter = function (defendant) {
-	      var fullName = defendant;
-	      var lowerCaseName = fullName.toLowerCase();
-	      var splitName = lowerCaseName.split(",");
-	      var lowerCaseFirst = splitName[1].trim();
-	      var lowerCaseLast = splitName[0].trim();
-	      var firstName = lowerCaseFirst.charAt(0).toUpperCase() + lowerCaseFirst.substr(1);
-	      var lastName = lowerCaseLast.charAt(0).toUpperCase() + lowerCaseLast.substr(1);
-	      var interpretedFullName = firstName + " " + lastName;
-	      return interpretedFullName;
-	    };
+	        // CODE FOR SENTENCERENDER:
+	        // Splits the defendant value and assigns them to vars firstName and lastName.
+	        _this.nameInterpreter = function (defendant) {
+	            var fullName = defendant;
+	            var lowerCaseName = fullName.toLowerCase();
+	            var splitName = lowerCaseName.split(",");
+	            var lowerCaseFirst = splitName[1].trim();
+	            var lowerCaseLast = splitName[0].trim();
+	            var firstName = lowerCaseFirst.charAt(0).toUpperCase() + lowerCaseFirst.substr(1);
+	            var lastName = lowerCaseLast.charAt(0).toUpperCase() + lowerCaseLast.substr(1);
+	            var interpretedFullName = firstName + " " + lastName;
+	            return interpretedFullName;
+	        };
 
-	    // Presents city name with proper capitalization:
-	    _this.cityInterpreter = function (uninterpretedCity) {
-	      var original = uninterpretedCity;
-	      var lowerCaseCity = original.toLowerCase();
-	      var splitCity = lowerCaseCity.split(" ");
-	      var interpretedWord = [];
-	      var interpretedCity = [];
-	      for (var i = 0; i < splitCity.length; i++) {
-	        interpretedWord = splitCity[i].charAt(0).toUpperCase() + splitCity[i].substr(1, splitCity[i].length - 1);
-	        interpretedCity.push(interpretedWord);
-	      }
-	      interpretedCity = interpretedCity.toString();
-	      interpretedCity = interpretedCity.replace(",", " ");
-	      return interpretedCity;
-	    };
+	        // Presents city name with proper capitalization:
+	        _this.cityInterpreter = function (uninterpretedCity) {
+	            var original = uninterpretedCity;
+	            var lowerCaseCity = original.toLowerCase();
+	            var splitCity = lowerCaseCity.split(" ");
+	            var interpretedWord = [];
+	            var interpretedCity = [];
+	            for (var i = 0; i < splitCity.length; i++) {
+	                interpretedWord = splitCity[i].charAt(0).toUpperCase() + splitCity[i].substr(1, splitCity[i].length - 1);
+	                interpretedCity.push(interpretedWord);
+	            }
+	            interpretedCity = interpretedCity.toString();
+	            interpretedCity = interpretedCity.replace(",", " ");
+	            return interpretedCity;
+	        };
 
-	    // Presents charges with proper capitalization:
-	    _this.chargesInterpreter = function (chargeOne) {
-	      var original = chargeOne;
-	      var charge = original.toLowerCase();
-	      return charge;
-	    };
+	        // Presents charges with proper capitalization:
+	        _this.chargesInterpreter = function (chargeOne) {
+	            var original = chargeOne;
+	            var charge = original.toLowerCase();
+	            return charge;
+	        };
 
-	    _this.weekDayInterpreter = function (uninterpretedDate) {
-	      var original = uninterpretedDate;
-	      var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-	      var interpretedDate = new Date(original);
-	      var dayIndex = interpretedDate.getDay();
-	      var day = days[dayIndex];
-	      var monthIndex = interpretedDate.getMonth();
-	      var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
-	      var month = months[monthIndex];
-	      var date = interpretedDate.getDate();
-	      return day + ", " + month + " " + date;
-	    };
+	        _this.weekDayInterpreter = function (uninterpretedDate) {
+	            var original = uninterpretedDate;
+	            var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+	            var interpretedDate = new Date(original);
+	            var dayIndex = interpretedDate.getDay();
+	            var day = days[dayIndex];
+	            var monthIndex = interpretedDate.getMonth();
+	            var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+	            var month = months[monthIndex];
+	            var date = interpretedDate.getDate();
+	            return day + ", " + month + " " + date;
+	        };
 
-	    return _this;
-	  }
-
-	  // Makes sure the component mounts:
-
-
-	  _createClass(FindForm, [{
-	    key: "componentDidMount",
-	    value: function componentDidMount() {
-	      console.log("<Form /> mounted!");
+	        return _this;
 	    }
-	  }, {
-	    key: "render",
-	    value: function render() {
-	      var _this2 = this;
 
-	      return _react2.default.createElement(
-	        "div",
-	        { className: "container" },
-	        _react2.default.createElement(
-	          "div",
-	          { className: "form-group" },
-	          _react2.default.createElement(_dateinput2.default, {
-	            handleInputChange: this.handleInputChange,
-	            month: this.state.month,
-	            day: this.state.day,
-	            year: this.state.year,
-	            charge: this.state.charge
-	          }),
-	          _react2.default.createElement(_submitbutton2.default, { handleFormSubmit: this.handleFormSubmit }),
-	          _react2.default.createElement(
-	            "div",
-	            null,
-	            _react2.default.createElement(
-	              "div",
-	              { className: "container" },
-	              _react2.default.createElement(
+	    // Makes sure the component mounts:
+
+
+	    _createClass(FindForm, [{
+	        key: "componentDidMount",
+	        value: function componentDidMount() {
+	            console.log("<Form /> mounted!");
+	        }
+	    }, {
+	        key: "render",
+	        value: function render() {
+	            var _this2 = this;
+
+	            return _react2.default.createElement(
 	                "div",
-	                { className: "row" },
-	                this.state.result.map(function (item) {
-	                  return _react2.default.createElement(
+	                { className: "container" },
+	                _react2.default.createElement(
 	                    "div",
-	                    { className: "col-md-4", key: item.dob },
+	                    { className: "form-group" },
+	                    _react2.default.createElement(_dateinput2.default, {
+	                        handleInputChange: this.handleInputChange,
+	                        month: this.state.month,
+	                        day: this.state.day,
+	                        year: this.state.year,
+	                        charge: this.state.charge
+	                    }),
+	                    _react2.default.createElement(_submitbutton2.default, { handleFormSubmit: this.handleFormSubmit }),
 	                    _react2.default.createElement(
-	                      _Card.Card,
-	                      null,
-	                      _react2.default.createElement(
-	                        _Card.CardMedia,
-	                        {
-	                          overlay: _react2.default.createElement(_Card.CardTitle, { title: item.defendant, subtitle: "Overlay subtitle" })
-	                        },
-	                        _react2.default.createElement("img", { src: "img/mugshot.png" })
-	                      ),
-	                      _react2.default.createElement(_Card.CardTitle, { title: "Card title", subtitle: "Card subtitle" }),
-	                      _react2.default.createElement(
-	                        _Card.CardText,
+	                        "div",
 	                        null,
 	                        _react2.default.createElement(
-	                          "p",
-	                          null,
-	                          "DOB: ",
-	                          item.dob
-	                        ),
-	                        _react2.default.createElement(
-	                          "p",
-	                          null,
-	                          "Residence: ",
-	                          item.location_1_address,
-	                          ", ",
-	                          item.location_1_city,
-	                          ", ",
-	                          item.location_1_state,
-	                          " ",
-	                          item.location_1_zip
-	                        ),
-	                        _react2.default.createElement(
-	                          "p",
-	                          null,
-	                          "Charges: ",
-	                          item.charge1,
-	                          ", ",
-	                          item.charge2
-	                        ),
-	                        _react2.default.createElement(_sentencerender2.default, {
-	                          nameInterpreter: _this2.nameInterpreter,
-	                          cityInterpreter: _this2.cityInterpreter,
-	                          chargesInterpreter: _this2.chargesInterpreter,
-	                          weekDayInterpreter: _this2.weekDayInterpreter,
-	                          defendant: item.defendant,
-	                          uninterpretedCity: item.location_1_city,
-	                          chargeOne: item.charge1,
-	                          uninterpretedDate: item.bookdate
-	                        })
-	                      )
+	                            "div",
+	                            { className: "container" },
+	                            _react2.default.createElement(
+	                                "div",
+	                                { className: "row" },
+	                                this.state.result.map(function (item) {
+	                                    return _react2.default.createElement(
+	                                        "div",
+	                                        { className: "col-md-4", key: item.dob },
+	                                        _react2.default.createElement(
+	                                            _Card.Card,
+	                                            null,
+	                                            _react2.default.createElement(
+	                                                _Card.CardMedia,
+	                                                {
+	                                                    overlay: _react2.default.createElement(_Card.CardTitle, { title: item.defendant, subtitle: "Overlay subtitle" })
+	                                                },
+	                                                _react2.default.createElement("img", { src: "img/mugshot.png" })
+	                                            ),
+	                                            _react2.default.createElement(_Card.CardTitle, { title: "Card title", subtitle: "Card subtitle" }),
+	                                            _react2.default.createElement(
+	                                                _Card.CardText,
+	                                                null,
+	                                                _react2.default.createElement(
+	                                                    "p",
+	                                                    null,
+	                                                    "DOB: ",
+	                                                    item.dob
+	                                                ),
+	                                                _react2.default.createElement(
+	                                                    "p",
+	                                                    null,
+	                                                    "Residence: ",
+	                                                    item.location_1_address,
+	                                                    ", ",
+	                                                    item.location_1_city,
+	                                                    ", ",
+	                                                    item.location_1_state,
+	                                                    " ",
+	                                                    item.location_1_zip
+	                                                ),
+	                                                _react2.default.createElement(
+	                                                    "p",
+	                                                    null,
+	                                                    "Charges: ",
+	                                                    item.charge1,
+	                                                    ", ",
+	                                                    item.charge2
+	                                                ),
+	                                                _react2.default.createElement(_sentencerender2.default, {
+	                                                    nameInterpreter: _this2.nameInterpreter,
+	                                                    cityInterpreter: _this2.cityInterpreter,
+	                                                    chargesInterpreter: _this2.chargesInterpreter,
+	                                                    weekDayInterpreter: _this2.weekDayInterpreter,
+	                                                    defendant: item.defendant,
+	                                                    uninterpretedCity: item.location_1_city,
+	                                                    chargeOne: item.charge1,
+	                                                    uninterpretedDate: item.bookdate
+	                                                })
+	                                            )
+	                                        )
+	                                    );
+	                                })
+	                            )
+	                        )
 	                    )
-	                  );
-	                })
-	              )
-	            )
-	          )
-	        )
-	      );
-	    }
-	  }]);
+	                )
+	            );
+	        }
+	    }]);
 
-	  return FindForm;
+	    return FindForm;
 	}(_react.Component);
 
 	exports.default = FindForm;
@@ -115177,10 +115177,10 @@
 /* 701 */
 /***/ (function(module, exports, __webpack_require__) {
 
-	'use strict';
+	"use strict";
 
 	Object.defineProperty(exports, "__esModule", {
-	  value: true
+		value: true
 	});
 
 	var _react = __webpack_require__(1);
@@ -115190,15 +115190,89 @@
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	var ContactPage = function ContactPage() {
-	  return _react2.default.createElement(
-	    'div',
-	    null,
-	    _react2.default.createElement(
-	      'h1',
-	      null,
-	      'ContactPage'
-	    )
-	  );
+		return _react2.default.createElement(
+			"section",
+			{ id: "contact" },
+			_react2.default.createElement(
+				"div",
+				{ className: "section-content" },
+				_react2.default.createElement(
+					"h1",
+					{ className: "section-header" },
+					"Get in ",
+					_react2.default.createElement(
+						"span",
+						{ className: "content-header wow fadeIn ", "data-wow-delay": "0.2s", "data-wow-duration": "2s" },
+						" Touch with us"
+					)
+				),
+				_react2.default.createElement(
+					"h3",
+					null,
+					"Lorem Ipsum is simply dummy text of the printing and typesetting industry"
+				)
+			),
+			_react2.default.createElement(
+				"div",
+				{ className: "contact-section" },
+				_react2.default.createElement(
+					"div",
+					{ className: "container" },
+					_react2.default.createElement(
+						"form",
+						{ id: "contact-form" },
+						_react2.default.createElement(
+							"div",
+							{ className: "col-md-12 form-line" },
+							_react2.default.createElement(
+								"div",
+								{ className: "form-group" },
+								_react2.default.createElement(
+									"label",
+									{ "for": "exampleInputUsername" },
+									"Your name"
+								),
+								_react2.default.createElement("input", { type: "text", className: "form-control", id: "", placeholder: " Enter Name" })
+							),
+							_react2.default.createElement(
+								"div",
+								{ className: "form-group" },
+								_react2.default.createElement(
+									"label",
+									{ "for": "exampleInputEmail" },
+									"Email Address"
+								),
+								_react2.default.createElement("input", { type: "email", className: "form-control", id: "exampleInputEmail", placeholder: " Enter Email id" })
+							)
+						),
+						_react2.default.createElement(
+							"div",
+							{ className: "col-md-12" },
+							_react2.default.createElement(
+								"div",
+								{ className: "form-group" },
+								_react2.default.createElement(
+									"label",
+									{ "for": "description" },
+									" Message"
+								),
+								_react2.default.createElement("textarea", { className: "form-control", id: "description", placeholder: "Enter Your Message" })
+							),
+							_react2.default.createElement(
+								"div",
+								null,
+								_react2.default.createElement(
+									"button",
+									{ type: "button", className: "btn btn-default submit" },
+									_react2.default.createElement("i", { className: "fa fa-paper-plane", "aria-hidden": "true" }),
+									"  Send Message"
+								)
+							)
+						)
+					)
+				)
+			)
+		);
 	};
 
 	exports.default = ContactPage;
