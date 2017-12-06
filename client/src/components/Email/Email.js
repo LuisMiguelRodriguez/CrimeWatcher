@@ -40,7 +40,7 @@ class Email extends Component {
    * This method will be executed after initial rendering.
    */
   componentDidMount() {
-    this.search();
+    // this.search();
   }
 
     render() {

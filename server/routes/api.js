@@ -18,6 +18,44 @@ router.get('/email', (req, res) => {
   });
 });
 
+router.post('/email/:action', (req, res) => {
+  var action = req.params.action;
+
+  var from_email = new helper.Email('luis.the.coder@gmail.com');
+  var to_email = new helper.Email(req.body.recipient);
+  var subject = req.body.subject;
+  var content = new helper.Content('text/plain', req.body.content );
+  var mail = new helper.Mail(from_email, subject, to_email, content);
+
+  var sg = require('sendgrid')(process.env.SENDGRID_API_KEY);
+  var request = sg.emptyRequest({
+    method: 'POST',
+    path: '/v3/mail/send',
+    body: mail.toJSON(),
+  });
+
+  sg.API(request, function(error, response) {
+    if(error){
+      res.json({
+        confirmation:'fail',
+        message: error
+      })
+
+      return
+    }
+    res.json({
+      confirmation:'success',
+      response: response
+    })
+
+    return
+    // console.log(response.statusCode);
+    // console.log(response.body);
+    // console.log(response.headers);
+  });
+
+})
+
 router.get('/email/:action', (req, res) => {
   var action = req.params.action;
 
