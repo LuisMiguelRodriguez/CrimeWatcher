@@ -12,123 +12,130 @@ import { Card, CardText } from 'material-ui/Card';
 
 const DateInput = props => (
 
-    <div>
-      <DropDownMenu
-        type="text"
-        onChange={(event, index, value ) => props.handleInputChange(event, index, value, 'month')}
-        name="month"
-        value={props.month}
-        placeholder="MM"
-        openImmediately={false} >
-          <MenuItem value={"Month"} primaryText="Month" />
-          <MenuItem value={"01"} primaryText="January" />
-          <MenuItem value={"02"} primaryText="February" />
-          <MenuItem value={"03"} primaryText="March" />
-          <MenuItem value={"04"} primaryText="April" />
-          <MenuItem value={"05"} primaryText="May" />
-          <MenuItem value={"06"} primaryText="June" />
-          <MenuItem value={"07"} primaryText="July" />
-          <MenuItem value={"08"} primaryText="August" />
-          <MenuItem value={"09"} primaryText="September" />
-          <MenuItem value={"10"} primaryText="October" />
-          <MenuItem value={"11"} primaryText="November" />
-          <MenuItem value={"12"} primaryText="December" />
-      </DropDownMenu>
-      <br/>
+  <div className="row">
+    <div className="col-md-4">
+      <div className="form-group">
+        <label>Month</label>
+        <select
+          className="form-control"
+          value={props.month}
+          onChange={(event, index, value ) => props.handleInputChange(event, index, value, 'month')}
+          name="month" >
+            <option value={"Month"} >Month</option>
+            <option value={"01"} >January</option>
+            <option value={"02"} >February</option>
+            <option value={"03"} >March</option>
+            <option value={"04"} >April</option>
+            <option value={"05"} >May</option>
+            <option value={"06"} >June</option>
+            <option value={"07"} >July</option>
+            <option value={"08"} >August</option>
+            <option value={"09"} >September</option>
+            <option value={"10"} >October</option>
+            <option value={"11"} >November</option>
+            <option value={"12"} >December</option>
+        </select>
+      </div>
+    </div>
 
-      <DropDownMenu
-         type="text"
-         onChange={(event, index, value ) => props.handleInputChange(event, index, value, 'day')}
-         name="day"
-         value={props.day}
-         placeholder="DD"
-         openImmediately={false} >
-           <MenuItem value={"Day"} primaryText="Day" />
-           <MenuItem value={"01"} primaryText="01" />
-           <MenuItem value={"02"} primaryText="02" />
-           <MenuItem value={"03"} primaryText="03" />
-           <MenuItem value={"04"} primaryText="04" />
-           <MenuItem value={"05"} primaryText="05" />
-           <MenuItem value={"06"} primaryText="06" />
-           <MenuItem value={"07"} primaryText="07" />
-           <MenuItem value={"08"} primaryText="08" />
-           <MenuItem value={"09"} primaryText="09" />
-           <MenuItem value={"10"} primaryText="10" />
-           <MenuItem value={"11"} primaryText="11" />
-           <MenuItem value={"12"} primaryText="12" />
-           <MenuItem value={"13"} primaryText="13" />
-           <MenuItem value={"14"} primaryText="14" />
-           <MenuItem value={"15"} primaryText="15" />
-           <MenuItem value={"16"} primaryText="16" />
-           <MenuItem value={"17"} primaryText="17" />
-           <MenuItem value={"18"} primaryText="18" />
-           <MenuItem value={"19"} primaryText="19" />
-           <MenuItem value={"20"} primaryText="20" />
-           <MenuItem value={"21"} primaryText="21" />
-           <MenuItem value={"22"} primaryText="22" />
-           <MenuItem value={"23"} primaryText="23" />
-           <MenuItem value={"24"} primaryText="24" />
-           <MenuItem value={"25"} primaryText="25" />
-           <MenuItem value={"26"} primaryText="26" />
-           <MenuItem value={"27"} primaryText="27" />
-           <MenuItem value={"28"} primaryText="28" />
-           <MenuItem value={"29"} primaryText="29" />
-           <MenuItem value={"30"} primaryText="30" />
-           <MenuItem value={"31"} primaryText="31" />
-      </DropDownMenu>
-      <br/>
+    <div className="col-md-4">
+      <div className="form-group">
+        <label>Day</label>
+        <select
+          className="form-control"
+          value={props.day}
+          onChange={(event, index, value ) => props.handleInputChange(event, index, value, 'day')}
+          name="day" >
+            <option value={"Day"}>Day</option>
+            <option value={"01"}>01</option>
+            <option value={"02"}>02</option>
+            <option value={"03"}>03</option>
+            <option value={"04"}>04</option>
+            <option value={"05"}>05</option>
+            <option value={"06"}>06</option>
+            <option value={"07"}>07</option>
+            <option value={"08"}>08</option>
+            <option value={"09"}>09</option>
+            <option value={"10"}>10</option>
+            <option value={"11"}>11</option>
+            <option value={"12"}>12</option>
+            <option value={"13"}>13</option>
+            <option value={"14"}>14</option>
+            <option value={"15"}>15</option>
+            <option value={"16"}>16</option>
+            <option value={"17"}>17</option>
+            <option value={"18"}>18</option>
+            <option value={"19"}>19</option>
+            <option value={"20"}>20</option>
+            <option value={"21"}>21</option>
+            <option value={"22"}>22</option>
+            <option value={"23"}>23</option>
+            <option value={"24"}>24</option>
+            <option value={"25"}>25</option>
+            <option value={"26"}>26</option>
+            <option value={"27"}>27</option>
+            <option value={"28"}>28</option>
+            <option value={"29"}>29</option>
+            <option value={"30"}>30</option>
+            <option value={"31"}>31</option>
+        </select>
+      </div>
+    </div>
 
-      <DropDownMenu
-        type="text"
-        onChange={(event, index, value ) => props.handleInputChange(event, index, value, 'year')}
-        name="year"
-        value={props.year}
-        placeholder="YYYY"
-        openImmediately={false} >
-          <MenuItem value={"Year"} primaryText="Year" />
-          <MenuItem value={"2004"} primaryText="2004" />
-          <MenuItem value={"2005"} primaryText="2005" />
-          <MenuItem value={"2006"} primaryText="2006" />
-          <MenuItem value={"2007"} primaryText="2007" />
-          <MenuItem value={"2008"} primaryText="2008" />
-          <MenuItem value={"2009"} primaryText="2009" />
-          <MenuItem value={"2010"} primaryText="2010" />
-          <MenuItem value={"2011"} primaryText="2011" />
-          <MenuItem value={"2012"} primaryText="2012" />
-          <MenuItem value={"2013"} primaryText="2013" />
-          <MenuItem value={"2014"} primaryText="2014" />
-          <MenuItem value={"2015"} primaryText="2015" />
-          <MenuItem value={"2016"} primaryText="2016" />
-          <MenuItem value={"2017"} primaryText="2017" />
-      </DropDownMenu>
-      <br/>
+    <div className="col-md-4">
+      <div className="form-group">
+        <label>Year</label>
+        <select
+          className="form-control"
+          value={props.year}
+          onChange={(event, index, value ) => props.handleInputChange(event, index, value, 'year')}
+          name="year" >
+            <option value={"Year"} > Year </option>
+            <option value={"2004"} > 2004 </option>
+            <option value={"2005"} > 2005 </option>
+            <option value={"2006"} > 2006 </option>
+            <option value={"2007"} > 2007 </option>
+            <option value={"2008"} > 2008 </option>
+            <option value={"2009"} > 2009 </option>
+            <option value={"2010"} > 2010 </option>
+            <option value={"2011"} > 2011 </option>
+            <option value={"2012"} > 2012 </option>
+            <option value={"2013"} > 2013 </option>
+            <option value={"2014"} > 2014 </option>
+            <option value={"2015"} > 2015 </option>
+            <option value={"2016"} > 2016 </option>
+            <option value={"2017"} > 2017 </option>
+        </select>
+      </div>
+    </div>
 
-      <br/>
-
-      <DropDownMenu
-          type="text"
-          name="charge"
+    <div className="col-md-4 offset-md-4">
+      <div className="form-group">
+        <label>Charge</label>
+        <select
+          className="form-control"
           value={props.charge}
           onChange={(event, index, value ) => props.handleInputChange(event, index, value, 'charge')}
-          openImmediately={false}>
-
-          <MenuItem value={"Charge"} primaryText="Charge" />
-          <MenuItem value={"PETIT THEFT"} primaryText="Petty Theft" />
-          <MenuItem value={"LOITERING OR PROWL"} primaryText="Loitering" />
-          <MenuItem value={"ALCOHOL/CONSUM/STORE"} primaryText="ALCOHOL/CONSUM/STORE" />
-          <MenuItem value={"CHILD ABUSE/NO HARM"} primaryText="Child Abuse" />
-          <MenuItem value={"COCAINE/POSSESSION"} primaryText="Cocaine Possession" />
-          <MenuItem value={"BENCH WARRANT"} primaryText="BENCH WARRANT" />
-          <MenuItem value={"TRES PROP/AFTER WARN"} primaryText="TRES PROP/AFTER WARN" />
-          <MenuItem value={"PROBATION WARRANT"} primaryText="Probation Warrant" />
-          <MenuItem value={"DL/EXPIRED 6 MTHS+"} primaryText="DL/EXPIRED 6 MTHS+" />
-          <MenuItem value={"DWLS/KNOWINGL"} primaryText="DWLS/KNOWINGLY" />
-          <MenuItem value={"ARREST WARRANT"} primaryText="Arrest Warrant" />
-          <MenuItem value={"DRUG PARAPHERNA/POSN"} primaryText="Drug Paraherna Posession" />
-          <MenuItem value={"ALC BEV/DRK IN PUBLC"} primaryText="Drunk in Public" />
-      </DropDownMenu>
-     
+          name="charge" >
+            <option value={"Charge"} > Charge </option>
+            <option value={"PETIT THEFT"} > Petty Theft </option>
+            <option value={"LOITERING OR PROWL"} > Loitering </option>
+            <option value={"ALCOHOL/CONSUM/STORE"} > ALCOHOL/CONSUM/STORE </option>
+            <option value={"CHILD ABUSE/NO HARM"} > Child Abuse </option>
+            <option value={"COCAINE/POSSESSION"} > Cocaine Possession </option>
+            <option value={"BENCH WARRANT"} > BENCH WARRANT </option>
+            <option value={"TRES PROP/AFTER WARN"} > TRES PROP/AFTER WARN </option>
+            <option value={"PROBATION WARRANT"} > Probation Warrant </option>
+            <option value={"DL/EXPIRED 6 MTHS+"} > DL/EXPIRED 6 MTHS+ </option>
+            <option value={"DWLS/KNOWINGL"} > DWLS/KNOWINGLY </option>
+            <option value={"ARREST WARRANT"} > Arrest Warrant </option>
+            <option value={"DRUG PARAPHERNA/POSN"} > Drug Paraherna Posession </option>
+            <option value={"ALC BEV/DRK IN PUBLC"} > Drunk in Public </option>
+        </select>
+      </div>
     </div>
+
+  </div>
 
 
 
