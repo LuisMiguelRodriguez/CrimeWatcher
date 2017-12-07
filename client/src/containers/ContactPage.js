@@ -1,47 +1,62 @@
-import React from 'react';
+import React, { Component } from 'react';
 import ReactGoogleMaps from '../components/GoogleMaps';
+import ContactForm from '../components/ContactForm';
+import API from '../components/ContactForm/API'
 
-const ContactPage = () => (
-	<div className="container">
-		<div className="row">
-			<div className="col-md-6">
-				<section id="contact">
-					<div className="section-content">
-						<h3 className="section-header">Get in <span className="content-header wow fadeIn " data-wow-delay="0.2s" data-wow-duration="2s"> Touch With Us</span></h3>
-						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+class ContactPage extends Component {
+
+	constructor (props){
+		super(props)
+
+		this.state = {
+			name: "",
+			email: "",
+			message: ""
+		}
+
+		this.handleInputChange = event => {
+
+      const value = event.target.value;
+
+			const name = event.target.name;
+
+			this.setState({
+          [name]: value
+      });
+    };
+
+		// This is for the submit button:
+		this.handleFormSubmit = event => {
+			// Stops the page from refreshing:
+			event.preventDefault();
+			
+			this.setState({
+
+			})
+		}
+
+	}
+
+	render () {
+		return (
+			<div className="container">
+				<div className="row">
+					<div className="col-md-6">
+						<ContactForm
+							handleInputChange={this.handleInputChange}
+							name={this.state.name}
+							email={this.state.email}
+							message={this.state.message}
+						/>
 					</div>
-					<div className="contact-section">
-						<div className="container">
-							<form id="contact-form">
-								<div className="col-md-12 form-line">
-								<div className="form-group">
-									<label for="exampleInputUsername">Your name</label>
-									<input type="text" className="form-control" id="" placeholder=" Enter Name"/>
-								</div>
-								<div className="form-group">
-									<label for="exampleInputEmail">Email Address</label>
-									<input type="email" className="form-control" id="exampleInputEmail" placeholder=" Enter Email id"/>
-								</div>
-							</div>
-							<div className="col-md-12">
-								<div className="form-group">
-									<label for ="description"> Message</label>
-									<textarea  className="form-control" id="description" placeholder="Enter Your Message"></textarea>
-								</div>
-								<div>
-									<button type="button" className="btn .btn-xl" id="contactbtn"><i className="fa fa-paper-plane" aria-hidden="true"></i>  Send Message</button>
-								</div>
-								</div>
-							</form>
-						</div>
+					<div className="col-md-6">
+						<ReactGoogleMaps />
+					</div>
 				</div>
-				</section>
 			</div>
-			<div className="col-md-6">
-				<ReactGoogleMaps />
-			</div>
-		</div>
-	</div>
-);
+		)
+	}
+
+}
 
 export default ContactPage;
