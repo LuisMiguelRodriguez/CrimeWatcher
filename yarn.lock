@@ -868,6 +868,10 @@ camelcase@^4.0.0:
   version "4.1.0"
   resolved "https://registry.yarnpkg.com/camelcase/-/camelcase-4.1.0.tgz#d545635be1e33c542649c69173e5de6acfae34dd"
 
+can-use-dom@^0.1.0:
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/can-use-dom/-/can-use-dom-0.1.0.tgz#22cc4a34a0abc43950f42c6411024a3f6366b45a"
+
 capture-stack-trace@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/capture-stack-trace/-/capture-stack-trace-1.0.0.tgz#4a6fa07399c26bba47f0b2496b4d0fb408c5550d"
@@ -1514,6 +1518,10 @@ globals@^9.18.0:
   version "9.18.0"
   resolved "https://registry.yarnpkg.com/globals/-/globals-9.18.0.tgz#aa3896b3e69b487f17e31ed2143d69a8e30c2d8a"
 
+google-maps-infobox@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/google-maps-infobox/-/google-maps-infobox-2.0.0.tgz#1ea6de93c0cdf4138c2d586331835c83dcc59dc2"
+
 got@^6.7.1:
   version "6.7.1"
   resolved "https://registry.yarnpkg.com/got/-/got-6.7.1.tgz#240cd05785a9a18e561dc1b44b41c763ef1e8db0"
@@ -1612,6 +1620,10 @@ hoek@4.x.x:
 hoist-non-react-statics@^1.0.0, hoist-non-react-statics@^1.2.0:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/hoist-non-react-statics/-/hoist-non-react-statics-1.2.0.tgz#aa448cf0986d55cc40773b17174b7dd066cb7cfb"
+
+hoist-non-react-statics@^2.3.1:
+  version "2.3.1"
+  resolved "https://registry.yarnpkg.com/hoist-non-react-statics/-/hoist-non-react-statics-2.3.1.tgz#343db84c6018c650778898240135a1420ee22ce0"
 
 home-or-tmp@^2.0.0:
   version "2.0.0"
@@ -2069,7 +2081,7 @@ lodash.throttle@^4.1.1:
   version "4.1.1"
   resolved "https://registry.yarnpkg.com/lodash.throttle/-/lodash.throttle-4.1.1.tgz#c23e91b710242ac70c37f1e1cda9274cc39bf2f4"
 
-lodash@^4.14.0, lodash@^4.17.4:
+lodash@^4.14.0, lodash@^4.16.2, lodash@^4.17.4:
   version "4.17.4"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.4.tgz#78203a4d1c328ae1d86dca6460e369b57f4055ae"
 
@@ -2112,6 +2124,14 @@ make-dir@^1.0.0:
 map-stream@~0.1.0:
   version "0.1.0"
   resolved "https://registry.yarnpkg.com/map-stream/-/map-stream-0.1.0.tgz#e56aa94c4c8055a16404a0674b78f215f7c8e194"
+
+marker-clusterer-plus@^2.1.4:
+  version "2.1.4"
+  resolved "https://registry.yarnpkg.com/marker-clusterer-plus/-/marker-clusterer-plus-2.1.4.tgz#f8eff74d599dab3b7d0e3fed5264ea0e704f5d67"
+
+markerwithlabel@^2.0.1:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/markerwithlabel/-/markerwithlabel-2.0.1.tgz#822f4eb68c488c2509c5ebdb75982eb84a856096"
 
 material-ui@^0.16.5:
   version "0.16.7"
@@ -2609,7 +2629,7 @@ promise@^7.1.1:
   dependencies:
     asap "~2.0.3"
 
-prop-types@^15.5.10, prop-types@^15.5.4, prop-types@^15.5.6:
+prop-types@^15.5.10, prop-types@^15.5.4, prop-types@^15.5.6, prop-types@^15.5.8:
   version "15.6.0"
   resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.6.0.tgz#ceaf083022fc46b4a35f69e13ef75aed0d639856"
   dependencies:
@@ -2730,6 +2750,26 @@ react-event-listener@^0.4.0:
     prop-types "^15.5.4"
     warning "^3.0.0"
 
+react-github-fork-ribbon@^0.5.1:
+  version "0.5.1"
+  resolved "https://registry.yarnpkg.com/react-github-fork-ribbon/-/react-github-fork-ribbon-0.5.1.tgz#35ab2815b2b5b02cb2ebd7d1bb46fee0c43ed5bb"
+
+react-google-maps@^9.4.2:
+  version "9.4.2"
+  resolved "https://registry.yarnpkg.com/react-google-maps/-/react-google-maps-9.4.2.tgz#a8644597b23a70c498c7e081b3d34f90b640a275"
+  dependencies:
+    babel-runtime "^6.11.6"
+    can-use-dom "^0.1.0"
+    google-maps-infobox "^2.0.0"
+    invariant "^2.2.1"
+    lodash "^4.16.2"
+    marker-clusterer-plus "^2.1.4"
+    markerwithlabel "^2.0.1"
+    prop-types "^15.5.8"
+    recompose "^0.26.0"
+    scriptjs "^2.5.8"
+    warning "^3.0.0"
+
 react-nvd3@^0.5.7:
   version "0.5.7"
   resolved "https://registry.yarnpkg.com/react-nvd3/-/react-nvd3-0.5.7.tgz#06e97ca5a75afcbf6ac7f5475217f41c1b0762a7"
@@ -2815,6 +2855,15 @@ recompose@^0.21.0:
     change-emitter "^0.1.2"
     fbjs "^0.8.1"
     hoist-non-react-statics "^1.0.0"
+    symbol-observable "^1.0.4"
+
+recompose@^0.26.0:
+  version "0.26.0"
+  resolved "https://registry.yarnpkg.com/recompose/-/recompose-0.26.0.tgz#9babff039cb72ba5bd17366d55d7232fbdfb2d30"
+  dependencies:
+    change-emitter "^0.1.2"
+    fbjs "^0.8.1"
+    hoist-non-react-statics "^2.3.1"
     symbol-observable "^1.0.4"
 
 regenerate@^1.2.1:
@@ -2976,6 +3025,10 @@ ripemd160@0.2.0:
 safe-buffer@5.1.1, safe-buffer@^5.0.1, safe-buffer@^5.1.1, safe-buffer@~5.1.0, safe-buffer@~5.1.1:
   version "5.1.1"
   resolved "https://registry.yarnpkg.com/safe-buffer/-/safe-buffer-5.1.1.tgz#893312af69b2123def71f57889001671eeb2c853"
+
+scriptjs@^2.5.8:
+  version "2.5.8"
+  resolved "https://registry.yarnpkg.com/scriptjs/-/scriptjs-2.5.8.tgz#d0c43955c2e6bad33b6e4edf7b53b8965aa7ca5f"
 
 semver-diff@^2.0.0:
   version "2.1.0"

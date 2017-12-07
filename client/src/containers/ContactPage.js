@@ -1,4 +1,5 @@
 import React from 'react';
+import ReactGoogleMaps from '../components/GoogleMaps';
 
 const ContactPage = () => (
 	<div className="container">
@@ -35,6 +36,9 @@ const ContactPage = () => (
 						</div>
 				</div>
 				</section>
+			</div>
+			<div className="col-md-6">
+				<ReactGoogleMaps />
 			</div>
 		</div>
 	</div>
