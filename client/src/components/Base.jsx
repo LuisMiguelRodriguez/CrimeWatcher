@@ -44,7 +44,7 @@ const Base = ({ children }) => (
                   <Link className="nav-link js-scroll-trigger" to="/#features">Features</Link>
                 </li>
                 <li className="nav-item">
-                  <Link className="nav-link js-scroll-trigger" to="/about">About</Link>
+                  <Link className="nav-link js-scroll-trigger" to="/about">Meet The Team</Link>
                 </li>
                 <li className="nav-item">
                   <Link className="nav-link js-scroll-trigger" to="/contact">Contact</Link>

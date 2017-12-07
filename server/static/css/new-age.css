@@ -443,8 +443,9 @@ About Page */
 .socialicon {
   margin-bottom: 10px;
   margin-top: 10px;
-  margin-left: 15px;
-  float: left;
-  padding: 5px;
+  padding: 10px;
   position: relative;
+  color: #fff;
+  font-size:36px;
+  background-color:#4395CD;
 }

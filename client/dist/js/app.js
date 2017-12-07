@@ -35191,7 +35191,7 @@
 	                _react2.default.createElement(
 	                  _reactRouter.Link,
 	                  { className: 'nav-link js-scroll-trigger', to: '/about' },
-	                  'About'
+	                  'Meet The Team'
 	                )
 	              ),
 	              _react2.default.createElement(
@@ -115997,35 +115997,9 @@
 	          "div",
 	          { className: "col-md-12" },
 	          _react2.default.createElement(
-	            "h1",
-	            { className: "aboutheading" },
-	            "About Crime Watcher"
-	          )
-	        )
-	      ),
-	      _react2.default.createElement(
-	        "div",
-	        { className: "row" },
-	        _react2.default.createElement(
-	          "div",
-	          { className: "col-md-12" },
-	          _react2.default.createElement(
-	            "p",
-	            null,
-	            "Foo Design Studios set out to change the way custom t-shirts are done. Our goal was to make it easier, faster, and more convenient than ever to get quality custom apparel printed and delivered direct to our customers. Giving our artistic customers full creative control.With our newest interactive design studio, we think we've made it easier than ever to create custom t-shirts. No visit to the print shop required. Just a t-shirt design studio at your fingertips, 24/7."
-	          )
-	        )
-	      ),
-	      _react2.default.createElement(
-	        "div",
-	        { className: "row" },
-	        _react2.default.createElement(
-	          "div",
-	          { className: "col-md-12" },
-	          _react2.default.createElement(
 	            "h2",
 	            { className: "aboutheading", id: "aboutheading" },
-	            "Meet the Crime Watchers"
+	            "Meet the Creators"
 	          )
 	        )
 	      ),
@@ -116038,14 +116012,27 @@
 	          _react2.default.createElement("img", { className: "bioPictures", src: "/img/bioPics/jen.jpg" }),
 	          _react2.default.createElement(
 	            "div",
-	            { className: "row" },
+	            { className: "container" },
 	            _react2.default.createElement(
 	              "div",
-	              { className: "col-xs-4 col-md-4" },
+	              { className: "row" },
 	              _react2.default.createElement(
-	                "a",
-	                { href: "https://www.linkedin.com/in/ecomjenma/" },
-	                _react2.default.createElement("img", { className: "socialicon", src: "/img/linkedin.png" })
+	                "div",
+	                { className: "col-xs-3 col-md-3" },
+	                _react2.default.createElement(
+	                  "a",
+	                  { href: "https://www.linkedin.com/in/ecomjenma/" },
+	                  _react2.default.createElement("i", { className: "fa fa-linkedin socialicon", "aria-hidden": "true" })
+	                )
+	              ),
+	              _react2.default.createElement(
+	                "div",
+	                { className: "col-xs-3 col-md-3" },
+	                _react2.default.createElement(
+	                  "a",
+	                  { href: "https://www.linkedin.com/in/ecomjenma/" },
+	                  _react2.default.createElement("i", { className: "fa fa-linkedin socialicon", "aria-hidden": "true" })
+	                )
 	              )
 	            )
 	          )
@@ -116086,7 +116073,7 @@
 	              _react2.default.createElement(
 	                "a",
 	                { href: "https://www.linkedin.com/in/luisthecoder" },
-	                _react2.default.createElement("img", { src: "/img/linkedin.png" })
+	                _react2.default.createElement("i", { className: "fa fa-linkedin socialicon", "aria-hidden": "true" })
 	              )
 	            )
 	          )
@@ -116127,7 +116114,7 @@
 	              _react2.default.createElement(
 	                "a",
 	                { href: "https://www.linkedin.com/in/ecomjenma/" },
-	                _react2.default.createElement("img", { className: "socialicon", src: "/img/linkedin.png" })
+	                _react2.default.createElement("i", { className: "fa fa-linkedin socialicon", "aria-hidden": "true" })
 	              )
 	            )
 	          )
@@ -116168,7 +116155,7 @@
 	              _react2.default.createElement(
 	                "a",
 	                { href: "https://www.linkedin.com/in/ecomjenma/" },
-	                _react2.default.createElement("img", { className: "socialicon", src: "/img/linkedin.png" })
+	                _react2.default.createElement("i", { className: "fa fa-linkedin socialicon", "aria-hidden": "true" })
 	              )
 	            )
 	          )
