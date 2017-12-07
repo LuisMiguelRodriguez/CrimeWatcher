@@ -12,17 +12,17 @@ class Analytics extends Component {
     super(props)
 
     this.state = {
-      startMonth: "",
-      startDay: "",
-      startYear: "",
-      endDay: "",
-      endMonth: "",
-      endYear: "",
+      startMonth: "05",
+      startDay: "05",
+      startYear: "2016",
+      endDay: "08",
+      endMonth: "08",
+      endYear: "2016",
       startDate: "2015-05-05",
       endDate: "2015-07-07",
       crimeData: [],
-      sortType: "",
-      chartType: "",
+      sortType: "crime",
+      chartType: "pieChart",
       showGraph: false,
       datum:[],
       chartVal:"pieChart",
@@ -50,13 +50,14 @@ class Analytics extends Component {
         datum: [],
       });
 
-      console.log("------- logging state here -------");
-      console.log(this.state)
-      console.log("------- end logging state here -------");
+
       event.preventDefault();
       if (this.state.startDate && this.state.endDate) {
         let URL = `https://opendata.miamidade.gov/resource/k7xd-qgzt.json?$where=bookdate between '${this.state.startYear}-${this.state.startMonth}-${this.state.startDay}T12:00:00' and '${this.state.endYear}-${this.state.endMonth}-${this.state.endDay}T14:00:00'`;
 
+      console.log("------- Before Entering switch logging state here -------");
+      console.log(this.state)
+      console.log("------- end logging state here -------");
         // let URL = `https://opendata.miamidade.gov/resource/k7xd-qgzt.json?$where=bookdate between '${this.state.startDate}T12:00:00' and '${this.state.endDate}T14:00:00'`;
         console.log(URL)
         API.getData(URL)
@@ -171,6 +172,9 @@ class Analytics extends Component {
                                 this.setState({
                                   datum: dataArray.slice(0,10),
                                 })
+                                console.log("------- logging state here -------");
+                                console.log(this.state)
+                                console.log("------- end logging state here -------");
                               })
                             break;
                             case "age":
