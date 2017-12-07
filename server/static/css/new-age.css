@@ -421,3 +421,31 @@ footer {
     color: white;
     border-color: #d73925;
     background-color: #d73925; }
+/* 
+About Page */
+.aboutcontainer{
+  margin-top: 80px;
+  padding-top: 20px;
+}
+.aboutheading{
+  font-weight: 600;
+  margin-left: 10px;
+}
+#aboutheading{
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+.bioPictures{
+  width: 200px;
+  /* border-radius: 50%; */
+  margin-left: 20px;
+}
+.socialicon {
+  margin-bottom: 10px;
+  margin-top: 10px;
+  padding: 10px;
+  position: relative;
+  color: #fff;
+  font-size:36px;
+  background-color:#4395CD;
+}
