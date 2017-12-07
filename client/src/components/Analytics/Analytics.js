@@ -550,7 +550,7 @@ class Analytics extends Component {
             <div className="row">
               <div className="col-md-1">
               </div>
-              <div className="col-md-10 text-center">
+              <div className="col-md-10 text-center" id="paddMeUp">
                 <NVD3Chart
                   id="chart"
                   width={800}

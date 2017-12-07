@@ -41,10 +41,10 @@
 
 }
 #graphingRegion {
-  background: #7095ad;
-  border: 3px solid teal;
+  background: linear-gradient(270deg, #10f2f0, #79dcfe);
+  border: 3px solid black
   border-radius: 3px;
-  box-shadow: 10px 15px 10px 3px ##1d82c4;
+  box-shadow: 2px 3px 2px 1px #a4d6e8;
 }
 
 .dataBlob {
@@ -54,7 +54,6 @@
   margin: 10px auto;
   font-family: 'Spectral SC', serif;
   font-size: 20px;
-/*  width: 200px;*/
   box-shadow: 2px 3px 2px 1px grey;
   color: white;
   border-radius: 3px;
