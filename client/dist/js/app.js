@@ -115989,247 +115989,207 @@
 	    null,
 	    _react2.default.createElement(
 	      "div",
-	      { className: "container-fluid" },
-	      _react2.default.createElement(
-	        "div",
-	        { id: "jumbo" },
-	        _react2.default.createElement(
-	          "h1",
-	          { className: "headline" },
-	          "About Us"
-	        )
-	      )
-	    ),
-	    _react2.default.createElement(
-	      "div",
-	      { className: "container" },
+	      { className: "container-fluid aboutcontainer" },
 	      _react2.default.createElement(
 	        "div",
 	        { className: "row" },
 	        _react2.default.createElement(
 	          "div",
-	          { className: "col-xs-12 col-md-4" },
+	          { className: "col-md-12" },
 	          _react2.default.createElement(
-	            "h2",
-	            null,
-	            "What Foo Design Studio Offer"
-	          )
-	        ),
-	        _react2.default.createElement(
-	          "div",
-	          { className: "col-xs-12 col-md-4 col-md-offset-2" },
-	          _react2.default.createElement(
-	            "div",
-	            { id: "aboutUs" },
-	            _react2.default.createElement(
-	              "p",
-	              null,
-	              "Foo Design Studios set out to change the way custom t-shirts are done. Our goal was to make it easier, faster, and more convenient than ever to get quality custom apparel printed and delivered direct to our customers. Giving our artistic customers full creative control.With our newest interactive design studio, we think we've made it easier than ever to create custom t-shirts. No visit to the print shop required. Just a t-shirt design studio at your fingertips, 24/7."
-	            )
+	            "h1",
+	            { className: "aboutheading" },
+	            "About Crime Watcher"
 	          )
 	        )
 	      ),
-	      _react2.default.createElement("br", null),
-	      _react2.default.createElement("br", null),
-	      _react2.default.createElement(
-	        "h1",
-	        null,
-	        "Meet the Foos"
-	      ),
-	      _react2.default.createElement("hr", null),
 	      _react2.default.createElement(
 	        "div",
-	        { className: "row", id: "square" },
+	        { className: "row" },
+	        _react2.default.createElement(
+	          "div",
+	          { className: "col-md-12" },
+	          _react2.default.createElement(
+	            "p",
+	            null,
+	            "Foo Design Studios set out to change the way custom t-shirts are done. Our goal was to make it easier, faster, and more convenient than ever to get quality custom apparel printed and delivered direct to our customers. Giving our artistic customers full creative control.With our newest interactive design studio, we think we've made it easier than ever to create custom t-shirts. No visit to the print shop required. Just a t-shirt design studio at your fingertips, 24/7."
+	          )
+	        )
+	      ),
+	      _react2.default.createElement(
+	        "div",
+	        { className: "row" },
+	        _react2.default.createElement(
+	          "div",
+	          { className: "col-md-12" },
+	          _react2.default.createElement(
+	            "h2",
+	            { className: "aboutheading", id: "aboutheading" },
+	            "Meet the Crime Watchers"
+	          )
+	        )
+	      ),
+	      _react2.default.createElement(
+	        "div",
+	        { className: "row" },
 	        _react2.default.createElement(
 	          "div",
 	          { className: "col-md-2" },
-	          _react2.default.createElement(
-	            "div",
-	            { id: "jen" },
-	            _react2.default.createElement("img", { className: "bioPictures", src: "/img/bioPics/jen.jpg" })
-	          )
-	        ),
-	        _react2.default.createElement(
-	          "div",
-	          { className: "col-md-8 col-md-offset-2" },
-	          _react2.default.createElement(
-	            "div",
-	            { id: "jenBio" },
-	            _react2.default.createElement(
-	              "h2",
-	              null,
-	              "Project Manager"
-	            ),
-	            _react2.default.createElement(
-	              "h3",
-	              null,
-	              "Jen"
-	            ),
-	            _react2.default.createElement(
-	              "p",
-	              null,
-	              " A UC Riverside alumni, Jen, project manager by birth and raised in the O.C. If you need a project done she is the one we call to get things done. She loves to try out different food locales with her boyfriend. She loves ice cream, gummy bears, or just straight sugar. Oh did we mention she loves raccoons?"
-	            )
-	          ),
+	          _react2.default.createElement("img", { className: "bioPictures", src: "/img/bioPics/jen.jpg" }),
 	          _react2.default.createElement(
 	            "div",
 	            { className: "row" },
 	            _react2.default.createElement(
 	              "div",
-	              { className: "col-xs-4 col-md-2" },
+	              { className: "col-xs-4 col-md-4" },
 	              _react2.default.createElement(
 	                "a",
 	                { href: "https://www.linkedin.com/in/ecomjenma/" },
-	                _react2.default.createElement("img", { src: "/img/linkedin.png" })
+	                _react2.default.createElement("img", { className: "socialicon", src: "/img/linkedin.png" })
 	              )
 	            )
-	          )
-	        )
-	      ),
-	      _react2.default.createElement(
-	        "div",
-	        { className: "row", id: "square" },
-	        _react2.default.createElement(
-	          "div",
-	          { className: "col-md-2" },
-	          _react2.default.createElement(
-	            "div",
-	            { id: "luis" },
-	            _react2.default.createElement("img", { className: "bioPictures", src: "/img/bioPics/luis.png" })
 	          )
 	        ),
 	        _react2.default.createElement(
 	          "div",
 	          { className: "col-md-8 col-md-offset-2" },
 	          _react2.default.createElement(
-	            "div",
-	            { id: "luisBio" },
-	            _react2.default.createElement(
-	              "h2",
-	              null,
-	              "Front/Back End Developer"
-	            ),
-	            _react2.default.createElement(
-	              "h3",
-	              null,
-	              "Luis"
-	            ),
-	            _react2.default.createElement(
-	              "p",
-	              null,
-	              "Luis loves Pizza and Cider. Born and raised in New York but was forced subcumb to the forces of the west side. But as he would say \"Why not ask me in person about me?.....I am serious.\""
-	            )
+	            "h2",
+	            null,
+	            "Project Manager/FrontEnd Designer"
 	          ),
+	          _react2.default.createElement(
+	            "h3",
+	            null,
+	            "Jen"
+	          ),
+	          _react2.default.createElement(
+	            "p",
+	            null,
+	            " A UC Riverside alumni, Jen, project manager by birth and raised in the O.C. If you need a project done she is the one we call to get things done. She loves to try out different food locales with her boyfriend. She loves ice cream, gummy bears, or just straight sugar. Oh did we mention she loves raccoons?"
+	          )
+	        )
+	      ),
+	      _react2.default.createElement(
+	        "div",
+	        { className: "row" },
+	        _react2.default.createElement(
+	          "div",
+	          { className: "col-md-2" },
+	          _react2.default.createElement("img", { className: "bioPictures", src: "/img/bioPics/luis.png" }),
 	          _react2.default.createElement(
 	            "div",
 	            { className: "row" },
 	            _react2.default.createElement(
 	              "div",
-	              { className: "col-xs-4 col-md-2" },
+	              { className: "col-xs-4 col-md-4" },
 	              _react2.default.createElement(
 	                "a",
-	                { href: "https://www.linkedin.com/in/luisthecoder?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3BzQUm0lbQTluZSKRUySXiEQ%3D%3D" },
+	                { href: "https://www.linkedin.com/in/luisthecoder" },
 	                _react2.default.createElement("img", { src: "/img/linkedin.png" })
 	              )
 	            )
-	          )
-	        )
-	      ),
-	      _react2.default.createElement(
-	        "div",
-	        { className: "row", id: "square" },
-	        _react2.default.createElement(
-	          "div",
-	          { className: "col-md-2" },
-	          _react2.default.createElement(
-	            "div",
-	            { id: "isaac" },
-	            _react2.default.createElement("img", { className: "bioPictures", src: "bioPics/isaac.jpg" })
 	          )
 	        ),
 	        _react2.default.createElement(
 	          "div",
 	          { className: "col-md-8 col-md-offset-2" },
 	          _react2.default.createElement(
-	            "div",
-	            { id: "IsaacBio" },
-	            _react2.default.createElement(
-	              "h2",
-	              null,
-	              "Front End Developer"
-	            ),
-	            _react2.default.createElement(
-	              "h3",
-	              null,
-	              "Isaac"
-	            ),
-	            _react2.default.createElement(
-	              "p",
-	              null,
-	              "A native Angelino by heart forced to moved to Irvine to save his family from having too much fun. A UCLA alumni and entrepreneur Isaac enjoys the success that he has built for himself. If you don't find him coding he is enjoying his time with children and wife. \"Are you a mexiCANT or a mexiCAN foo\""
-	            )
+	            "h2",
+	            null,
+	            "Front/Back End Developer"
 	          ),
+	          _react2.default.createElement(
+	            "h3",
+	            null,
+	            "Luis"
+	          ),
+	          _react2.default.createElement(
+	            "p",
+	            null,
+	            "Luis loves Pizza and Cider. Born and raised in New York but was forced subcumb to the forces of the west side. But as he would say \"Why not ask me in person about me?.....I am serious.\""
+	          )
+	        )
+	      ),
+	      _react2.default.createElement(
+	        "div",
+	        { className: "row" },
+	        _react2.default.createElement(
+	          "div",
+	          { className: "col-md-2" },
+	          _react2.default.createElement("img", { className: "bioPictures", src: "/img/bioPics/jen.jpg" }),
 	          _react2.default.createElement(
 	            "div",
 	            { className: "row" },
 	            _react2.default.createElement(
 	              "div",
-	              { className: "col-xs-4 col-md-2" },
+	              { className: "col-xs-4 col-md-4" },
 	              _react2.default.createElement(
 	                "a",
-	                { href: "https://www.linkedin.com/in/isaac-solis-a403a141/" },
-	                _react2.default.createElement("img", { src: "img/linkedin.png" })
+	                { href: "https://www.linkedin.com/in/ecomjenma/" },
+	                _react2.default.createElement("img", { className: "socialicon", src: "/img/linkedin.png" })
 	              )
 	            )
-	          )
-	        )
-	      ),
-	      _react2.default.createElement(
-	        "div",
-	        { className: "row", id: "square" },
-	        _react2.default.createElement(
-	          "div",
-	          { className: "col-md-2" },
-	          _react2.default.createElement(
-	            "div",
-	            { id: "brandy" },
-	            _react2.default.createElement("img", { className: "bioPictures", src: "/img/bioPics/me.jpg" })
 	          )
 	        ),
 	        _react2.default.createElement(
 	          "div",
 	          { className: "col-md-8 col-md-offset-2" },
 	          _react2.default.createElement(
+	            "h2",
+	            null,
+	            "Project Manager/FrontEnd Designer"
+	          ),
+	          _react2.default.createElement(
+	            "h3",
+	            null,
+	            "Jen"
+	          ),
+	          _react2.default.createElement(
+	            "p",
+	            null,
+	            " A UC Riverside alumni, Jen, project manager by birth and raised in the O.C. If you need a project done she is the one we call to get things done. She loves to try out different food locales with her boyfriend. She loves ice cream, gummy bears, or just straight sugar. Oh did we mention she loves raccoons?"
+	          )
+	        )
+	      ),
+	      _react2.default.createElement(
+	        "div",
+	        { className: "row" },
+	        _react2.default.createElement(
+	          "div",
+	          { className: "col-md-2" },
+	          _react2.default.createElement("img", { className: "bioPictures", src: "/img/bioPics/jen.jpg" }),
+	          _react2.default.createElement(
 	            "div",
-	            { id: "brandyBio" },
-	            _react2.default.createElement(
-	              "h2",
-	              null,
-	              "Front End Developer"
-	            ),
-	            _react2.default.createElement(
-	              "h3",
-	              null,
-	              "Brandy"
-	            ),
-	            _react2.default.createElement(
-	              "p",
-	              null,
-	              "Brandy born in Orange County and lived in Santa his whole life. He studied Computer Science at Cal State Fullerton before deciding History was his calling. Working in multiple customer service jobs he finally settled in Noritz America as a technical support. With more ambition than hair he decided to begin a career as a Front End Web Developer. On his free time he likes to go out to different food place with his wife Maria. He also loves to play soccer and beat people online in FIFA. Foo he is too good!"
-	            ),
+	            { className: "row" },
 	            _react2.default.createElement(
 	              "div",
-	              { className: "row" },
+	              { className: "col-xs-4 col-md-4" },
 	              _react2.default.createElement(
-	                "div",
-	                { className: "col-xs-4 col-md-2" },
-	                _react2.default.createElement(
-	                  "a",
-	                  { href: "https://www.linkedin.com/in/brandy-antonio-47342a94" },
-	                  _react2.default.createElement("img", { src: "/img/linkedin.png" })
-	                )
+	                "a",
+	                { href: "https://www.linkedin.com/in/ecomjenma/" },
+	                _react2.default.createElement("img", { className: "socialicon", src: "/img/linkedin.png" })
 	              )
 	            )
+	          )
+	        ),
+	        _react2.default.createElement(
+	          "div",
+	          { className: "col-md-8 col-md-offset-2" },
+	          _react2.default.createElement(
+	            "h2",
+	            null,
+	            "Project Manager/FrontEnd Designer"
+	          ),
+	          _react2.default.createElement(
+	            "h3",
+	            null,
+	            "Jen"
+	          ),
+	          _react2.default.createElement(
+	            "p",
+	            null,
+	            " A UC Riverside alumni, Jen, project manager by birth and raised in the O.C. If you need a project done she is the one we call to get things done. She loves to try out different food locales with her boyfriend. She loves ice cream, gummy bears, or just straight sugar. Oh did we mention she loves raccoons?"
 	          )
 	        )
 	      )
