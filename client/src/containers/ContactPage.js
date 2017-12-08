@@ -39,17 +39,27 @@ class ContactPage extends Component {
 
 	render () {
 		return (
-			<div className="container">
-				<div className="row">
-					<div className="col-md-6">
-						<ContactForm
-							handleInputChange={this.handleInputChange}
-							name={this.state.name}
-							email={this.state.email}
-							message={this.state.message}
-						/>
+			<div className="container contact">
+				<div className="row" id="contactheadline">
+					<div className="col-md-12">
+						<h2> We'd <i className="icon-heart"></i> to hear from you</h2>
+						<p>We like to hear your feedback to see how we can improve your app and how it has helped you</p>
 					</div>
+				</div>
+					
+				<div className="row contact-form">
 					<div className="col-md-6">
+						
+							<ContactForm
+								handleInputChange={this.handleInputChange}
+								name={this.state.name}
+								email={this.state.email}
+								message={this.state.message}
+							/>
+					</div>
+					<div className="col-md-6 section-content ">
+						<h3 className="section-header">How To Find Us</h3>
+						<p className="address">Univeristy of California Extenstion Center<br></br>510 E Peltason Dr.<br></br> Irvine, CA 92697</p>
 						<ReactGoogleMaps />
 					</div>
 				</div>

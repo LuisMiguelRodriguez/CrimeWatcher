@@ -2,10 +2,10 @@ import React from 'react'
 
 const ContactForm = props => (
 
-  <section id="contact">
+  <section>
     <div className="section-content">
-      <h3 className="section-header">Get in <span className="content-header wow fadeIn " data-wow-delay="0.2s" data-wow-duration="2s"> Touch With Us</span></h3>
-      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+      <h3 className="section-header">How To Reach Us</h3>
+      <p className="address">Fill out the form below!</p>
     </div>
     <div className="contact-section">
       <div className="container">
