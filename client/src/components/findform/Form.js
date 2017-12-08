@@ -179,7 +179,7 @@ class FindForm extends Component {
                   <div className = "col-md-4 " key={item.dob}>
                     <Card>
                       <CardMedia
-                      overlay={<CardTitle title={item.defendant} subtitle="Overlay subtitle" />}
+                      overlay={<CardTitle title={this.nameInterpreter(item.defendant)} subtitle="Overlay subtitle" />}
                       >
                       <img src="img/mugshot.png" />
                       </CardMedia>
