@@ -109,9 +109,15 @@ class FindForm extends Component {
 
     // Presents charges with proper capitalization:
     this.chargesInterpreter = (chargeOne) => {
-      var original = chargeOne;
-      var charge = original.toLowerCase();
-      return charge;
+      if(chargeOne){
+        var original = chargeOne;
+        var charge = original.toLowerCase();
+        return charge;
+      } else {
+        var charge = "N/A"
+        return charge;
+      }
+
     }
 
     this.weekDayInterpreter = (uninterpretedDate) => {
@@ -179,7 +185,7 @@ class FindForm extends Component {
                       </CardMedia>
                       <CardTitle title="Card title" subtitle="Card subtitle" />
                       <CardText>
-                      <p>DOB: {item.dob}</p>
+                      <p>DOB: {item.dob.substr(0,10)}</p>
                       <p>Residence: {item.location_1_address}, {item.location_1_city}, {item.location_1_state} {item.location_1_zip}</p>
                       <p>Charges: {item.charge1}, {item.charge2}</p>
                       <SentenceRender
