@@ -18,10 +18,10 @@ const AboutPage = () => (
           <div className="container">
             <div className="row">
               <div className="col-xs-3 col-md-3">
-                <a href="https://www.linkedin.com/in/ecomjenma/"><i className="fa fa-linkedin socialicon" aria-hidden="true"></i></a>
+                <a href="https://www.linkedin.com/in/ecomjenma"><i className="fa fa-linkedin socialicon" aria-hidden="true"></i></a>
               </div>
               <div className="col-xs-3 col-md-3">
-                <a href="https://www.linkedin.com/in/ecomjenma/"><i className="fa fa-github-square socialgit" aria-hidden="true"></i></a>
+                <a href="https://github.com/Jenmadev"><i className="fa fa-github-square socialgit" aria-hidden="true"></i></a>
               </div>
             </div>
           </div>
@@ -39,7 +39,7 @@ const AboutPage = () => (
           <div className="container">
             <div className="row">
               <div className="col-xs-3 col-md-3">
-                <a href="https://www.linkedin.com/in/luisthecoder/" target="_blank"><i className="fa fa-linkedin socialicon" aria-hidden="true"></i></a>
+                <a href="https://www.linkedin.com/in/luisthecoder" target="_blank"><i className="fa fa-linkedin socialicon" aria-hidden="true"></i></a>
               </div>
               <div className="col-xs-3 col-md-3">
                 <a href="https://github.com/LuisMiguelRodriguez" target="_blank"><i className="fa fa-github-square socialgit" aria-hidden="true"></i></a>
@@ -48,7 +48,7 @@ const AboutPage = () => (
           </div>
         </div>
         <div className="col-md-8 col-md-offset-2">
-          <h4>Front/Back End Developer</h4>
+          <h4>FrontEnd/BackEnd Developer</h4>
           <h4>Luis</h4>
           <p>Luis loves Pizza and Cider. Born and raised in New York but was forced subcumb to the forces of the west side. But as he would say "Why not ask me in person about me?.....I am serious."
           </p>
@@ -80,17 +80,17 @@ const AboutPage = () => (
           <div className="container">
             <div className="row">
               <div className="col-xs-3 col-md-3">
-                <a href="https://www.linkedin.com/in/omkapoor" target="_blank"><i className="fa fa-linkedin socialicon" aria-hidden="true"></i></a>
+                <a href="https://www.linkedin.com/in/petersurowski" target="_blank"><i className="fa fa-linkedin socialicon" aria-hidden="true"></i></a>
               </div>
               <div className="col-xs-3 col-md-3">
-                <a href="https://github.com/okapoor" target="_blank"><i className="fa fa-github-square socialgit" aria-hidden="true"></i></a>
+                <a href="https://github.com/petersurowski" target="_blank"><i className="fa fa-github-square socialgit" aria-hidden="true"></i></a>
               </div>
             </div>
           </div>
         </div>
         <div className="col-md-8 col-md-offset-2">
           <h4>Back End Developer/Copywriter</h4>
-          <h4>Om</h4>
+          <h4>Peter</h4>
           <p>DevOps engineer with a passion for solving problems and learning new technologies</p>
         </div>
       </div>
