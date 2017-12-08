@@ -179,13 +179,12 @@ class FindForm extends Component {
                   <div className = "col-md-4 " key={item.dob}>
                     <Card>
                       <CardMedia
-                      overlay={<CardTitle title={this.nameInterpreter(item.defendant)} subtitle="Overlay subtitle" />}
+                      overlay={<CardTitle title={this.nameInterpreter(item.defendant)} subtitle={"DOB: " + item.dob.substr(0,10)} />}
                       >
                       <img src="img/mugshot.png" />
                       </CardMedia>
-                      <CardTitle title="Card title" subtitle="Card subtitle" />
+                      <CardTitle title="Facts: " subtitle="" />
                       <CardText>
-                      <p>DOB: {item.dob.substr(0,10)}</p>
                       <p>Residence: {item.location_1_address}, {item.location_1_city}, {item.location_1_state} {item.location_1_zip}</p>
                       <p>Charges: {item.charge1}, {item.charge2}</p>
                       <SentenceRender
