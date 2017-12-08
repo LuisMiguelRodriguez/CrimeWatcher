@@ -413,6 +413,7 @@ footer {
   border-color: white;
   background-color: rgba(0, 0, 0, 0.5);
   font-size: 14px;
+  margin-top:10px;
 }
 
 #contactbtn:hover, #contactbtn:focus, #contactbtn:active, #contactbtn.active {
