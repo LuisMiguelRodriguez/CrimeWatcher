@@ -40,7 +40,7 @@ const HomePage = () => (
           <p className="text-muted">Check out what you can do with this app!</p>
           <hr/>
         </div>
-        <div className="row">
+        <div className="row feature-section">
           <div className="col-lg-4 my-auto">
             <div className="device-container">
               <div className="device-mockup iphone6_plus portrait white">
@@ -60,14 +60,14 @@ const HomePage = () => (
                 <div className="col-lg-6">
                   <div className="feature-item">
                     <i className="icon-magnifier text-primary"></i>
-                    <h3>Search</h3>
+                    <h4>Search</h4>
                     <p className="text-muted">Give us dates and a type of crime, and we'll dig up all the matching data in Miami-Dade County booking logs.</p>
                   </div>
                 </div>
                 <div className="col-lg-6">
                   <div className="feature-item">
                     <i className="icon-book-open text-primary"></i>
-                    <h3>Automated Articles</h3>
+                    <h4>Automated Articles</h4>
                     <p className="text-muted">We'll give you these data in paragraph form so you can copy-paste into your articles. No more typos!</p>
                   </div>
                 </div>
@@ -76,14 +76,14 @@ const HomePage = () => (
                 <div className="col-lg-6">
                   <div className="feature-item">
                     <i className="icon-graph text-primary"></i>
-                    <h3>Crime Data</h3>
+                    <h4>Crime Data</h4>
                     <p className="text-muted">We'll give you pie charts and bar graphs describing crime trends in the date range you can use to illustrate your stories.</p>
                   </div>
                 </div>
                 <div className="col-lg-6">
                   <div className="feature-item">
                     <i className="icon-envelope text-primary"></i>
-                    <h3>Email</h3>
+                    <h4>Email</h4>
                     <p className="text-muted">We can email you the data for safe keeping.</p>
                   </div>
                 </div>
