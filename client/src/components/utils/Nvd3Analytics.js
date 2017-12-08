@@ -45,6 +45,7 @@ export default {
 				let bookDay = bookDate.split("T")[0];
 				dayCounts[bookDay] = (dayCounts[bookDay]||0)+1
 			});
+			console.log(dayCounts);
 			resolve(dayCounts);
 		})
 	},
@@ -128,5 +129,42 @@ export default {
 			let minCrimeType = crimeCounts.crime[crimeCounts.counts.indexOf(Math.min(...crimeCounts.counts))];
 			resolve({maxCrimeType: maxCrimeType,minCrimeType: minCrimeType})
 		})
+	},
+	lineGraph: (dataArray) => {
+		console.log("At the start now")
+		return new Promise((resolve, reject) => {
+			var lineGraphArray= []
+
+			if (lineGraphArray[])
+			lineGraphArray[0] = {
+				date: dataArray[0].bookdate.split("T")[0],
+				count: 0
+			};
+			console.log("Inside now something wierd")
+
+			dataArray.forEach((element) => { 
+				let date = element.bookdate.split("T")[0];
+
+				if(lineGraphArray)
+				console.log(date);
+				lineGraphArray.forEach((dayObject) => {
+					console.log(dayObject);
+					if(dayObject.date === date) {
+						console.log("True Loop");
+							dayObject.count++
+							console.log(dayObject.count)
+					}else{
+						console.log(lineGraphArray.length);
+						lineGraphArray.push("HelloHiHello")
+						// lineGraphArray.push({
+						// 	date: date,
+						// 	count: 0,
+						// });
+					};
+				});
+			});
+			resolve(lineGraphArray)	;
+		});
 	}
+
 }

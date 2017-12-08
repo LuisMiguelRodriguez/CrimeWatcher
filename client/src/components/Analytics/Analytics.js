@@ -29,6 +29,7 @@ class Analytics extends Component {
       age: {},
       day: {},
       crime: {},
+      lineGraph:[],
     };
 
     this.loadData = () => {
@@ -83,6 +84,19 @@ class Analytics extends Component {
                 day: response
               })
             });
+            console.log("---------======-----------------")
+            console.log("WKJNSDKJNSDKJFNSKDJFNSKJDFNKSJN");
+
+            Nvd3Analytics.lineGraph(this.state.crimeData).then((response) => {
+
+              console.log("==================================")
+              console.log("This is a test for a line Graph!!!")
+              console.log(response);
+              console.log("==================================")
+            });
+
+            console.log("WKJNSDKJNSDKJFNSKDJFNSKJDFNKSJN");
+            console.log("WKJNSDKJNSDKJFNSKDJFNSKJDFNKSJN");
 
             // END getting data anlytics
 
