@@ -1,20 +1,12 @@
 import React from 'react';
 
 const AboutPage = () => (
-  <div>
-    <div className="container-fluid aboutcontainer"> 
-      {/* <div className="row">
-        <div className="col-md-12">
-          <h2 className="aboutheading">What Is It About</h2>
-        </div>
-      </div>
-      <div className="row">
-        <div className="col-md-12">
-          <p id>Foo Design Studios set out to change the way custom t-shirts are done. Our goal was to make it easier, faster, and more convenient than ever to get quality custom apparel printed and delivered direct to our customers. Giving our artistic customers
-            full creative control.With our newest interactive design studio, we think we've made it easier than ever to create custom t-shirts. No visit to the print shop required. Just a t-shirt design studio at your fingertips, 24/7.
-          </p>
-        </div>
-      </div> */}
+  <div className="aboutcontainer">
+    <div className="container-fluid"> 
+      <br/>
+      <br/>
+      <br/>
+      <br/>
       <div className="row">
         <div className="col-md-12">
         <h2 className="aboutheading" id="aboutheading">Meet the Creators</h2>
@@ -48,6 +40,9 @@ const AboutPage = () => (
           <div className="row">
             <div className="col-xs-4 col-md-4">
             <a href="https://www.linkedin.com/in/luisthecoder"><i className="fa fa-linkedin socialicon" aria-hidden="true"></i></a>
+            </div>
+            <div className="col-xs-3 col-md-3">
+                <a href="https://www.linkedin.com/in/ecomjenma/"><i className="fa fa-github-square socialicon" aria-hidden="true"></i></a>
             </div>
           </div>
         </div>
