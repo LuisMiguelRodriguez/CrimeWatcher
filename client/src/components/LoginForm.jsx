@@ -28,17 +28,20 @@ const LoginForm = ({
               errorText={errors.email}
               onChange={onChange}
               value={user.email}
+              fullWidth={true}
             />
           </div>
 
           <div className="field-line">
+
             <TextField
               floatingLabelText="Password"
               type="password"
               name="password"
               onChange={onChange}
               errorText={errors.password}
-              value={user.password}
+              value={user.password}              
+              fullWidth={true}
             />
           </div>
 

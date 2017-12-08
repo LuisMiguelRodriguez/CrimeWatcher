@@ -3,3 +3,4 @@ node_modules
 *.swp
 .idea
 .env
+client/dist/js/app.js

@@ -42,6 +42,10 @@ class SignLoginPage extends React.Component {
         <Tabs
           value={this.state.value}
           onChange={this.handleChange}
+          inkBarStyle={{
+            backgroundColor:
+            "black"}
+          }
         >
           <Tab label="Signup" value="a" >
             <div>

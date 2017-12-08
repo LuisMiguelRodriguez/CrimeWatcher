@@ -4,6 +4,12 @@ import { Card, CardText } from 'material-ui/Card';
 import RaisedButton from 'material-ui/RaisedButton';
 import TextField from 'material-ui/TextField';
 
+const styles = {
+  underlineFocusStyle: {
+borderBottom: 'solid 1px',
+width: 'calc(100% - 5px)'
+}
+}
 
 const SignUpForm = ({
   onSubmit,
@@ -26,6 +32,10 @@ const SignUpForm = ({
               errorText={errors.name}
               onChange={onChange}
               value={user.name}
+              style ={{width: '100%'}}
+              inputStyle ={{width: '100%'}}
+              underlineFocusStyle={styles.underlineFocusStyle}
+
             />
           </div>
 
@@ -36,6 +46,7 @@ const SignUpForm = ({
               errorText={errors.email}
               onChange={onChange}
               value={user.email}
+              fullWidth={true}
             />
           </div>
 
@@ -47,6 +58,7 @@ const SignUpForm = ({
               onChange={onChange}
               errorText={errors.password}
               value={user.password}
+              fullWidth={true}
             />
           </div>
 
