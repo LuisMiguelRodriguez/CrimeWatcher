@@ -29,7 +29,7 @@ const AboutPage = () => (
                 <a href="https://www.linkedin.com/in/ecomjenma/"><i className="fa fa-linkedin socialicon" aria-hidden="true"></i></a>
               </div>
               <div className="col-xs-3 col-md-3">
-                <a href="https://www.linkedin.com/in/ecomjenma/"><i className="fa fa-linkedin socialicon" aria-hidden="true"></i></a>
+                <a href="https://www.linkedin.com/in/ecomjenma/"><i className="fa fa-github-square socialicon" aria-hidden="true"></i></a>
               </div>
             </div>
           </div>
