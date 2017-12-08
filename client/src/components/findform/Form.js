@@ -9,6 +9,7 @@ import _ from 'lodash';
 import {Card, CardActions, CardHeader, CardMedia, CardTitle, CardText} from 'material-ui/Card';
 import FlatButton from 'material-ui/FlatButton';
 import ErrorMessage from "./errorMessage";
+import { capitalize } from 'lodash'
 
 class FindForm extends Component {
 
@@ -104,6 +105,7 @@ class FindForm extends Component {
         }
       interpretedCity = interpretedCity.toString();
       interpretedCity = interpretedCity.replace(",", " ");
+
       return interpretedCity;
     }
 
@@ -185,8 +187,9 @@ class FindForm extends Component {
                       </CardMedia>
                       <CardTitle title="Facts: " subtitle="" />
                       <CardText>
-                      <p>Residence: {item.location_1_address}, {item.location_1_city}, {item.location_1_state} {item.location_1_zip}</p>
-                      <p>Charges: {item.charge1}, {item.charge2}</p>
+                      <p>Residence:  {this.cityInterpreter(item.location_1_city)}, {item.location_1_state} {item.location_1_zip}</p>
+                      <p>Charges:  {item.charge1 ? item.charge1 : '' }, {item.charge2 ? capitalize(item.charge2) : ''}</p>
+
                       <SentenceRender
                         nameInterpreter={this.nameInterpreter}
                         cityInterpreter={this.cityInterpreter}
