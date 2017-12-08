@@ -1,9 +1,13 @@
 import React from 'react';
 
 const AboutPage = () => (
-  <div className="aboutPageContainer"  style={{'margin-top':'100px'}}>
-    <div className="container-fluid aboutcontainer">
 
+  <div className="aboutcontainer">
+    <div className="container-fluid">
+      <br/>
+      <br/>
+      <br/>
+      <br/>
       <div className="row">
         <div className="col-md-12">
         <h2 className="aboutheading" id="aboutheading">Meet the Creators</h2>
@@ -37,6 +41,9 @@ const AboutPage = () => (
           <div className="row">
             <div className="col-xs-4 col-md-4">
             <a href="https://www.linkedin.com/in/luisthecoder"><i className="fa fa-linkedin socialicon" aria-hidden="true"></i></a>
+            </div>
+            <div className="col-xs-3 col-md-3">
+                <a href="https://www.linkedin.com/in/ecomjenma/"><i className="fa fa-github-square socialicon" aria-hidden="true"></i></a>
             </div>
           </div>
         </div>
