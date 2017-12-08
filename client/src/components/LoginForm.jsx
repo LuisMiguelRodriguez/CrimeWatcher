@@ -40,7 +40,7 @@ const LoginForm = ({
               name="password"
               onChange={onChange}
               errorText={errors.password}
-              value={user.password}              
+              value={user.password}
               fullWidth={true}
             />
           </div>
@@ -49,7 +49,8 @@ const LoginForm = ({
             <RaisedButton type="submit" label="Log in" primary />
           </div>
 
-          <CardText>Don't have an account? <Link to={'/signup'}>Create one</Link>.</CardText>
+          <br />
+          <br />
         </form>
       </div>
     </Card>

@@ -21,7 +21,7 @@ const SignUpForm = ({
     <Card className="container">
       <div className="card-container">
         <form action="/" onSubmit={onSubmit}>
-          <h2 className="card-heading">Sign Up</h2>
+          <h2 className="card-heading ">Sign Up</h2>
 
           {errors.summary && <p className="error-message">{errors.summary}</p>}
 
@@ -66,7 +66,9 @@ const SignUpForm = ({
             <RaisedButton type="submit" label="Create New Account" primary />
           </div>
 
-          <CardText>Already have an account? <Link to={'/login'}>Log in</Link></CardText>
+          <br />
+          <br />
+
         </form>
       </div>
     </Card>
