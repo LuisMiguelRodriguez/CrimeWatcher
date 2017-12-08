@@ -1,11 +1,10 @@
 import React, { Component } from "react";
 import API from "../utils/API";
 import { Link } from "react-router";
-import { Col, Row, Container } from "../Grid";
+// import { Col, Row, Container } from "../Grid";
 import { Input, FormBtn } from "../Form";
 import Nvd3Analytics from "../utils/Nvd3Analytics";
 import NVD3Chart from "react-nvd3";
-
 
 class Analytics extends Component {
   constructor(props){
@@ -13,10 +12,16 @@ class Analytics extends Component {
     super(props)
 
     this.state = {
-      startDate: "",
-      endDate: "",
+      startMonth: "05",
+      startDay: "05",
+      startYear: "2016",
+      endDay: "08",
+      endMonth: "08",
+      endYear: "2016",
+      startDate: "2015-05-05",
+      endDate: "2015-07-07",
       crimeData: [],
-      sortType: "",
+      sortType: "crime",
       chartType: "pieChart",
       showGraph: false,
       datum:[],
@@ -45,10 +50,15 @@ class Analytics extends Component {
         datum: [],
       });
 
+
       event.preventDefault();
       if (this.state.startDate && this.state.endDate) {
+        let URL = `https://opendata.miamidade.gov/resource/k7xd-qgzt.json?$where=bookdate between '${this.state.startYear}-${this.state.startMonth}-${this.state.startDay}T12:00:00' and '${this.state.endYear}-${this.state.endMonth}-${this.state.endDay}T14:00:00'`;
 
-        let URL = `https://opendata.miamidade.gov/resource/k7xd-qgzt.json?$where=bookdate between '${this.state.startDate}T12:00:00' and '${this.state.endDate}T14:00:00'`;
+      console.log("------- Before Entering switch logging state here -------");
+      console.log(this.state)
+      console.log("------- end logging state here -------");
+        // let URL = `https://opendata.miamidade.gov/resource/k7xd-qgzt.json?$where=bookdate between '${this.state.startDate}T12:00:00' and '${this.state.endDate}T14:00:00'`;
         console.log(URL)
         API.getData(URL)
           .then(res => {
@@ -94,10 +104,6 @@ class Analytics extends Component {
 
                                   dataArray.push(tmpObject)
                                 })
-                                console.log("---- This is the data Array -----")
-                                console.log(dataArray.slice(0,10))
-                                console.log("---- This is the data Array -----")
-
                                 this.setState({
                                   datum: [{
                                     key: "Cumulative Return",
@@ -116,9 +122,6 @@ class Analytics extends Component {
 
                                   dataArray.push(tmpObject)
                                 })
-                                console.log("---- This is the data Array -----")
-                                console.log(dataArray.slice(0,10))
-                                console.log("---- This is the data Array -----")
 
                                 this.setState({
                                   datum: [{
@@ -138,9 +141,6 @@ class Analytics extends Component {
 
                                   dataArray.push(tmpObject)
                                 })
-                                console.log("---- This is the data Array -----")
-                                console.log(dataArray.slice(0,10))
-                                console.log("---- This is the data Array -----")
 
                                 this.setState({
                                   datum: [{
@@ -168,13 +168,13 @@ class Analytics extends Component {
 
                                   dataArray.push(tmpObject)
                                 })
-                                console.log("---- This is the data Array -----")
-                                console.log(dataArray.slice(0,10))
-                                console.log("---- This is the data Array -----")
 
                                 this.setState({
                                   datum: dataArray.slice(0,10),
                                 })
+                                console.log("------- logging state here -------");
+                                console.log(this.state)
+                                console.log("------- end logging state here -------");
                               })
                             break;
                             case "age":
@@ -188,9 +188,6 @@ class Analytics extends Component {
 
                                   dataArray.push(tmpObject)
                                 })
-                                console.log("---- This is the pieChart -----")
-                                console.log(dataArray.slice(0,10))
-                                console.log("---- This is the pieChart -----")
 
                                  this.setState({
                                   datum: dataArray.slice(0,10),
@@ -208,9 +205,7 @@ class Analytics extends Component {
 
                                   dataArray.push(tmpObject)
                                 })
-                                console.log("---- This is the data Array -----")
-                                console.log(dataArray.slice(0,10))
-                                console.log("---- This is the data Array -----")
+
 
                                 this.setState({
                                   datum: dataArray.slice(0,10),
@@ -233,107 +228,355 @@ class Analytics extends Component {
   componentDidMount() {
 
     this.setState({
-      datum: []
-    })
+      datum: [],
+    });
+
 
 
   }
 
 
-
-
   render() {
     return (
-      <Container fluid>
-        <Row>
-          <Col size="md-12">
-              <h1>MIAMI - Crime Analytics</h1>
-            <form>
-              <Input
-                value={this.state.startDate}
-                onChange={this.handleInputChange}
-                name="startDate"
-                placeholder="startDate  (required)"
-              />
-              <Input
-                value={this.state.endDate}
-                onChange={this.handleInputChange}
-                name="endDate"
-                placeholder="endDate  (required)"
-              />
-              <Input
-                value={this.state.chartType}
-                onChange={this.handleInputChange}
-                name="chartType"
-                placeholder="chart Type  (required)"
-              />
-              <Input
-                value={this.state.sortType}
-                onChange={this.handleInputChange}
-                name="sortType"
-                placeholder="sort by  (required)"
-              />
-              <FormBtn
-                disabled={!(this.state.startDate && this.state.endDate)}
-                onClick={this.callTheAPI}
-              >
-                Initiate Analytics
-              </FormBtn>
-            </form>
-          </Col>
-        </Row>
-        <div class="row">
-          <div class="col-md-4">
-            Max Age : {this.state.age.maxAge}
+      <div id="analytics-hero">
+        <div className="container">
+          <div className="row">
+            <div className="col-md-12">
+              <br/><br/><hr/><hr/><hr/>
+              <h1 id="analyticsHeader"> Analytics Dashboard </h1>
+            </div>
           </div>
-          <div class="col-md-4">
-            Min Age : {this.state.age.minAge}
+          <div id="analyticsForm">
+            <div className="row">
+              <div className="col-md-4">
+                <div className="form-group">
+                  <label>Start Day</label>
+                  <select 
+                  className="form-control" 
+                  value={this.state.startDay} 
+                  onChange={this.handleInputChange}
+                  name="startDay" >
+                    <option>01</option>
+                    <option>02</option>
+                    <option>03</option>
+                    <option>04</option>
+                    <option>05</option>
+                    <option>06</option>
+                    <option>07</option>
+                    <option>08</option>
+                    <option>09</option>
+                    <option>10</option>
+                    <option>11</option>
+                    <option>12</option>
+                    <option>13</option>
+                    <option>14</option>
+                    <option>15</option>
+                    <option>16</option>
+                    <option>17</option>
+                    <option>18</option>
+                    <option>19</option>
+                    <option>20</option>
+                    <option>21</option>
+                    <option>22</option>
+                    <option>23</option>
+                    <option>24</option>
+                    <option>25</option>
+                    <option>26</option>
+                    <option>27</option>
+                    <option>28</option>
+                    <option>29</option>
+                    <option>30</option>
+                    <option>31</option>
+                  </select>
+                </div>
+              </div>
+              <div className="col-md-4">
+                <div className="form-group">
+                  <label>Start Month</label>
+                  <select 
+                  className="form-control" 
+                  value={this.state.startMonth} 
+                  onChange={this.handleInputChange}
+                  name="startMonth" >
+                    <option>01</option>
+                    <option>02</option>
+                    <option>03</option>
+                    <option>04</option>
+                    <option>05</option>
+                    <option>06</option>
+                    <option>07</option>
+                    <option>08</option>
+                    <option>09</option>
+                    <option>10</option>
+                    <option>11</option>
+                    <option>12</option>
+                  </select>
+                </div>
+              </div>
+              <div className="col-md-4">
+                <div className="form-group">
+                  <label>Start Year</label>
+                  <select 
+                  className="form-control" 
+                  value={this.state.startYear} 
+                  onChange={this.handleInputChange}
+                  name="startYear" >
+                    <option>2000</option>
+                    <option>2001</option>
+                    <option>2002</option>
+                    <option>2003</option>
+                    <option>2004</option>
+                    <option>2005</option>
+                    <option>2006</option>
+                    <option>2007</option>
+                    <option>2008</option>
+                    <option>2009</option>
+                    <option>2010</option>
+                    <option>2011</option>
+                    <option>2012</option>
+                    <option>2013</option>
+                    <option>2014</option>
+                    <option>2015</option>
+                    <option>2016</option>
+                    <option>2017</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <br/>
+            <div className="row">
+              <div className="col-md-4">
+                <div className="form-group">
+                  <label>End Day</label>
+                  <select 
+                  className="form-control" 
+                  value={this.state.endDay} 
+                  onChange={this.handleInputChange}
+                  name="endDay" >
+                    <option>01</option>
+                    <option>02</option>
+                    <option>03</option>
+                    <option>04</option>
+                    <option>05</option>
+                    <option>06</option>
+                    <option>07</option>
+                    <option>08</option>
+                    <option>09</option>
+                    <option>10</option>
+                    <option>11</option>
+                    <option>12</option>
+                    <option>13</option>
+                    <option>14</option>
+                    <option>15</option>
+                    <option>16</option>
+                    <option>17</option>
+                    <option>18</option>
+                    <option>19</option>
+                    <option>20</option>
+                    <option>21</option>
+                    <option>22</option>
+                    <option>23</option>
+                    <option>24</option>
+                    <option>25</option>
+                    <option>26</option>
+                    <option>27</option>
+                    <option>28</option>
+                    <option>29</option>
+                    <option>30</option>
+                    <option>31</option>
+                  </select>
+                </div>
+              </div>
+              <div className="col-md-4">
+                <div className="form-group">
+                  <label>End Month</label>
+                  <select 
+                  className="form-control" 
+                  value={this.state.endMonth} 
+                  onChange={this.handleInputChange}
+                  name="endMonth" >
+                    <option>01</option>
+                    <option>02</option>
+                    <option>03</option>
+                    <option>04</option>
+                    <option>05</option>
+                    <option>06</option>
+                    <option>07</option>
+                    <option>08</option>
+                    <option>09</option>
+                    <option>10</option>
+                    <option>11</option>
+                    <option>12</option>
+                  </select>
+                </div>
+              </div>
+              <div className="col-md-4">
+                <div className="form-group">
+                  <label>End Year</label>
+                  <select 
+                  className="form-control" 
+                  value={this.state.endYear} 
+                  onChange={this.handleInputChange}
+                  name="endYear" >
+                    <option>2000</option>
+                    <option>2001</option>
+                    <option>2002</option>
+                    <option>2003</option>
+                    <option>2004</option>
+                    <option>2005</option>
+                    <option>2006</option>
+                    <option>2007</option>
+                    <option>2008</option>
+                    <option>2009</option>
+                    <option>2010</option>
+                    <option>2011</option>
+                    <option>2012</option>
+                    <option>2013</option>
+                    <option>2014</option>
+                    <option>2015</option>
+                    <option>2016</option>
+                    <option>2017</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+
+            <div className="row">
+              <div className="col-md-12">
+                <div className="form-group">
+                  <label>Sort By</label>
+                  <select 
+                  className="form-control form-control-lg" 
+                  value={this.state.sortType} 
+                  onChange={this.handleInputChange}
+                  name="sortType" >
+                    <option>crime</option>
+                    <option>day</option>
+                    <option>age</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+
+            <div className="row">
+              <div className="col-md-12">
+                <div className="form-group">
+                  <label>Chart Type</label>
+                  <select 
+                  className="form-control form-control-lg"
+                  value={this.state.chartType}
+                  onChange={this.handleInputChange}
+                  name="chartType">
+                    <option>pieChart</option>
+                    <option>discreteBarChart</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+
+
+            <div className="row">
+              <div className="col-md-12 text-center">
+                <button type="button" className="buttonAnalytics" onClick={this.callTheAPI}>Initiate Analytics</button>
+              </div>
+            </div>
           </div>
-          <div class="col-md-4">
-            Age that commited the most crimes : {this.state.age.maxCrimeAge}
+          <hr/>
+          <br/><br/>  
+          <div className="row">
+            <div className="col-md-4">
+              <div className="dataBlob">
+                Oldest Criminal : {this.state.age.maxAge}
+              </div>
+            </div>
+
+            <div className="col-md-4">
+              <div className="dataBlob">
+                Youngest Criminal: {this.state.age.minAge}
+              </div>
+            </div>
+
+            <div className="col-md-4">
+              <div className="dataBlob">
+                Most Common Criminal Age : {this.state.age.maxCrimeAge}
+              </div>
+            </div>
           </div>
+
+
+          <div className="row">
+            <div className="col-md-2">
+            </div>
+            <div className="col-md-4">
+              <div className="dataBlob">
+                Lowest Crime Commited : {this.state.crime.minCrimeType}
+              </div>
+            </div>
+
+            <div className="col-md-4">
+              <div className="dataBlob">
+                Most commited crime : {this.state.crime.maxCrimeType}
+              </div>
+            </div>
+            <div className="col-md-2">
+            </div>
+          </div>
+
+
+          <div className="row">
+            <div className="col-md-2">
+            </div>
+            <div className="col-md-4">
+              <div className="dataBlob">
+                Minimum Crimes on : {this.state.day.minCrimeDay} <br/>
+                Number of Crimes: {this.state.day.minCrimeDayCount}
+              </div>
+            </div>
+
+            <div className="col-md-4">
+              <div className="dataBlob">
+                Maximum Crimes on : {this.state.day.maxCrimeDay} <br/>
+                Number of Crimes: {this.state.day.maxCrimeDayCount}
+              </div>
+            </div>
+            <div className="col-md-2">
+            </div>
+          </div>
+
+          <hr/>
+          <br/><br/> 
+
+          <div id="graphingRegion">
+            <div className="row">
+              <div className="col-md-1">
+              </div>
+              <div className="col-md-10 text-center" id="paddMeUp">
+                <NVD3Chart
+                  id="chart"
+                  width={800}
+                  height={500}
+                  type={this.state.chartVal}
+                  datum={this.state.datum}
+                  x="key"
+                  y="count"
+                  showValues={true}
+                  showLegend={true}
+                  showControls={true}
+                  showLabels={true}
+                  showXAxis={false}
+                  labelType="percent"
+                  noData="Awaiting Data"
+                />
+              </div>
+              <div className="col-md-1">
+              </div>
+            </div>
+          </div>
+
+          <hr/>
+          <br/><br/> 
         </div>
-
-
-        <div class="row">
-          <div class="col-md-6">
-            Lowest crimes commited on : {this.state.day.minCrimeDay} || Number of Crimes commited : {this.state.day.minCrimeDayCount}
-          </div>
-          <div class="col-md-6">
-            Highest crimes commited on : {this.state.day.maxCrimeDay} || Number of Crimes commited : {this.state.day.maxCrimeDayCount}
-          </div>
-        </div>
-
-
-        <div class="row">
-          <div class="col-md-6">
-            Most commited crime : {this.state.crime.maxCrimeType}
-          </div>
-          <div class="col-md-6">
-            Least commited crime : {this.state.crime.minCrimeType}
-          </div>
-        </div>
-
-        <Row>
-            <NVD3Chart
-              id="chart"
-              width={700}
-              height={570}
-              type={this.state.chartVal}
-              datum={this.state.datum}
-              x="key"
-              y="count"
-              showValues={false}
-              showLegend={false}
-              showControls={false}
-              showLabels={false}
-              showXAxis={false}
-              labelType="percent"
-              noData="Awaiting Data"
-            />
-        </Row>
-
-      </Container>
+      </div>
     );
   }
 }

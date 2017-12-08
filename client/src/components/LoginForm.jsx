@@ -16,13 +16,18 @@ const LoginForm = ({
     <Card className="container ">
       <div className="card-container">
         <form action="/" onSubmit={onSubmit}>
-          <h2 className="card-heading">Login</h2>
+          <br />
+          <br />
+          <h3 className="card-heading">Login</h3>
+          <br />
+
 
           {successMessage && <p className="success-message">{successMessage}</p>}
           {errors.summary && <p className="error-message">{errors.summary}</p>}
 
           <div className="field-line">
             <TextField
+              style={{'text-align':'center'}}
               floatingLabelText="Email"
               name="email"
               errorText={errors.email}
@@ -32,7 +37,9 @@ const LoginForm = ({
           </div>
 
           <div className="field-line">
+
             <TextField
+              style={{'text-align':'center'}}
               floatingLabelText="Password"
               type="password"
               name="password"
@@ -41,12 +48,14 @@ const LoginForm = ({
               value={user.password}
             />
           </div>
-
+          <br/>
+          <br/>
           <div className="button-line">
             <RaisedButton type="submit" label="Log in" primary />
           </div>
 
-          <CardText>Don't have an account? <Link to={'/signup'}>Create one</Link>.</CardText>
+          <br />
+          <br />
         </form>
       </div>
     </Card>

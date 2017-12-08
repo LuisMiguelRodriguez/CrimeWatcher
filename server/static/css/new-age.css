@@ -53,10 +53,7 @@ p {
   color: white;
 }
 
-section {
-  padding: 100px 0; }
-  section h2 {
-    font-size: 50px; }
+
 
 #mainNav {
   border-color: rgba(34, 34, 34, 0.05);
@@ -68,8 +65,8 @@ section {
   font-weight: 200;
   letter-spacing: 1px; }
   #mainNav .navbar-brand {
-    color: #d80404;
-    font-family: 'Catamaran', 'Helvetica', 'Arial', 'sans-serif';
+    color: white;
+    font-family: 'Spinnaker', 'sans-serif', 'Catamaran', 'Helvetica', 'Arial', 'sans-serif';
     font-weight: 600;
     letter-spacing: 1px;
     font-size: 32px;
@@ -289,6 +286,7 @@ footer {
   color: white;
   border: 1px solid;
   border-color: white; }
+
   .btn-outline:hover, .btn-outline:focus, .btn-outline:active, .btn-outline.active {
     color: white;
     border-color: #d73925;
@@ -305,7 +303,7 @@ footer {
 }
 
 .btn-xl {
-  font-size: 11px;
+  font-size: 14px;
   padding: 15px 45px; }
 
 
@@ -356,7 +354,7 @@ footer {
     padding-bottom: 5px;
     margin-top: 20px;
     border-radius: 2px;
-    background-color: red;
+    background-color: #d73925;
     font-weight: 600;
     font-size: 18px;
     border: none;
@@ -367,6 +365,7 @@ footer {
   #dashboard-form-card{
     text-align: center;
     background-color: black;
+    padding:30px 25px 45px 25px;
   }
   #login-signup {
     width:800px;
@@ -385,8 +384,9 @@ footer {
 
   /*Contact Form*/
 
-  #contact {
+  .contact {
     text-align: center;
+    margin-top: 50px;
   }
 
   #contact-form {
@@ -407,3 +407,88 @@ footer {
   position: relative;
 
 }
+#contactbtn{
+  color: white;
+  border: 1px solid;
+  border-color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  font-size: 14px;
+  margin-top:10px;
+}
+
+#contactbtn:hover, #contactbtn:focus, #contactbtn:active, #contactbtn.active {
+    color: white;
+    border-color: #d73925;
+    background-color: #d73925; }
+
+#map{
+margin-top: 30px;
+}
+.address{
+  font-size: 16px;
+}
+.contact-form{
+margin-top: 10px;
+}
+#contactheadline{
+  padding-top:40px;
+  margin-bottom:20px;
+}
+
+About Page */
+.aboutcontainer{
+  padding-top: 100px;
+}
+.aboutheading{
+  font-weight: 600;
+  margin-left: 10px;
+}
+#aboutheading{
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+.bioPictures{
+  width: 200px;
+  /* border-radius: 50%; */
+  margin-left: 20px;
+}
+.socialicon {
+  margin-bottom: 10px;
+  margin-top: 10px;
+  padding: 10px;
+  position: relative;
+  color: #fff;
+  font-size:26px;
+  background-color:#4395CD;
+}
+.socialgit{
+  margin-bottom: 10px;
+  margin-top: 10px;
+  padding: 10px;
+  position: relative;
+  color: #fff;
+  font-size:26px;
+  background-color:#d73925;
+}
+.result-rows {
+  margin-left:0px;
+  margin-right:0px;
+  padding-left:0px;
+  padding-right:0px;
+}
+
+.biorow{
+  margin-bottom: 20px;
+  margin-left: 10px;
+}
+
+.masthead-full {
+  position: relative;
+  width: 100%;
+  padding-top: 150px;
+  padding-bottom: 100px;
+  color: white;
+  background: url("../img/bg-pattern.png"), #000;
+  background: url("../img/bg-pattern.png"), -webkit-linear-gradient(to left, #d80404, #000);
+  background: url("../img/bg-pattern.png"), linear-gradient(to left, #d80404, #000); }
+

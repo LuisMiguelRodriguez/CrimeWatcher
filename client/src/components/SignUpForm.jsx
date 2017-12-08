@@ -4,6 +4,12 @@ import { Card, CardText } from 'material-ui/Card';
 import RaisedButton from 'material-ui/RaisedButton';
 import TextField from 'material-ui/TextField';
 
+const styles = {
+  underlineFocusStyle: {
+borderBottom: 'solid 1px',
+width: 'calc(100% - 5px)'
+}
+}
 
 const SignUpForm = ({
   onSubmit,
@@ -14,13 +20,18 @@ const SignUpForm = ({
   <div >
     <Card className="container">
       <div className="card-container">
+
         <form action="/" onSubmit={onSubmit}>
-          <h2 className="card-heading">Sign Up</h2>
+        <br />
+        <br />
+
+          <h3 className="card-heading ">Sign Up</h3>
 
           {errors.summary && <p className="error-message">{errors.summary}</p>}
 
-          <div className="field-line">
+          <div className="field-line ">
             <TextField
+              style={{'text-align':'center'}}
               floatingLabelText="Name"
               name="name"
               errorText={errors.name}
@@ -31,6 +42,7 @@ const SignUpForm = ({
 
           <div className="field-line">
             <TextField
+              style={{'text-align':'center'}}
               floatingLabelText="Email"
               name="email"
               errorText={errors.email}
@@ -39,8 +51,9 @@ const SignUpForm = ({
             />
           </div>
 
-          <div className="field-line">
+          <div className="field-line ">
             <TextField
+              style={{'text-align':'center'}}
               floatingLabelText="Password"
               type="password"
               name="password"
@@ -49,12 +62,16 @@ const SignUpForm = ({
               value={user.password}
             />
           </div>
+          <br/>
+          <br/>
 
           <div className="button-line">
             <RaisedButton type="submit" label="Create New Account" primary />
           </div>
 
-          <CardText>Already have an account? <Link to={'/login'}>Log in</Link></CardText>
+          <br />
+          <br />
+
         </form>
       </div>
     </Card>

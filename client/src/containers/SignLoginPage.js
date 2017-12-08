@@ -31,30 +31,35 @@ class SignLoginPage extends React.Component {
 
   render() {
     return (
-
-      <div id="login-signup">
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <Tabs
-          value={this.state.value}
-          onChange={this.handleChange}
-        >
-          <Tab label="Signup" value="a" >
-            <div>
-              <SignUpPage />
-            </div>
-          </Tab>
-          <Tab label="Log In" value="b">
-            <div>
-              <LoginPage/>
-            </div>
-          </Tab>
-        </Tabs>
-      </div>
+      <header className="masthead-full">
+          <div id="login-signup">
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <Tabs
+              value={this.state.value}
+              onChange={this.handleChange}
+              inkBarStyle={{
+                backgroundColor:
+                "white"}
+              }
+            >
+              <Tab label="Signup" value="a" >
+                <div>
+                  <SignUpPage />
+                </div>
+              </Tab>
+              <Tab style={{color:'white'}}label="Log In" value="b">
+                <div>
+                  <LoginPage/>
+                </div>
+              </Tab>
+            </Tabs>
+          </div>
+      </header>
     );
   }
 }

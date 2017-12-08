@@ -10,27 +10,23 @@ import FindForm from "../findform";
 const Dashboard = ({ secretData }) => (
   <div>
     <div id="dashboard-hero">
-      <div className="arrow-container">
-        <a href="/#search-form"><i id="down-arrow" className="fa fa-arrow-circle-o-down" aria-hidden="true" ></i></a>        
-      </div>
-    </div>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <div className="container">
-        <div className="row">
-            <div className="col-md-12">
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
 
-            </div>
-        </div>
-        <div className="row">
-            <div className="col-md-12">
-
-            </div>
-        </div>
+      }
+      <br />
+      <FindForm/>
     </div>
-    <FindForm/>
+
   </div>
 );
 

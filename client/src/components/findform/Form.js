@@ -26,11 +26,14 @@ class FindForm extends Component {
     }
 
     // This gets user input for charges and sends it to <ChargesInput />:
+
     this.handleInputChange = ( event, index, value, name ) => {
       console.log(name)
       console.log(value)
+
+
       this.setState({
-          [name]: value
+        [name]: value
       });
     };
 
@@ -157,11 +160,20 @@ class FindForm extends Component {
               <ErrorMessage message={this.state.message} />
             </div>
 
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+
             <div>
-              <div className = "container">
-               <div className = "row">
+              <div className = "container result-rows ">
+               <div className = "row ">
                 {this.state.result.map(item => (
-                  <div className = "col-md-4" key={item.dob}>
+                  <div className = "col-md-4 " key={item.dob}>
                     <Card>
                       <CardMedia
                       overlay={<CardTitle title={item.defendant} subtitle="Overlay subtitle" />}

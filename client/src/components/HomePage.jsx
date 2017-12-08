@@ -1,5 +1,6 @@
 import React from 'react';
 import { Card, CardTitle } from 'material-ui/Card';
+import { Link, IndexLink } from 'react-router';
 
 
 const HomePage = () => (
@@ -11,7 +12,7 @@ const HomePage = () => (
             <div className="header-content mx-auto">
               <h1 className="mb-5">Add depth to your crime stories.</h1>
               <h4 className="mb-5">Give us a few basic details and we'll do the leg work. Booking logs, crime statistics, a wealth of information at your fingertips.</h4>
-              <a href="#download" className="btn btn-outline btn-xl js-scroll-trigger">Sign Up Now for Free!</a>
+              <Link to="/signlogin" className="btn btn-outline btn-xl js-scroll-trigger">Sign Up Now for Free!</Link >
             </div>
           </div>
           <div className="col-lg-5 my-auto">
@@ -81,7 +82,7 @@ const HomePage = () => (
                 </div>
                 <div className="col-lg-6">
                   <div className="feature-item">
-                    <i className="icon-layers text-primary"></i>
+                    <i className="icon-envelope text-primary"></i>
                     <h3>Email</h3>
                     <p className="text-muted">We can email you the data for safe keeping.</p>
                   </div>
@@ -97,7 +98,7 @@ const HomePage = () => (
       <div className="cta-content">
         <div className="container">
           <h2 id="feature-headline">Stop waiting.<br/>Start watching.</h2>
-          <a href="/login" className="btn btn-outline btn-xl js-scroll-trigger">Let's Get Started!</a>
+          <Link to="/signlogin" className="btn btn-outline btn-xl js-scroll-trigger">Let's Get Started!</Link>
         </div>
       </div>
       <div className="overlay"></div>
