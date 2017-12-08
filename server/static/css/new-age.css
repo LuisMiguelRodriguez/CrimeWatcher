@@ -458,8 +458,17 @@ About Page */
   padding: 10px;
   position: relative;
   color: #fff;
-  font-size:36px;
+  font-size:26px;
   background-color:#4395CD;
+}
+.socialgit{
+  margin-bottom: 10px;
+  margin-top: 10px;
+  padding: 10px;
+  position: relative;
+  color: #fff;
+  font-size:26px;
+  background-color:#d73925;
 }
 .result-rows {
   margin-left:0px;
@@ -468,10 +477,9 @@ About Page */
   padding-right:0px;
 }
 
-.center-tag {
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
+.biorow{
+  margin-bottom: 20px;
+  margin-left: 10px;
 }
 
 .masthead-full {
@@ -483,3 +491,4 @@ About Page */
   background: url("../img/bg-pattern.png"), #000;
   background: url("../img/bg-pattern.png"), -webkit-linear-gradient(to left, #d80404, #000);
   background: url("../img/bg-pattern.png"), linear-gradient(to left, #d80404, #000); }
+
