@@ -27,11 +27,8 @@ class FindForm extends Component {
 
     // This gets user input for charges and sends it to <ChargesInput />:
 
-    this.handleInputChange = ( event, index, value, name ) => {
-      console.log(name)
-      console.log(value)
-
-
+    this.handleInputChange = event => {
+      const { name, value } = event.target;
       this.setState({
         [name]: value
       });
@@ -70,7 +67,7 @@ class FindForm extends Component {
           month: "Month",
           day: "Day",
           year: "Year",
-          charge: "Charge"          
+          charge: "Charge"
       })
     }
 
@@ -117,7 +114,7 @@ class FindForm extends Component {
       return charge;
     }
 
-    this.weekDayInterpreter = (uninterpretedDate) => { 
+    this.weekDayInterpreter = (uninterpretedDate) => {
         var original = uninterpretedDate;
         const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
         var interpretedDate = new Date(original);
