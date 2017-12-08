@@ -48,7 +48,8 @@ const LoginForm = ({
               value={user.password}
             />
           </div>
-
+          <br/>
+          <br/>
           <div className="button-line">
             <RaisedButton type="submit" label="Log in" primary />
           </div>

@@ -31,7 +31,7 @@ class SignLoginPage extends React.Component {
 
   render() {
     return (
-      <header className="masthead">
+      <header className="masthead-full">
           <div id="login-signup">
             <br />
             <br />

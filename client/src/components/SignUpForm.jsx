@@ -62,6 +62,8 @@ const SignUpForm = ({
               value={user.password}
             />
           </div>
+          <br/>
+          <br/>
 
           <div className="button-line">
             <RaisedButton type="submit" label="Create New Account" primary />
