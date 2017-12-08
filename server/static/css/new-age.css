@@ -476,7 +476,19 @@ About Page */
   padding-left:0px;
   padding-right:0px;
 }
+
 .biorow{
   margin-bottom: 20px;
   margin-left: 10px;
 }
+
+.masthead-full {
+  position: relative;
+  width: 100%;
+  padding-top: 150px;
+  padding-bottom: 100px;
+  color: white;
+  background: url("../img/bg-pattern.png"), #000;
+  background: url("../img/bg-pattern.png"), -webkit-linear-gradient(to left, #d80404, #000);
+  background: url("../img/bg-pattern.png"), linear-gradient(to left, #d80404, #000); }
+

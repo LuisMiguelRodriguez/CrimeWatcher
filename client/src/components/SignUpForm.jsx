@@ -20,47 +20,50 @@ const SignUpForm = ({
   <div >
     <Card className="container">
       <div className="card-container">
+
         <form action="/" onSubmit={onSubmit}>
-          <h2 className="card-heading ">Sign Up</h2>
+        <br />
+        <br />
+
+          <h3 className="card-heading ">Sign Up</h3>
 
           {errors.summary && <p className="error-message">{errors.summary}</p>}
 
-          <div className="field-line">
+          <div className="field-line ">
             <TextField
+              style={{'text-align':'center'}}
               floatingLabelText="Name"
               name="name"
               errorText={errors.name}
               onChange={onChange}
               value={user.name}
-              style ={{width: '100%'}}
-              inputStyle ={{width: '100%'}}
-              underlineFocusStyle={styles.underlineFocusStyle}
-
             />
           </div>
 
           <div className="field-line">
             <TextField
+              style={{'text-align':'center'}}
               floatingLabelText="Email"
               name="email"
               errorText={errors.email}
               onChange={onChange}
               value={user.email}
-              fullWidth={true}
             />
           </div>
 
-          <div className="field-line">
+          <div className="field-line ">
             <TextField
+              style={{'text-align':'center'}}
               floatingLabelText="Password"
               type="password"
               name="password"
               onChange={onChange}
               errorText={errors.password}
               value={user.password}
-              fullWidth={true}
             />
           </div>
+          <br/>
+          <br/>
 
           <div className="button-line">
             <RaisedButton type="submit" label="Create New Account" primary />

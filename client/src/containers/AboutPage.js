@@ -1,8 +1,9 @@
 import React from 'react';
 
 const AboutPage = () => (
+
   <div className="aboutcontainer">
-    <div className="container-fluid"> 
+    <div className="container-fluid">
       <br/>
       <br/>
       <br/>
@@ -14,7 +15,7 @@ const AboutPage = () => (
       </div>
       <div className="row biorow">
         <div className="col-md-2">
-          <img className="bioPictures" src="/img/bioPics/jen.jpg"/> 
+          <img className="bioPictures" src="/img/bioPics/jen.jpg"/>
           <div className="container">
             <div className="row">
               <div className="col-xs-3 col-md-3">
@@ -65,6 +66,7 @@ const AboutPage = () => (
               <div className="col-xs-3 col-md-3">
                 <a href="https://github.com/okapoor" target="_blank"><i className="fa fa-github-square socialgit" aria-hidden="true"></i></a>
               </div>
+
             </div>
           </div>
         </div>
@@ -85,6 +87,7 @@ const AboutPage = () => (
               <div className="col-xs-3 col-md-3">
                 <a href="https://github.com/petersurowski" target="_blank"><i className="fa fa-github-square socialgit" aria-hidden="true"></i></a>
               </div>
+
             </div>
           </div>
         </div>
