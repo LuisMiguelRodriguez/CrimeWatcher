@@ -5,16 +5,14 @@ import MenuItem from 'material-ui/MenuItem';
 import { Card, CardText } from 'material-ui/Card';
 
 
+
 // import DatePicker from 'react-datepicker';
 // import moment from 'moment';
 // import 'react-datepicker/dist/react-datepicker.css';
 
 const DateInput = props => (
-  <div  id="dashboard-form-layout">
-    <Card id="dashboard-form-card">
-    <h1 className="title">Find Your Next Story</h1>
-    <h3 className="title"> Start searching by selecting a date and the charge and hit submit</h3>
-      <br/>
+
+    <div>
       <DropDownMenu
         type="text"
         onChange={(event, index, value ) => props.handleInputChange(event, index, value, 'month')}
@@ -129,10 +127,10 @@ const DateInput = props => (
           <MenuItem value={"DRUG PARAPHERNA/POSN"} primaryText="Drug Paraherna Posession" />
           <MenuItem value={"ALC BEV/DRK IN PUBLC"} primaryText="Drunk in Public" />
       </DropDownMenu>
+     
+    </div>
 
-    </Card>
 
-  </div>
 
 )
 export default DateInput;
