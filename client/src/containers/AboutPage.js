@@ -91,7 +91,7 @@ const AboutPage = () => (
         <div className="col-md-8 col-md-offset-2">
           <h4>Back End Developer/Copywriter</h4>
           <h4>Peter</h4>
-          <p>DevOps engineer with a passion for solving problems and learning new technologies</p>
+          <p>He is developer, marketing content creator and veteran journalist based in Southern California. His specialty is developing digital strategy for higher education institutions. When he's not writing code or magazine articles, he's writing web content for the University of California, Riverside, where he works as a creative copywriter.</p>
         </div>
       </div>
 
