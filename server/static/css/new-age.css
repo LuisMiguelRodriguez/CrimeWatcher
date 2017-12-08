@@ -468,3 +468,9 @@ About Page */
   padding-left:0px;
   padding-right:0px;
 }
+
+.center-tag {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}

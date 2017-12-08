@@ -25,17 +25,14 @@ const muiTheme = getMuiTheme({
    accent2Color: pinkA400,
    accent3Color: pinkA100,
    textColor: 'white',
-   secondaryTextColor: fade(fullWhite, 0.7),
+   secondaryTextColor: 'white',
    alternateTextColor: 'white',
    canvasColor: '#303030',
    borderColor: fade(fullWhite, 0.3),
-   disabledColor: fade(fullWhite, 0.3),
+   disabledColor: 'white',
    pickerHeaderColor: fade(fullWhite, 0.12),
    clockCircleColor: fade(fullWhite, 0.12),
- },
-  appBar: {
-    height:70,
-  },
+ }
 });
 
 ReactDom.render((
