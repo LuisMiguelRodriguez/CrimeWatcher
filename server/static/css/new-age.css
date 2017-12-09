@@ -278,6 +278,10 @@ footer {
       color: rgba(255, 255, 255, 0.3); }
       footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li a.active {
         text-decoration: none; }
+        .tagline{
+          padding-top: 20px;
+          margin-bottom: 40px;
+        }
 
 .bg-primary {
   background: #000;

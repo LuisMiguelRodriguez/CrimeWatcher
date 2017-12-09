@@ -126,6 +126,7 @@ const HomePage = () => (
             </a>
           </li>
         </ul>
+        <Link to="/about"><h5 className="tagline">Designed and Developed by Team Teal</h5></Link>
       </div>
     </section>
 
