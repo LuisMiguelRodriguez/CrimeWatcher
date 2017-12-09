@@ -162,7 +162,7 @@ header.masthead {
 
 section.features .section-heading {
   margin-bottom: 50px;
-  margin-top: 50px;
+  padding-top: 80px;
 }
   section.features .section-heading h2 {
     font-size: 36px;
